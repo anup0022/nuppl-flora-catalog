@@ -7,6 +7,7 @@ import re
 import shutil
 import json
 import subprocess
+import time
 import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -35,68 +36,103 @@ def clean_name(folder_name):
     return name
 
 
-def scientific_search_term(scientific_name):
-    if not scientific_name:
-        return ""
-    words = re.findall(r"[A-Za-z]+", scientific_name)
-    return " ".join(words[:2]) if len(words) >= 2 else ""
+# 1 hero photo + 4 Visual record photos per plant
+COMMONS_TARGET = 5
+NON_SPECIES_TOKENS = {"spp", "sp", "cv", "var", "subsp"}
 
 
-def fetch_commons_images(plant):
-    term = scientific_search_term(plant["scientific_name"])
-    if not term:
+def scientific_search_terms(scientific_name):
+    """Return (primary two-word term, genus-only fallback term)."""
+    words = [w for w in re.findall(r"[A-Za-z]+", scientific_name or "") if w.lower() not in NON_SPECIES_TOKENS]
+    primary = " ".join(words[:2]) if len(words) >= 2 else ""
+    genus = words[0] if words else ""
+    return primary, genus
+
+
+def _commons_search(term, tokens, limit, exclude_titles):
+    if not term or limit <= 0:
         return []
-    os.makedirs(os.path.dirname(COMMONS_MANIFEST), exist_ok=True)
-    manifest = {}
-    if os.path.exists(COMMONS_MANIFEST):
-        with open(COMMONS_MANIFEST, "r", encoding="utf-8") as fh:
-            manifest = json.load(fh)
-    if plant["slug"] in manifest:
-        return manifest[plant["slug"]]
-
     query = urllib.parse.urlencode({
         "action": "query",
         "format": "json",
         "generator": "search",
         "gsrsearch": term,
         "gsrnamespace": "6",
-        "gsrlimit": "8",
+        "gsrlimit": "20",
         "prop": "imageinfo",
         "iiprop": "url|mime|extmetadata",
         "iiurlwidth": "1400",
     })
     api_url = f"https://commons.wikimedia.org/w/api.php?{query}"
-    try:
-        result = subprocess.run(
-            ["curl", "-ksL", "--max-time", "20", "-A", "NUPPL-Flora-Catalog/1.0", api_url],
-            check=True,
-            capture_output=True,
-            text=True,
-        )
-        payload = json.loads(result.stdout)
-    except (subprocess.SubprocessError, json.JSONDecodeError):
-        manifest[plant["slug"]] = []
+    payload = None
+    for attempt in range(3):
+        time.sleep(1.1)
+        try:
+            result = subprocess.run(
+                ["curl", "-ksL", "--max-time", "20", "-A", "NUPPL-Flora-Catalog/1.0", api_url],
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+            if "too many requests" in result.stdout.lower():
+                time.sleep(8)
+                continue
+            payload = json.loads(result.stdout)
+            break
+        except (subprocess.SubprocessError, json.JSONDecodeError):
+            time.sleep(3)
+    if payload is None:
         return []
 
-    expected = term.lower().split()
     matches = []
     for page in payload.get("query", {}).get("pages", {}).values():
         info = (page.get("imageinfo") or [{}])[0]
         title = page.get("title", "")
         title_lower = title.lower()
-        if not all(token in title_lower for token in expected):
+        clean_title = title.removeprefix("File:")
+        if clean_title in exclude_titles:
+            continue
+        if not all(token in title_lower for token in tokens):
             continue
         if info.get("mime") not in ("image/jpeg", "image/png") or not info.get("thumburl"):
             continue
         metadata = info.get("extmetadata", {})
         matches.append({
-            "title": title.removeprefix("File:"),
+            "title": clean_title,
             "url": info["thumburl"],
             "source": "Wikimedia Commons",
             "license": metadata.get("LicenseShortName", {}).get("value", "Commons license"),
         })
-        if len(matches) == 3:
+        if len(matches) == limit:
             break
+    return matches
+
+
+def fetch_commons_images(plant):
+    primary_term, genus_term = scientific_search_terms(plant["scientific_name"])
+    if not primary_term and not genus_term:
+        return []
+
+    os.makedirs(os.path.dirname(COMMONS_MANIFEST), exist_ok=True)
+    manifest = {}
+    if os.path.exists(COMMONS_MANIFEST):
+        with open(COMMONS_MANIFEST, "r", encoding="utf-8") as fh:
+            manifest = json.load(fh)
+
+    matches = list(manifest.get(plant["slug"], []))
+    if len(matches) >= COMMONS_TARGET:
+        return matches
+
+    seen_titles = {m["title"] for m in matches}
+    if primary_term:
+        for m in _commons_search(primary_term, primary_term.lower().split(), COMMONS_TARGET - len(matches), seen_titles):
+            matches.append(m)
+            seen_titles.add(m["title"])
+    if len(matches) < COMMONS_TARGET and genus_term:
+        for m in _commons_search(genus_term, [genus_term.lower()], COMMONS_TARGET - len(matches), seen_titles):
+            matches.append(m)
+            seen_titles.add(m["title"])
+
     manifest[plant["slug"]] = matches
     with open(COMMONS_MANIFEST, "w", encoding="utf-8") as fh:
         json.dump(manifest, fh, indent=2, ensure_ascii=False)
@@ -234,10 +270,10 @@ def build():
                     shutil.copy2(os.path.join(plant_path, imf), os.path.join(img_dir, dest_name))
                     copied_imgs.append(f"assets/img/{slug}/{dest_name}")
 
-                commons_images = fetch_commons_images({
-                  "slug": slug,
-                  "scientific_name": data["scientific_name"],
-                })
+            commons_images = fetch_commons_images({
+                "slug": slug,
+                "scientific_name": data["scientific_name"],
+            })
 
             plant = {
                 "slug": slug,
@@ -398,48 +434,48 @@ def render_plant_page(plant, prev_p, next_p):
   else:
     gallery = '<section class="gallery gallery-footer gallery-empty"><p>No additional reference photographs on file yet.</p></section>'
 
-    facts_rows = []
-    if plant["scientific_name"]:
-        facts_rows.append(f'<tr><th>Scientific name</th><td class="sci">{esc(plant["scientific_name"])}</td></tr>')
-    if plant["family"]:
-        facts_rows.append(f'<tr><th>Family</th><td>{esc(plant["family"])}</td></tr>')
-    if plant["ptype"]:
-        facts_rows.append(f'<tr><th>Type</th><td>{esc(plant["ptype"])}</td></tr>')
-    facts_rows.append(f'<tr><th>Category</th><td>{esc(plant["category_label"])}</td></tr>')
-    facts_table = "<table class=\"facts\">\n" + "\n".join(facts_rows) + "\n</table>"
+  facts_rows = []
+  if plant["scientific_name"]:
+      facts_rows.append(f'<tr><th>Scientific name</th><td class="sci">{esc(plant["scientific_name"])}</td></tr>')
+  if plant["family"]:
+      facts_rows.append(f'<tr><th>Family</th><td>{esc(plant["family"])}</td></tr>')
+  if plant["ptype"]:
+      facts_rows.append(f'<tr><th>Type</th><td>{esc(plant["ptype"])}</td></tr>')
+  facts_rows.append(f'<tr><th>Category</th><td>{esc(plant["category_label"])}</td></tr>')
+  facts_table = "<table class=\"facts\">\n" + "\n".join(facts_rows) + "\n</table>"
 
-    habitat_html = render_list(plant["habitat"]) or "<p class=\"muted\">Habitat notes pending.</p>"
-    economic_html = render_list(plant["economic"]) or "<p class=\"muted\">Economic notes pending.</p>"
-    medicinal_html = render_list(plant["medicinal"]) or "<p class=\"muted\">Medicinal notes pending.</p>"
-    other_html = f'<section class="block"><h3>Field Notes</h3>{render_list(plant["other"])}</section>' if plant["other"] else ""
-    hero_image = (
-      f'<img src="{esc(hero_src)}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
-      if hero_external else
-      f'<img src="../{hero_src}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
-    ) if hero_src else ""
-    inline_src = plant["images"][1] if len(plant["images"]) > 1 else ""
-    inline_image = (
-      f'<img src="../{inline_src}" alt="{esc(plant["display_name"])} field detail" loading="lazy">'
-      if inline_src else
-      f'<img src="{esc(plant["commons_images"][0]["url"])}" alt="{esc(plant["display_name"])} reference detail" loading="lazy">'
-      if plant.get("commons_images") else ""
-    )
-    inline_photo = (
-      f'<figure class="inline-photo">{inline_image}<figcaption>Field detail</figcaption></figure>'
-      if inline_image else ""
-    )
+  habitat_html = render_list(plant["habitat"]) or "<p class=\"muted\">Habitat notes pending.</p>"
+  economic_html = render_list(plant["economic"]) or "<p class=\"muted\">Economic notes pending.</p>"
+  medicinal_html = render_list(plant["medicinal"]) or "<p class=\"muted\">Medicinal notes pending.</p>"
+  other_html = f'<section class="block"><h3>Field Notes</h3>{render_list(plant["other"])}</section>' if plant["other"] else ""
+  hero_image = (
+    f'<img src="{esc(hero_src)}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
+    if hero_external else
+    f'<img src="../{hero_src}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
+  ) if hero_src else ""
+  inline_src = plant["images"][1] if len(plant["images"]) > 1 else ""
+  inline_image = (
+    f'<img src="../{inline_src}" alt="{esc(plant["display_name"])} field detail" loading="lazy">'
+    if inline_src else
+    f'<img src="{esc(plant["commons_images"][0]["url"])}" alt="{esc(plant["display_name"])} reference detail" loading="lazy">'
+    if plant.get("commons_images") else ""
+  )
+  inline_photo = (
+    f'<figure class="inline-photo">{inline_image}<figcaption>Field detail</figcaption></figure>'
+    if inline_image else ""
+  )
 
-    nav_links = []
-    if prev_p:
-        nav_links.append(f'<a class="nav-link prev" href="{prev_p["slug"]}.html">&larr; {esc(prev_p["display_name"])}</a>')
-    else:
-        nav_links.append('<span></span>')
-    if next_p:
-        nav_links.append(f'<a class="nav-link next" href="{next_p["slug"]}.html">{esc(next_p["display_name"])} &rarr;</a>')
-    else:
-        nav_links.append('<span></span>')
+  nav_links = []
+  if prev_p:
+      nav_links.append(f'<a class="nav-link prev" href="{prev_p["slug"]}.html">&larr; {esc(prev_p["display_name"])}</a>')
+  else:
+      nav_links.append('<span></span>')
+  if next_p:
+      nav_links.append(f'<a class="nav-link next" href="{next_p["slug"]}.html">{esc(next_p["display_name"])} &rarr;</a>')
+  else:
+      nav_links.append('<span></span>')
 
-    html = base_head(f'{plant["display_name"]} \u2014 NUPPL Flora Catalog', depth="../") + f"""<body class="plant-page cat-{plant['badge']}">
+  html = base_head(f'{plant["display_name"]} \u2014 NUPPL Flora Catalog', depth="../") + f"""<body class="plant-page cat-{plant['badge']}">
 <header class="plant-header">
   <a class="back-link" href="../index.html#{plant['category_folder'].lower()}">&larr; Full Index</a>
   <div class="plant-hero">
@@ -483,8 +519,8 @@ def render_plant_page(plant, prev_p, next_p):
 </body>
 </html>
 """
-    with open(os.path.join(DOCS, "plants", f"{plant['slug']}.html"), "w", encoding="utf-8") as fh:
-        fh.write(html)
+  with open(os.path.join(DOCS, "plants", f"{plant['slug']}.html"), "w", encoding="utf-8") as fh:
+    fh.write(html)
 
 
 def write_readme_data(by_category):
