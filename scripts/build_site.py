@@ -811,7 +811,6 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .index-link .sci { font-size: .72rem; margin-top: .08rem; }
 
 .plant-header { max-width: 1180px; padding: 2.2rem 3rem 1.4rem; position: relative; }
-.plant-header::after { content: "FIELD PLATE"; position: absolute; right: 3rem; top: 3.1rem; font: 600 .68rem/1 "Work Sans",sans-serif; letter-spacing: .18em; color: var(--ink-soft); }
 .plant-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr); height: 440px; border-radius: 14px; background: radial-gradient(circle at 82% 18%, rgba(232,174,91,.38), transparent 24%), linear-gradient(122deg, #173d2a 0%, #2f6844 52%, #b95e31 150%); color: var(--paper); box-shadow: 0 20px 36px rgba(16,47,34,.18); position: relative; overflow: hidden; }
 .plant-hero::after { content: ""; position: absolute; width: 360px; height: 360px; border: 1px solid rgba(244,239,228,.25); border-radius: 50%; left: 38%; bottom: -245px; box-shadow: 0 0 0 24px rgba(244,239,228,.035), 0 0 0 48px rgba(244,239,228,.025); pointer-events: none; }
 .plant-hero-copy { padding: 2.4rem 2.2rem; align-self: center; position: relative; z-index: 1; }
@@ -849,7 +848,6 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 
 @media (max-width: 760px) {
   .site-header { min-height: 0; padding: 4.5rem 1.4rem 3rem; display: block; }
-  .site-header::after, .plant-header::after { right: 1.4rem; }
   .site-header h1 { margin-top: 1.2rem; font-size: 3.3rem; }
   .hero-collage { min-height: 280px; margin: 2.3rem -.4rem 0; transform: scale(.9) rotate(2deg); transform-origin: top center; }
   #search { margin-top: 2rem; max-width: none; width: 100%; }
