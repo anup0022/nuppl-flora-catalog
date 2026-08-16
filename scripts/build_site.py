@@ -387,12 +387,12 @@ def render_plant_page(plant, prev_p, next_p):
             )
         gallery_body = "\n".join(figs)
         gallery = (
-            f'<div class="gallery"><div class="gallery-heading"><span>Visual record</span>'
+          f'<section class="gallery gallery-footer"><div class="gallery-heading"><span>Visual record</span>'
             f'<strong>{all_image_count:02d} photographs</strong></div>'
-            f'<div class="gallery-grid">\n{gallery_body}\n    </div></div>'
+            f'<div class="gallery-grid">\n{gallery_body}\n    </div></section>'
         )
     else:
-        gallery = '<div class="gallery gallery-empty"><p>No field photo on file yet.</p></div>'
+        gallery = '<section class="gallery gallery-footer gallery-empty"><p>No field photo on file yet.</p></section>'
 
     facts_rows = []
     if plant["scientific_name"]:
@@ -449,7 +449,6 @@ def render_plant_page(plant, prev_p, next_p):
   </div>
 </header>
 <main class="plant-main">
-  {gallery}
   <div class="content-grid">
     <div class="col-facts">
       {facts_table}
@@ -471,6 +470,7 @@ def render_plant_page(plant, prev_p, next_p):
       {other_html}
     </div>
   </div>
+  {gallery}
 </main>
 <nav class="plant-nav">
   {nav_links[0]}
@@ -812,18 +812,21 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 
 .plant-header { max-width: 1180px; padding: 2.2rem 3rem 1.4rem; position: relative; }
 .plant-header::after { content: "FIELD PLATE"; position: absolute; right: 3rem; top: 3.1rem; font: 600 .68rem/1 "Work Sans",sans-serif; letter-spacing: .18em; color: var(--ink-soft); }
-.plant-hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(260px, .9fr); height: 320px; border-radius: 12px; background: linear-gradient(118deg, #1f482f 0%, #356b45 54%, #bd642f 145%); color: var(--paper); box-shadow: 0 16px 30px rgba(16,47,34,.13); position: relative; overflow: hidden; }
-.plant-hero::after { content: ""; position: absolute; width: 220px; height: 220px; border: 1px solid rgba(244,239,228,.22); border-radius: 50%; left: 42%; bottom: -135px; pointer-events: none; }
-.plant-hero-copy { padding: 2.4rem 2.2rem 2.5rem; align-self: center; position: relative; z-index: 1; }
-.plant-hero-image { min-height: 0; position: relative; }
-.plant-hero-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(31,72,47,.55), transparent 35%), linear-gradient(0deg, rgba(18,36,23,.28), transparent 45%); pointer-events: none; }
-.plant-hero-image img { display: block; width: 100%; height: 320px; object-fit: cover; }
+.plant-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr); height: 360px; border-radius: 14px; background: radial-gradient(circle at 82% 18%, rgba(232,174,91,.38), transparent 24%), linear-gradient(122deg, #173d2a 0%, #2f6844 52%, #b95e31 150%); color: var(--paper); box-shadow: 0 20px 36px rgba(16,47,34,.18); position: relative; overflow: hidden; }
+.plant-hero::before { content: "01 / SPECIMEN"; position: absolute; left: 2.2rem; bottom: 1.6rem; color: rgba(244,239,228,.64); font: 600 .65rem/1 "Work Sans",sans-serif; letter-spacing: .18em; z-index: 2; }
+.plant-hero::after { content: ""; position: absolute; width: 360px; height: 360px; border: 1px solid rgba(244,239,228,.25); border-radius: 50%; left: 38%; bottom: -245px; box-shadow: 0 0 0 24px rgba(244,239,228,.035), 0 0 0 48px rgba(244,239,228,.025); pointer-events: none; }
+.plant-hero-copy { padding: 2.4rem 2.2rem 4rem; align-self: center; position: relative; z-index: 1; }
+.plant-hero-copy::after { content: ""; display: block; width: 4.5rem; height: 3px; margin-top: 1.8rem; background: var(--orange); }
+.plant-hero-image { min-height: 0; margin: 1rem 1rem 1rem 0; position: relative; border: 8px solid rgba(244,239,228,.88); border-radius: 9px; overflow: hidden; transform: rotate(1.5deg); box-shadow: 0 18px 30px rgba(13,34,22,.28); z-index: 1; }
+.plant-hero-image::after { content: "FIELD IMAGE"; position: absolute; right: .75rem; bottom: .65rem; color: #fff; font: 600 .6rem/1 "Work Sans",sans-serif; letter-spacing: .15em; text-shadow: 0 1px 5px #111; pointer-events: none; }
+.plant-hero-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .plant-hero .eyebrow { color: #c6d8bd; }
 .plant-header h1 { color: var(--paper); font-size: clamp(2.8rem, 6vw, 5.6rem); letter-spacing: -.04em; max-width: 620px; }
 .common-alt { font-size: 1.05rem; }
 .plant-main { max-width: 1180px; padding: 0 3rem 3rem; }
 
 .gallery { display: block; margin: 0 0 2.25rem; }
+.gallery-footer { margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--rule); }
 .gallery-heading { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--rule); padding-bottom: .65rem; margin-bottom: 1rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .13em; font-size: .7rem; }
 .gallery-heading strong { color: var(--green); font-size: .68rem; }
 .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 145px; gap: .8rem; }
@@ -854,8 +857,9 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
   #search { margin-top: 2rem; max-width: none; width: 100%; }
   main, .plant-main { padding-left: 1.4rem; padding-right: 1.4rem; }
   .plant-header { padding: 2.2rem 1.4rem 1.2rem; }
-  .plant-hero { display: block; height: auto; }
+  .plant-hero { display: block; height: auto; min-height: 0; }
   .plant-hero-copy { padding: 1.5rem 1.25rem 1.7rem; }
+  .plant-hero-image { margin: 0 .8rem .8rem; transform: none; }
   .plant-hero-image, .plant-hero-image img { min-height: 0; height: 220px; }
   .plant-hero-image::after { background: linear-gradient(0deg, rgba(18,36,23,.2), transparent 55%); }
   .plant-header h1 { font-size: 3.3rem; margin-top: 1rem; }
