@@ -36,13 +36,17 @@ HEADING_RULES = [
     ("habitat", "habitat"),
     ("growth form", "habitat"),
     ("features", "habitat"),
-    ("economic importance", "importance"),
-    ("economic & medicinal importance", "importance"),
-    ("economic and medicinal importance", "importance"),
-    ("medicinal importance", "importance"),
-    ("uses & importance", "importance"),
-    ("ecological importance", "importance"),
-    ("importance", "importance"),
+    ("economic & medicinal importance", "economic"),
+    ("economic and medicinal importance", "economic"),
+    ("economic importance", "economic"),
+    ("ecological importance", "economic"),
+    ("ecological", "economic"),
+    ("importance", "economic"),
+    ("medicinal importance", "medicinal"),
+    ("medicinal", "medicinal"),
+    ("other uses", "other"),
+    ("other", "other"),
+    ("uses & importance", "other"),
 ]
 
 SKIP_HEADING_STARTS = (
@@ -54,8 +58,22 @@ SKIP_HEADING_STARTS = (
 
 def parse_txt(text):
     data = {"common_name": None, "scientific_name": None, "family": None, "ptype": None}
-    sections = {"habitat": [], "importance": [], "other": []}
+    sections = {"habitat": [], "economic": [], "medicinal": [], "other": []}
     current = "other"
+
+    labels = (
+        "Common name", "Scientific name", "Plant Type", "Family", "Synonym",
+        "Habitat", "Growth form", "Features", "Economic importance",
+        "Ecological importance", "Ecological", "Medicinal importance", "Medicinal",
+        "Other uses",
+    )
+    label_pattern = "|".join(re.escape(label) for label in labels)
+    text = re.sub(
+        rf"(?<!^)(?<!\n)(?=({label_pattern})\s*:)",
+        "\n",
+        text,
+        flags=re.IGNORECASE,
+    )
 
     for raw_line in text.splitlines():
         raw = raw_line.strip()
@@ -156,7 +174,8 @@ def build():
                 "family": data["family"],
                 "ptype": data["ptype"],
                 "habitat": sections["habitat"],
-                "importance": sections["importance"],
+                "economic": sections["economic"],
+                "medicinal": sections["medicinal"],
                 "other": sections["other"],
                 "images": copied_imgs,
             }
@@ -264,11 +283,17 @@ input.addEventListener('input', () => {{
 def render_plant_page(plant, prev_p, next_p):
     gallery = ""
     if plant["images"]:
-        figs = "\n".join(
-            f'      <figure><img src="../{src}" alt="{esc(plant["display_name"])} field photo {i+1}" loading="lazy"></figure>'
-            for i, src in enumerate(plant["images"])
+        figs = []
+        for i, src in enumerate(plant["images"]):
+            figs.append(
+                f'      <figure class="gallery-item gallery-item-{i + 1}"><img src="../{src}" alt="{esc(plant["display_name"])} field photo {i + 1}" loading="lazy"><figcaption>Field reference {i + 1:02d}</figcaption></figure>'
+            )
+        gallery_body = "\n".join(figs)
+        gallery = (
+            f'<div class="gallery"><div class="gallery-heading"><span>Visual record</span>'
+            f'<strong>{len(plant["images"]):02d} photographs</strong></div>'
+            f'<div class="gallery-grid">\n{gallery_body}\n    </div></div>'
         )
-        gallery = f'<div class="gallery">\n{figs}\n    </div>'
     else:
         gallery = '<div class="gallery gallery-empty"><p>No field photo on file yet.</p></div>'
 
@@ -283,7 +308,8 @@ def render_plant_page(plant, prev_p, next_p):
     facts_table = "<table class=\"facts\">\n" + "\n".join(facts_rows) + "\n</table>"
 
     habitat_html = render_list(plant["habitat"]) or "<p class=\"muted\">Habitat notes pending.</p>"
-    importance_html = render_list(plant["importance"]) or "<p class=\"muted\">Importance notes pending.</p>"
+    economic_html = render_list(plant["economic"]) or "<p class=\"muted\">Economic notes pending.</p>"
+    medicinal_html = render_list(plant["medicinal"]) or "<p class=\"muted\">Medicinal notes pending.</p>"
     other_html = f'<section class="block"><h3>Field Notes</h3>{render_list(plant["other"])}</section>' if plant["other"] else ""
 
     nav_links = []
@@ -315,8 +341,12 @@ def render_plant_page(plant, prev_p, next_p):
         {habitat_html}
       </section>
       <section class="block">
-        <h3>Ecological &amp; Economic Importance</h3>
-        {importance_html}
+        <h3>Economic Importance</h3>
+        {economic_html}
+      </section>
+      <section class="block">
+        <h3>Medicinal Importance</h3>
+        {medicinal_html}
       </section>
       {other_html}
     </div>
@@ -585,6 +615,103 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem 4rem; }
   letter-spacing: 0.08em;
   font-size: 0.75rem;
   color: var(--ink-soft);
+}
+
+/* Editorial pass: make the catalog feel like a designed field journal. */
+:root {
+  --paper: #f7f4ed;
+  --paper-deep: #e7e8df;
+  --ink: #19241c;
+  --ink-soft: #687168;
+  --green: #1e5137;
+  --green-deep: #102f22;
+  --rule: rgba(25, 36, 28, 0.16);
+  --blue: #164fc0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.23;
+  background-image: linear-gradient(rgba(25,36,28,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(25,36,28,.025) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(to bottom, black, transparent 75%);
+}
+
+.site-header {
+  max-width: 1180px;
+  min-height: 440px;
+  padding: 6.8rem 3rem 4rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  align-content: end;
+  gap: 1.5rem 5rem;
+  position: relative;
+}
+.site-header::after {
+  content: "NUPPL / 2026";
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  color: var(--ink-soft);
+  font: 600 .7rem/1 "Work Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.site-header .eyebrow { grid-column: 1 / -1; }
+.site-header h1 { font-size: clamp(3.4rem, 8vw, 7rem); letter-spacing: -.04em; max-width: 700px; }
+.tagline { margin: 0; max-width: 540px; font-size: 1.02rem; }
+#search { align-self: end; justify-self: end; max-width: 290px; border-radius: 0; border: 0; border-bottom: 2px solid var(--green); background: transparent; padding: .85rem 0; }
+
+main { max-width: 1180px; padding: 0 3rem 5rem; }
+.cat-block { padding: 3.3rem 0; position: relative; }
+.cat-block h2 { font-size: 2.6rem; gap: 1rem; }
+.cat-count { border-radius: 50%; min-width: 2.4rem; height: 2.4rem; display: inline-grid; place-items: center; padding: 0; font-size: .74rem; }
+.index-grid { columns: 4 200px; column-gap: 2.6rem; margin-top: 2rem; }
+.index-grid li { margin-bottom: .75rem; }
+.index-link { color: var(--blue); font-size: .96rem; padding: .32rem 0; transition: transform .18s ease, color .18s ease; }
+.index-link:hover { border: 0; color: var(--green); transform: translateX(6px); }
+.index-link .sci { font-size: .72rem; margin-top: .08rem; }
+
+.plant-header { max-width: 1180px; padding: 3rem 3rem 2rem; position: relative; }
+.plant-header::after { content: "FIELD PLATE"; position: absolute; right: 3rem; top: 3.1rem; font: 600 .68rem/1 "Work Sans",sans-serif; letter-spacing: .18em; color: var(--ink-soft); }
+.plant-header h1 { font-size: clamp(3rem, 7vw, 6rem); letter-spacing: -.04em; max-width: 780px; }
+.common-alt { font-size: 1.05rem; }
+.plant-main { max-width: 1180px; padding: 0 3rem 3rem; }
+
+.gallery { margin: 0 0 3.5rem; }
+.gallery-heading { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--rule); padding-bottom: .65rem; margin-bottom: 1rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .13em; font-size: .7rem; }
+.gallery-heading strong { color: var(--green); font-size: .68rem; }
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 170px; gap: .8rem; }
+.gallery-item { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); }
+.gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0; box-shadow: none; filter: saturate(.9) contrast(1.03); transition: transform .5s ease, filter .5s ease; }
+.gallery-item:hover img { transform: scale(1.045); filter: saturate(1.1) contrast(1.05); }
+.gallery-item figcaption { position: absolute; left: .7rem; bottom: .55rem; color: white; font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; text-shadow: 0 1px 8px #000; opacity: .9; }
+.gallery-empty { border: 1px dashed var(--rule); border-radius: 0; }
+
+.content-grid { grid-template-columns: 280px 1fr; gap: 4rem; align-items: start; }
+.facts { background: rgba(255,255,255,.68); border-radius: 0; border-top: 3px solid var(--green); }
+.facts th, .facts td { padding: .85rem .95rem; }
+.block { margin-bottom: 2.8rem; }
+.block h3 { font-size: 1.45rem; border-bottom: 1px solid var(--rule); padding-bottom: .7rem; }
+.block li { margin-bottom: .7rem; }
+.plant-nav { max-width: 1180px; padding: 2rem 3rem 5rem; }
+
+@media (max-width: 760px) {
+  .site-header { min-height: 0; padding: 4.5rem 1.4rem 3rem; display: block; }
+  .site-header::after, .plant-header::after { right: 1.4rem; }
+  .site-header h1 { margin-top: 1.2rem; font-size: 3.3rem; }
+  #search { margin-top: 2rem; max-width: none; width: 100%; }
+  main, .plant-main { padding-left: 1.4rem; padding-right: 1.4rem; }
+  .plant-header { padding: 2.2rem 1.4rem 1.5rem; }
+  .plant-header h1 { font-size: 3.3rem; margin-top: 1rem; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
+  .gallery-item:first-child { grid-column: span 2; }
+  .content-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .plant-nav { padding-left: 1.4rem; padding-right: 1.4rem; }
 }
 """
     with open(os.path.join(DOCS, "assets", "style.css"), "w", encoding="utf-8") as fh:
