@@ -249,9 +249,8 @@ def render_index(by_category):
 
     html = base_head("NUPPL Flora Catalog \u2014 Full Index") + f"""<body>
 <header class="site-header">
-  <p class="eyebrow">Field Survey &middot; Raw Data Handover</p>
   <h1>The Green Register</h1>
-  <p class="tagline">A working catalog of {total} campus &amp; local species &mdash; trees, shrubs, herbs and grasses &mdash; documented for the flora magazine layout.</p>
+  <p class="tagline">A working catalog of {total} campus &amp; local species &mdash; trees, shrubs, herbs and grasses.</p>
   <input id="search" type="search" placeholder="Search the register by name..." autocomplete="off">
 </header>
 <main>
