@@ -373,26 +373,30 @@ input.addEventListener('input', () => {{
 
 
 def render_plant_page(plant, prev_p, next_p):
-    gallery = ""
-    all_image_count = len(plant["images"]) + len(plant.get("commons_images", []))
-    if all_image_count:
-        figs = []
-        for i, src in enumerate(plant["images"]):
-            figs.append(
-          f'      <figure class="gallery-item gallery-item-{i + 1}"><img src="../{src}" alt="{esc(plant["display_name"])} field photo {i + 1}" loading="lazy"><figcaption>Field reference {i + 1:02d}</figcaption></figure>'
-            )
-        for i, source in enumerate(plant.get("commons_images", []), start=len(figs) + 1):
-            figs.append(
-                f'      <figure class="gallery-item gallery-external gallery-item-{i}"><img src="{esc(source["url"])}" alt="{esc(plant["display_name"])} reference image from Wikimedia Commons" loading="lazy"><figcaption>{esc(source["source"])} · {esc(source["license"])}</figcaption></figure>'
-            )
-        gallery_body = "\n".join(figs)
-        gallery = (
-          f'<section class="gallery gallery-footer"><div class="gallery-heading"><span>Visual record</span>'
-            f'<strong>{all_image_count:02d} photographs</strong></div>'
-            f'<div class="gallery-grid">\n{gallery_body}\n    </div></section>'
-        )
-    else:
-        gallery = '<section class="gallery gallery-footer gallery-empty"><p>No field photo on file yet.</p></section>'
+  hero_external = plant.get("commons_images", [{}])[0].get("url", "") if plant.get("commons_images") else ""
+  hero_src = hero_external or (plant["images"][0] if plant["images"] else "")
+  visual_commons = [source for source in plant.get("commons_images", []) if source.get("url") != hero_external]
+  visual_local = plant["images"][1:] if plant["images"] else []
+  visual_count = len(visual_commons) + len(visual_local)
+  gallery = ""
+  if visual_count:
+    figs = []
+    for i, source in enumerate(visual_commons):
+      figs.append(
+        f'      <figure class="gallery-item gallery-external gallery-item-{i + 1}"><img src="{esc(source["url"])}" alt="{esc(plant["display_name"])} reference image from Wikimedia Commons" loading="lazy"><figcaption>{esc(source["source"])} · {esc(source["license"])}</figcaption></figure>'
+      )
+    for i, src in enumerate(visual_local, start=len(figs) + 1):
+      figs.append(
+        f'      <figure class="gallery-item gallery-item-{i}"><img src="../{src}" alt="{esc(plant["display_name"])} field photo {i}" loading="lazy"><figcaption>Field reference {i:02d}</figcaption></figure>'
+      )
+    gallery_body = "\n".join(figs)
+    gallery = (
+      f'<section class="gallery gallery-footer"><div class="gallery-heading"><span>Visual record</span>'
+      f'<strong>{visual_count:02d} additional photographs</strong></div>'
+      f'<div class="gallery-grid">\n{gallery_body}\n    </div></section>'
+    )
+  else:
+    gallery = '<section class="gallery gallery-footer gallery-empty"><p>No additional reference photographs on file yet.</p></section>'
 
     facts_rows = []
     if plant["scientific_name"]:
@@ -408,11 +412,10 @@ def render_plant_page(plant, prev_p, next_p):
     economic_html = render_list(plant["economic"]) or "<p class=\"muted\">Economic notes pending.</p>"
     medicinal_html = render_list(plant["medicinal"]) or "<p class=\"muted\">Medicinal notes pending.</p>"
     other_html = f'<section class="block"><h3>Field Notes</h3>{render_list(plant["other"])}</section>' if plant["other"] else ""
-    hero_src = plant["images"][0] if plant["images"] else (plant.get("commons_images", [{}])[0].get("url", "") if plant.get("commons_images") else "")
     hero_image = (
-      f'<img src="../{hero_src}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
-      if plant["images"] else
       f'<img src="{esc(hero_src)}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
+      if hero_external else
+      f'<img src="../{hero_src}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
     ) if hero_src else ""
     inline_src = plant["images"][1] if len(plant["images"]) > 1 else ""
     inline_image = (
