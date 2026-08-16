@@ -339,7 +339,7 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .gallery-item img { width: 100%; height: calc(100% - 2rem); object-fit: cover; display: block; filter: saturate(.9) contrast(1.03); transition: transform .5s ease, filter .5s ease; }
 .gallery-item:hover img { transform: scale(1.045); filter: saturate(1.1) contrast(1.05); }
 .gallery-external { border: 2px solid rgba(30,81,55,.28); }
-.gallery-item figcaption { height: 2rem; display: flex; align-items: center; padding: 0 .65rem; color: var(--ink-soft); background: var(--paper); font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; }
+.gallery-item figcaption { position: static; inset: auto; height: 2rem; display: flex; align-items: center; padding: 0 .65rem; color: var(--ink-soft); background: var(--paper); font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; }
 .gallery-empty { border: 1px dashed var(--rule); border-radius: 8px; }
 
 .content-grid { grid-template-columns: 280px 1fr; gap: 2.8rem; align-items: start; }
