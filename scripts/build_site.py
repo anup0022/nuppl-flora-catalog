@@ -379,7 +379,7 @@ def render_plant_page(plant, prev_p, next_p):
         figs = []
         for i, src in enumerate(plant["images"]):
             figs.append(
-                f'      <figure class="gallery-item gallery-item-{i + 1}"><img src="../{src}" alt="{esc(plant["display_name"])} field photo {i + 1}" loading="lazy"><figcaption>Field reference {i + 1:02d}</figcaption></figure>'
+          f'      <figure class="gallery-item gallery-item-{i + 1}"><img src="../{src}" alt="{esc(plant["display_name"])} field photo {i + 1}" loading="lazy"><figcaption>Field reference {i + 1:02d}</figcaption></figure>'
             )
         for i, source in enumerate(plant.get("commons_images", []), start=len(figs) + 1):
             figs.append(
@@ -408,6 +408,23 @@ def render_plant_page(plant, prev_p, next_p):
     economic_html = render_list(plant["economic"]) or "<p class=\"muted\">Economic notes pending.</p>"
     medicinal_html = render_list(plant["medicinal"]) or "<p class=\"muted\">Medicinal notes pending.</p>"
     other_html = f'<section class="block"><h3>Field Notes</h3>{render_list(plant["other"])}</section>' if plant["other"] else ""
+    hero_src = plant["images"][0] if plant["images"] else (plant.get("commons_images", [{}])[0].get("url", "") if plant.get("commons_images") else "")
+    hero_image = (
+      f'<img src="../{hero_src}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
+      if plant["images"] else
+      f'<img src="{esc(hero_src)}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
+    ) if hero_src else ""
+    inline_src = plant["images"][1] if len(plant["images"]) > 1 else ""
+    inline_image = (
+      f'<img src="../{inline_src}" alt="{esc(plant["display_name"])} field detail" loading="lazy">'
+      if inline_src else
+      f'<img src="{esc(plant["commons_images"][0]["url"])}" alt="{esc(plant["display_name"])} reference detail" loading="lazy">'
+      if plant.get("commons_images") else ""
+    )
+    inline_photo = (
+      f'<figure class="inline-photo">{inline_image}<figcaption>Field detail</figcaption></figure>'
+      if inline_image else ""
+    )
 
     nav_links = []
     if prev_p:
@@ -422,9 +439,14 @@ def render_plant_page(plant, prev_p, next_p):
     html = base_head(f'{plant["display_name"]} \u2014 NUPPL Flora Catalog', depth="../") + f"""<body class="plant-page cat-{plant['badge']}">
 <header class="plant-header">
   <a class="back-link" href="../index.html#{plant['category_folder'].lower()}">&larr; Full Index</a>
-  <p class="eyebrow">{esc(plant['category_label'])} Specimen</p>
-  <h1>{esc(plant['display_name'])}</h1>
-  {f'<p class="common-alt">Also known as: {esc(plant["common_name"])}</p>' if plant["common_name"] and plant["common_name"] != plant["display_name"] else ''}
+  <div class="plant-hero">
+    <div class="plant-hero-copy">
+      <p class="eyebrow">{esc(plant['category_label'])} Specimen</p>
+      <h1>{esc(plant['display_name'])}</h1>
+      {f'<p class="common-alt">Also known as: {esc(plant["common_name"])}</p>' if plant["common_name"] and plant["common_name"] != plant["display_name"] else ''}
+    </div>
+    {f'<div class="plant-hero-image">{hero_image}</div>' if hero_image else ''}
+  </div>
 </header>
 <main class="plant-main">
   {gallery}
@@ -437,6 +459,7 @@ def render_plant_page(plant, prev_p, next_p):
         <h3>Habitat &amp; Growing Conditions</h3>
         {habitat_html}
       </section>
+      {inline_photo}
       <section class="block">
         <h3>Economic Importance</h3>
         {economic_html}
@@ -787,31 +810,41 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .index-link:hover { border: 0; color: var(--green); transform: translateX(6px); }
 .index-link .sci { font-size: .72rem; margin-top: .08rem; }
 
-.plant-header { max-width: 1180px; padding: 3rem 3rem 2rem; position: relative; }
+.plant-header { max-width: 1180px; padding: 2.2rem 3rem 1.4rem; position: relative; }
 .plant-header::after { content: "FIELD PLATE"; position: absolute; right: 3rem; top: 3.1rem; font: 600 .68rem/1 "Work Sans",sans-serif; letter-spacing: .18em; color: var(--ink-soft); }
-.plant-header h1 { font-size: clamp(3rem, 7vw, 6rem); letter-spacing: -.04em; max-width: 780px; }
+.plant-hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(260px, .9fr); height: 320px; border-radius: 12px; background: linear-gradient(118deg, #1f482f 0%, #356b45 54%, #bd642f 145%); color: var(--paper); box-shadow: 0 16px 30px rgba(16,47,34,.13); position: relative; overflow: hidden; }
+.plant-hero::after { content: ""; position: absolute; width: 220px; height: 220px; border: 1px solid rgba(244,239,228,.22); border-radius: 50%; left: 42%; bottom: -135px; pointer-events: none; }
+.plant-hero-copy { padding: 2.4rem 2.2rem 2.5rem; align-self: center; position: relative; z-index: 1; }
+.plant-hero-image { min-height: 0; position: relative; }
+.plant-hero-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(31,72,47,.55), transparent 35%), linear-gradient(0deg, rgba(18,36,23,.28), transparent 45%); pointer-events: none; }
+.plant-hero-image img { display: block; width: 100%; height: 320px; object-fit: cover; }
+.plant-hero .eyebrow { color: #c6d8bd; }
+.plant-header h1 { color: var(--paper); font-size: clamp(2.8rem, 6vw, 5.6rem); letter-spacing: -.04em; max-width: 620px; }
 .common-alt { font-size: 1.05rem; }
 .plant-main { max-width: 1180px; padding: 0 3rem 3rem; }
 
-.gallery { margin: 0 0 3.5rem; }
+.gallery { display: block; margin: 0 0 2.25rem; }
 .gallery-heading { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--rule); padding-bottom: .65rem; margin-bottom: 1rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .13em; font-size: .7rem; }
 .gallery-heading strong { color: var(--green); font-size: .68rem; }
-.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 170px; gap: .8rem; }
-.gallery-item { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); }
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 145px; gap: .8rem; }
+.gallery-item { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); border-radius: 8px; }
 .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0; box-shadow: none; filter: saturate(.9) contrast(1.03); transition: transform .5s ease, filter .5s ease; }
+.gallery-item img { width: 100%; height: calc(100% - 2rem); object-fit: cover; display: block; filter: saturate(.9) contrast(1.03); transition: transform .5s ease, filter .5s ease; }
 .gallery-item:hover img { transform: scale(1.045); filter: saturate(1.1) contrast(1.05); }
 .gallery-external { border: 2px solid rgba(30,81,55,.28); }
-.gallery-item figcaption { position: absolute; left: .7rem; bottom: .55rem; color: white; font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; text-shadow: 0 1px 8px #000; opacity: .9; }
-.gallery-empty { border: 1px dashed var(--rule); border-radius: 0; }
+.gallery-item figcaption { height: 2rem; display: flex; align-items: center; padding: 0 .65rem; color: var(--ink-soft); background: var(--paper); font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; }
+.gallery-empty { border: 1px dashed var(--rule); border-radius: 8px; }
 
-.content-grid { grid-template-columns: 280px 1fr; gap: 4rem; align-items: start; }
-.facts { background: rgba(255,255,255,.68); border-radius: 0; border-top: 3px solid var(--green); }
+.content-grid { grid-template-columns: 280px 1fr; gap: 2.8rem; align-items: start; }
+.facts { background: rgba(255,255,255,.68); border-radius: 10px; border-top: 3px solid var(--green); }
 .facts th, .facts td { padding: .85rem .95rem; }
 .block { margin-bottom: 2.8rem; }
 .block h3 { font-size: 1.45rem; border-bottom: 1px solid var(--rule); padding-bottom: .7rem; }
 .block li { margin-bottom: .7rem; }
 .plant-nav { max-width: 1180px; padding: 2rem 3rem 5rem; }
+.inline-photo { margin: .2rem 0 2.5rem; max-width: 520px; }
+.inline-photo img { display: block; width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 12px 24px rgba(23,48,29,.12); }
+.inline-photo figcaption { margin-top: .45rem; color: var(--ink-soft); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
 
 @media (max-width: 760px) {
   .site-header { min-height: 0; padding: 4.5rem 1.4rem 3rem; display: block; }
@@ -820,9 +853,13 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
   .hero-collage { min-height: 280px; margin: 2.3rem -.4rem 0; transform: scale(.9) rotate(2deg); transform-origin: top center; }
   #search { margin-top: 2rem; max-width: none; width: 100%; }
   main, .plant-main { padding-left: 1.4rem; padding-right: 1.4rem; }
-  .plant-header { padding: 2.2rem 1.4rem 1.5rem; }
+  .plant-header { padding: 2.2rem 1.4rem 1.2rem; }
+  .plant-hero { display: block; height: auto; }
+  .plant-hero-copy { padding: 1.5rem 1.25rem 1.7rem; }
+  .plant-hero-image, .plant-hero-image img { min-height: 0; height: 220px; }
+  .plant-hero-image::after { background: linear-gradient(0deg, rgba(18,36,23,.2), transparent 55%); }
   .plant-header h1 { font-size: 3.3rem; margin-top: 1rem; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 135px; }
   .gallery-item:first-child { grid-column: span 2; }
   .content-grid { grid-template-columns: 1fr; gap: 2rem; }
   .plant-nav { padding-left: 1.4rem; padding-right: 1.4rem; }
