@@ -427,8 +427,7 @@ def render_plant_page(plant, prev_p, next_p):
       )
     gallery_body = "\n".join(figs)
     gallery = (
-      f'<section class="gallery gallery-footer"><div class="gallery-heading"><span>Visual record</span>'
-      f'<strong>{visual_count:02d} additional photographs</strong></div>'
+      f'<section class="gallery gallery-footer"><div class="gallery-heading"><span>Visual record</span></div>'
       f'<div class="gallery-grid">\n{gallery_body}\n    </div></section>'
     )
   else:
@@ -864,7 +863,6 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .gallery { display: block; margin: 0 0 2.25rem; }
 .gallery-footer { margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--rule); }
 .gallery-heading { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--rule); padding-bottom: .65rem; margin-bottom: 1rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .13em; font-size: .7rem; }
-.gallery-heading strong { color: var(--green); font-size: .68rem; }
 .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 145px; gap: .8rem; }
 .gallery-item { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); border-radius: 8px; }
 .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
