@@ -419,11 +419,11 @@ def render_plant_page(plant, prev_p, next_p):
     figs = []
     for i, source in enumerate(visual_commons):
       figs.append(
-        f'      <figure class="gallery-item gallery-external gallery-item-{i + 1}"><img src="{esc(source["url"])}" alt="{esc(plant["display_name"])} reference image from Wikimedia Commons" loading="lazy"><figcaption>{esc(source["source"])} · {esc(source["license"])}</figcaption></figure>'
+        f'      <figure class="gallery-item gallery-external gallery-item-{i + 1}"><img src="{esc(source["url"])}" alt="{esc(plant["display_name"])} reference image from Wikimedia Commons" loading="lazy"></figure>'
       )
     for i, src in enumerate(visual_local, start=len(figs) + 1):
       figs.append(
-        f'      <figure class="gallery-item gallery-item-{i}"><img src="../{src}" alt="{esc(plant["display_name"])} field photo {i}" loading="lazy"><figcaption>Field reference {i:02d}</figcaption></figure>'
+        f'      <figure class="gallery-item gallery-item-{i}"><img src="../{src}" alt="{esc(plant["display_name"])} field photo {i}" loading="lazy"></figure>'
       )
     gallery_body = "\n".join(figs)
     gallery = (
@@ -461,7 +461,7 @@ def render_plant_page(plant, prev_p, next_p):
     if plant.get("commons_images") else ""
   )
   inline_photo = (
-    f'<figure class="inline-photo">{inline_image}<figcaption>Field detail</figcaption></figure>'
+    f'<figure class="inline-photo">{inline_image}</figure>'
     if inline_image else ""
   )
 
@@ -868,10 +868,9 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 145px; gap: .8rem; }
 .gallery-item { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); border-radius: 8px; }
 .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
-.gallery-item img { width: 100%; height: calc(100% - 2rem); object-fit: cover; display: block; filter: saturate(.9) contrast(1.03); transition: transform .5s ease, filter .5s ease; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.9) contrast(1.03); transition: transform .5s ease, filter .5s ease; }
 .gallery-item:hover img { transform: scale(1.045); filter: saturate(1.1) contrast(1.05); }
 .gallery-external { border: 2px solid rgba(30,81,55,.28); }
-.gallery-item figcaption { position: static; inset: auto; height: 2rem; display: flex; align-items: center; padding: 0 .65rem; color: var(--ink-soft); background: var(--paper); font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; }
 .gallery-empty { border: 1px dashed var(--rule); border-radius: 8px; }
 
 .content-grid { grid-template-columns: 280px 1fr; gap: 2.8rem; align-items: start; }
@@ -883,7 +882,6 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .plant-nav { max-width: 1180px; padding: 2rem 3rem 5rem; }
 .inline-photo { margin: .2rem 0 2.5rem; max-width: 520px; }
 .inline-photo img { display: block; width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 12px 24px rgba(23,48,29,.12); }
-.inline-photo figcaption { margin-top: .45rem; color: var(--ink-soft); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
 
 @media (max-width: 760px) {
   .site-header { min-height: 0; padding: 4.5rem 1.4rem 3rem; display: block; }
