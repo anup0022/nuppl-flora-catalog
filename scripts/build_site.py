@@ -6,6 +6,8 @@ import os
 import re
 import shutil
 import json
+import subprocess
+import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(ROOT, "docs")
@@ -18,6 +20,7 @@ CATEGORIES = [
 ]
 
 IMG_EXTS = (".jpg", ".jpeg", ".png")
+COMMONS_MANIFEST = os.path.join(ROOT, "data", "commons_images.json")
 
 
 def slugify(text):
@@ -30,6 +33,74 @@ def clean_name(folder_name):
     # collapse double spaces / stray parens spacing used in the raw folder names
     name = re.sub(r"\s+", " ", folder_name).strip()
     return name
+
+
+def scientific_search_term(scientific_name):
+    if not scientific_name:
+        return ""
+    words = re.findall(r"[A-Za-z]+", scientific_name)
+    return " ".join(words[:2]) if len(words) >= 2 else ""
+
+
+def fetch_commons_images(plant):
+    term = scientific_search_term(plant["scientific_name"])
+    if not term:
+        return []
+    os.makedirs(os.path.dirname(COMMONS_MANIFEST), exist_ok=True)
+    manifest = {}
+    if os.path.exists(COMMONS_MANIFEST):
+        with open(COMMONS_MANIFEST, "r", encoding="utf-8") as fh:
+            manifest = json.load(fh)
+    if plant["slug"] in manifest:
+        return manifest[plant["slug"]]
+
+    query = urllib.parse.urlencode({
+        "action": "query",
+        "format": "json",
+        "generator": "search",
+        "gsrsearch": term,
+        "gsrnamespace": "6",
+        "gsrlimit": "8",
+        "prop": "imageinfo",
+        "iiprop": "url|mime|extmetadata",
+        "iiurlwidth": "1400",
+    })
+    api_url = f"https://commons.wikimedia.org/w/api.php?{query}"
+    try:
+        result = subprocess.run(
+            ["curl", "-ksL", "--max-time", "20", "-A", "NUPPL-Flora-Catalog/1.0", api_url],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        payload = json.loads(result.stdout)
+    except (subprocess.SubprocessError, json.JSONDecodeError):
+        manifest[plant["slug"]] = []
+        return []
+
+    expected = term.lower().split()
+    matches = []
+    for page in payload.get("query", {}).get("pages", {}).values():
+        info = (page.get("imageinfo") or [{}])[0]
+        title = page.get("title", "")
+        title_lower = title.lower()
+        if not all(token in title_lower for token in expected):
+            continue
+        if info.get("mime") not in ("image/jpeg", "image/png") or not info.get("thumburl"):
+            continue
+        metadata = info.get("extmetadata", {})
+        matches.append({
+            "title": title.removeprefix("File:"),
+            "url": info["thumburl"],
+            "source": "Wikimedia Commons",
+            "license": metadata.get("LicenseShortName", {}).get("value", "Commons license"),
+        })
+        if len(matches) == 3:
+            break
+    manifest[plant["slug"]] = matches
+    with open(COMMONS_MANIFEST, "w", encoding="utf-8") as fh:
+        json.dump(manifest, fh, indent=2, ensure_ascii=False)
+    return matches
 
 
 HEADING_RULES = [
@@ -163,6 +234,11 @@ def build():
                     shutil.copy2(os.path.join(plant_path, imf), os.path.join(img_dir, dest_name))
                     copied_imgs.append(f"assets/img/{slug}/{dest_name}")
 
+                commons_images = fetch_commons_images({
+                  "slug": slug,
+                  "scientific_name": data["scientific_name"],
+                })
+
             plant = {
                 "slug": slug,
                 "display_name": display_name,
@@ -178,6 +254,7 @@ def build():
                 "medicinal": sections["medicinal"],
                 "other": sections["other"],
                 "images": copied_imgs,
+                "commons_images": commons_images,
             }
             plants.append(plant)
             all_plants.append(plant)
@@ -228,6 +305,16 @@ def base_head(title, depth=""):
 
 def render_index(by_category):
     total = sum(len(c["plants"]) for c in by_category.values())
+    featured = []
+    for category in by_category.values():
+        for plant in category["plants"]:
+            if plant["images"]:
+                featured.append(plant)
+    featured = featured[:6]
+    hero_images = "\n".join(
+        f'<figure class="hero-photo hero-photo-{i + 1}"><img src="{p["images"][0]}" alt="{esc(p["display_name"])}" loading="eager"><figcaption>{esc(p["display_name"])}</figcaption></figure>'
+        for i, p in enumerate(featured)
+    )
     sections_html = []
     for folder, label, badge in CATEGORIES:
         cat = by_category.get(folder)
@@ -249,9 +336,15 @@ def render_index(by_category):
 
     html = base_head("NUPPL Flora Catalog \u2014 Full Index") + f"""<body>
 <header class="site-header">
-  <h1>The Green Register</h1>
-  <p class="tagline">A working catalog of {total} campus &amp; local species &mdash; trees, shrubs, herbs and grasses.</p>
-  <input id="search" type="search" placeholder="Search the register by name..." autocomplete="off">
+  <div class="hero-copy">
+    <p class="eyebrow">NUPPL Flora Catalog</p>
+    <h1>The Green Register</h1>
+    <p class="tagline">A working catalog of {total} campus &amp; local species &mdash; trees, shrubs, herbs and grasses.</p>
+    <input id="search" type="search" placeholder="Search the register by name..." autocomplete="off">
+  </div>
+  <div class="hero-collage" aria-label="Selected plant photographs">
+{hero_images}
+  </div>
 </header>
 <main>
 {''.join(sections_html)}
@@ -281,16 +374,21 @@ input.addEventListener('input', () => {{
 
 def render_plant_page(plant, prev_p, next_p):
     gallery = ""
-    if plant["images"]:
+    all_image_count = len(plant["images"]) + len(plant.get("commons_images", []))
+    if all_image_count:
         figs = []
         for i, src in enumerate(plant["images"]):
             figs.append(
                 f'      <figure class="gallery-item gallery-item-{i + 1}"><img src="../{src}" alt="{esc(plant["display_name"])} field photo {i + 1}" loading="lazy"><figcaption>Field reference {i + 1:02d}</figcaption></figure>'
             )
+        for i, source in enumerate(plant.get("commons_images", []), start=len(figs) + 1):
+            figs.append(
+                f'      <figure class="gallery-item gallery-external gallery-item-{i}"><img src="{esc(source["url"])}" alt="{esc(plant["display_name"])} reference image from Wikimedia Commons" loading="lazy"><figcaption>{esc(source["source"])} · {esc(source["license"])}</figcaption></figure>'
+            )
         gallery_body = "\n".join(figs)
         gallery = (
             f'<div class="gallery"><div class="gallery-heading"><span>Visual record</span>'
-            f'<strong>{len(plant["images"]):02d} photographs</strong></div>'
+            f'<strong>{all_image_count:02d} photographs</strong></div>'
             f'<div class="gallery-grid">\n{gallery_body}\n    </div></div>'
         )
     else:
@@ -663,6 +761,21 @@ body::before {
 .site-header h1 { font-size: clamp(3.4rem, 8vw, 7rem); letter-spacing: -.04em; max-width: 700px; }
 .tagline { margin: 0; max-width: 540px; font-size: 1.02rem; }
 #search { align-self: end; justify-self: end; max-width: 290px; border-radius: 0; border: 0; border-bottom: 2px solid var(--green); background: transparent; padding: .85rem 0; }
+.hero-copy { position: relative; z-index: 2; animation: rise-in .85s cubic-bezier(.2,.8,.2,1) both; }
+.hero-collage { min-height: 330px; position: relative; transform: rotate(2deg); animation: collage-in 1.1s .15s cubic-bezier(.2,.8,.2,1) both; }
+.hero-photo { position: absolute; margin: 0; overflow: hidden; background: var(--paper-deep); box-shadow: 0 18px 32px rgba(16,47,34,.16); border: 7px solid var(--paper); opacity: 0; animation: photo-in .75s cubic-bezier(.2,.8,.2,1) forwards; }
+.hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(.82) contrast(1.05); transition: transform .6s ease, filter .6s ease; }
+.hero-photo:hover img { transform: scale(1.08); filter: saturate(1.15) contrast(1.04); }
+.hero-photo figcaption { position: absolute; left: .6rem; bottom: .55rem; color: #fff; font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; text-shadow: 0 1px 8px #000; }
+.hero-photo-1 { width: 190px; height: 245px; top: 10px; left: 0; transform: rotate(-7deg); animation-delay: .25s; }
+.hero-photo-2 { width: 165px; height: 205px; top: 100px; left: 145px; transform: rotate(5deg); animation-delay: .38s; }
+.hero-photo-3 { width: 145px; height: 185px; top: 0; right: 5px; transform: rotate(8deg); animation-delay: .51s; }
+.hero-photo-4 { width: 160px; height: 205px; bottom: 0; right: 115px; transform: rotate(-5deg); animation-delay: .64s; }
+.hero-photo-5 { width: 125px; height: 170px; bottom: 5px; left: 35px; transform: rotate(4deg); animation-delay: .77s; }
+.hero-photo-6 { width: 120px; height: 155px; top: 125px; right: 0; transform: rotate(-4deg); animation-delay: .9s; }
+@keyframes rise-in { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes collage-in { from { opacity: 0; transform: translateX(35px) rotate(8deg); } to { opacity: 1; transform: translateX(0) rotate(2deg); } }
+@keyframes photo-in { from { opacity: 0; transform: translateY(24px) rotate(0); } to { opacity: 1; } }
 
 main { max-width: 1180px; padding: 0 3rem 5rem; }
 .cat-block { padding: 3.3rem 0; position: relative; }
@@ -688,6 +801,7 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
 .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0; box-shadow: none; filter: saturate(.9) contrast(1.03); transition: transform .5s ease, filter .5s ease; }
 .gallery-item:hover img { transform: scale(1.045); filter: saturate(1.1) contrast(1.05); }
+.gallery-external { border: 2px solid rgba(30,81,55,.28); }
 .gallery-item figcaption { position: absolute; left: .7rem; bottom: .55rem; color: white; font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; text-shadow: 0 1px 8px #000; opacity: .9; }
 .gallery-empty { border: 1px dashed var(--rule); border-radius: 0; }
 
@@ -703,6 +817,7 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
   .site-header { min-height: 0; padding: 4.5rem 1.4rem 3rem; display: block; }
   .site-header::after, .plant-header::after { right: 1.4rem; }
   .site-header h1 { margin-top: 1.2rem; font-size: 3.3rem; }
+  .hero-collage { min-height: 280px; margin: 2.3rem -.4rem 0; transform: scale(.9) rotate(2deg); transform-origin: top center; }
   #search { margin-top: 2rem; max-width: none; width: 100%; }
   main, .plant-main { padding-left: 1.4rem; padding-right: 1.4rem; }
   .plant-header { padding: 2.2rem 1.4rem 1.5rem; }
@@ -711,6 +826,9 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
   .gallery-item:first-child { grid-column: span 2; }
   .content-grid { grid-template-columns: 1fr; gap: 2rem; }
   .plant-nav { padding-left: 1.4rem; padding-right: 1.4rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 """
     with open(os.path.join(DOCS, "assets", "style.css"), "w", encoding="utf-8") as fh:
