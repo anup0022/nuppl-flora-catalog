@@ -853,8 +853,8 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .plant-hero::after { content: ""; position: absolute; width: 360px; height: 360px; border: 1px solid rgba(244,239,228,.25); border-radius: 50%; left: 38%; bottom: -245px; box-shadow: 0 0 0 24px rgba(244,239,228,.035), 0 0 0 48px rgba(244,239,228,.025); pointer-events: none; }
 .plant-hero-copy { padding: 2.4rem 2.2rem; align-self: center; position: relative; z-index: 1; }
 .plant-hero-copy::after { content: ""; display: block; width: 4.5rem; height: 3px; margin-top: 1.8rem; background: var(--orange); }
-.plant-hero-image { min-height: 0; height: 420px; margin: 1rem 1rem 1rem 0; position: relative; border: 8px solid rgba(244,239,228,.88); border-radius: 9px; overflow: hidden; transform: rotate(1.5deg); box-shadow: 0 18px 30px rgba(13,34,22,.28); z-index: 1; }
-.plant-hero-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.plant-hero-image { min-height: 0; height: 420px; margin: 1rem 1rem 1rem 0; padding: 5px; background: rgba(244,239,228,.88); position: relative; border: 8px solid rgba(244,239,228,.88); border-radius: 9px; overflow: hidden; transform: rotate(1.5deg); box-shadow: 0 18px 30px rgba(13,34,22,.28); z-index: 1; }
+.plant-hero-image img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
 .plant-hero .eyebrow { color: #c6d8bd; }
 .plant-header h1 { color: var(--paper); font-size: clamp(2.8rem, 6vw, 5.6rem); line-height: .94; letter-spacing: -.04em; max-width: 620px; }
 .common-alt { max-width: 35rem; font-size: 1.05rem; color: rgba(244,239,228,.72); }
