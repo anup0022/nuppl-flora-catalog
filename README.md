@@ -2,7 +2,7 @@
 
 A working, browsable catalog of 92 species (trees, shrubs, herbs, grasses) built from the raw field folders in this repo, for handover to the design team ahead of the print/magazine layout.
 
-**Live site:** published via GitHub Pages from the `docs/` folder (see repo "About" section / Pages settings for the URL once enabled).
+**Live site:** https://nuppl-flora-catalog.netlify.app — hosted on Netlify, deployed from the `docs/` folder via `netlify deploy --dir=docs --prod`.
 
 ## Structure
 
