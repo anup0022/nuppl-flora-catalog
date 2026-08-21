@@ -270,7 +270,8 @@ def parse_txt(text):
             continue
 
         content_line = re.sub(r"^[\-\*\u2022]\s*", "", raw)
-        sections[current].append(content_line)
+        if content_line:
+            sections[current].append(content_line)
 
     return data, sections
 
@@ -373,6 +374,7 @@ def esc(text):
 
 
 def render_list(items):
+    items = [item for item in items if item and item.strip()]
     if not items:
         return ""
     lis = "\n".join(f"        <li>{esc(item)}</li>" for item in items)
