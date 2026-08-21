@@ -40,6 +40,15 @@ def clean_name(folder_name):
 COMMONS_TARGET = 5
 NON_SPECIES_TOKENS = {"spp", "sp", "cv", "var", "subsp"}
 
+# Visual record is organized into these fixed plant-part categories, in order.
+CATEGORY_SPECS = [
+    ("full_plant", "Full Plant / Tree", ["habit", "plant", "tree"]),
+    ("flower", "Flower", ["flower", "flowers"]),
+    ("fruit_seed", "Fruit / Seed", ["fruit", "seed"]),
+    ("stem", "Stem", ["stem", "bark"]),
+    ("leaf", "Leaf", ["leaf", "leaves"]),
+]
+
 
 def scientific_search_terms(scientific_name):
     """Return (primary two-word term, genus-only fallback term)."""
@@ -108,10 +117,13 @@ def _commons_search(term, tokens, limit, exclude_titles):
     return matches
 
 
-def fetch_commons_images(plant):
+def fetch_plant_images(plant):
+    """Fetch (and cache) a general reference photo pool plus 5 categorized
+    plant-part photos (full plant/tree, flower, fruit/seed, stem, leaf) from
+    Wikimedia Commons for a single plant. Returns (general_list, categories_dict)."""
     primary_term, genus_term = scientific_search_terms(plant["scientific_name"])
     if not primary_term and not genus_term:
-        return []
+        return [], {}
 
     os.makedirs(os.path.dirname(COMMONS_MANIFEST), exist_ok=True)
     manifest = {}
@@ -119,41 +131,77 @@ def fetch_commons_images(plant):
         with open(COMMONS_MANIFEST, "r", encoding="utf-8") as fh:
             manifest = json.load(fh)
 
-    matches = list(manifest.get(plant["slug"], []))
-    if len(matches) >= COMMONS_TARGET:
-        return matches
+    raw_entry = manifest.get(plant["slug"])
+    if isinstance(raw_entry, list):
+        entry = {"general": raw_entry, "categories": {}}
+    else:
+        entry = raw_entry or {}
+    general = list(entry.get("general", []))
+    categories = dict(entry.get("categories", {}))
 
-    seen_titles = {m["title"] for m in matches}
-    if primary_term:
-        for m in _commons_search(primary_term, primary_term.lower().split(), COMMONS_TARGET - len(matches), seen_titles):
-            matches.append(m)
-            seen_titles.add(m["title"])
-    if len(matches) < COMMONS_TARGET and genus_term:
-        for m in _commons_search(genus_term, [genus_term.lower()], COMMONS_TARGET - len(matches), seen_titles):
-            matches.append(m)
-            seen_titles.add(m["title"])
+    seen_titles = {m["title"] for m in general}
+    for cat_matches in categories.values():
+        seen_titles.update(m["title"] for m in cat_matches)
 
-    manifest[plant["slug"]] = matches
+    # general reference pool (hero image + fallback source for categories)
+    if len(general) < COMMONS_TARGET:
+        if primary_term:
+            for m in _commons_search(primary_term, primary_term.lower().split(), COMMONS_TARGET - len(general), seen_titles):
+                general.append(m)
+                seen_titles.add(m["title"])
+        if len(general) < COMMONS_TARGET and genus_term:
+            for m in _commons_search(genus_term, [genus_term.lower()], COMMONS_TARGET - len(general), seen_titles):
+                general.append(m)
+                seen_titles.add(m["title"])
+
+    # categorized plant-part photos (full plant/tree, flower, fruit/seed, stem, leaf)
+    for cat_key, _label, keywords in CATEGORY_SPECS:
+        if cat_key in categories:
+            continue
+        found = []
+        for keyword in keywords:
+            for term in (primary_term, genus_term):
+                if not term:
+                    continue
+                tokens = term.lower().split() + [keyword]
+                found = _commons_search(f"{term} {keyword}", tokens, 1, seen_titles)
+                if found:
+                    break
+            if found:
+                break
+        categories[cat_key] = found
+        seen_titles.update(m["title"] for m in found)
+
+    manifest[plant["slug"]] = {"general": general, "categories": categories}
     with open(COMMONS_MANIFEST, "w", encoding="utf-8") as fh:
         json.dump(manifest, fh, indent=2, ensure_ascii=False)
-    return matches
+    return general, categories
 
 
 HEADING_RULES = [
     ("habitat", "habitat"),
     ("growth form", "habitat"),
     ("features", "habitat"),
+    ("biodiversity value", "biodiversity"),
+    ("biodiversity", "biodiversity"),
     ("economic & medicinal importance", "economic"),
     ("economic and medicinal importance", "economic"),
+    ("economic & ecological importance", "economic"),
+    ("economic and ecological importance", "economic"),
     ("economic importance", "economic"),
     ("ecological importance", "economic"),
     ("ecological", "economic"),
     ("importance", "economic"),
     ("medicinal importance", "medicinal"),
     ("medicinal", "medicinal"),
-    ("other uses", "other"),
+    ("authentic ayurvedic reference", "ayurvedic"),
+    ("ayurvedic reference", "ayurvedic"),
+    ("ayurvedic shloka", "ayurvedic"),
+    ("shloka", "ayurvedic"),
+    ("uses & importance", "uses"),
+    ("other uses", "uses"),
+    ("uses", "uses"),
     ("other", "other"),
-    ("uses & importance", "other"),
 ]
 
 SKIP_HEADING_STARTS = (
@@ -165,7 +213,7 @@ SKIP_HEADING_STARTS = (
 
 def parse_txt(text):
     data = {"common_name": None, "scientific_name": None, "family": None, "ptype": None}
-    sections = {"habitat": [], "economic": [], "medicinal": [], "other": []}
+    sections = {"habitat": [], "economic": [], "medicinal": [], "other": [], "uses": [], "biodiversity": [], "ayurvedic": []}
     current = "other"
 
     labels = (
@@ -270,10 +318,11 @@ def build():
                     shutil.copy2(os.path.join(plant_path, imf), os.path.join(img_dir, dest_name))
                     copied_imgs.append(f"assets/img/{slug}/{dest_name}")
 
-            commons_images = fetch_commons_images({
+            commons_general, commons_categories = fetch_plant_images({
                 "slug": slug,
                 "scientific_name": data["scientific_name"],
             })
+            species_binomial, genus = scientific_search_terms(data["scientific_name"])
 
             plant = {
                 "slug": slug,
@@ -283,14 +332,20 @@ def build():
                 "badge": badge,
                 "common_name": data["common_name"] or display_name,
                 "scientific_name": data["scientific_name"],
+                "genus": genus,
+                "species_binomial": species_binomial,
                 "family": data["family"],
                 "ptype": data["ptype"],
                 "habitat": sections["habitat"],
+                "uses": sections["uses"],
+                "biodiversity": sections["biodiversity"],
                 "economic": sections["economic"],
                 "medicinal": sections["medicinal"],
+                "ayurvedic": sections["ayurvedic"],
                 "other": sections["other"],
                 "images": copied_imgs,
-                "commons_images": commons_images,
+                "commons_images": commons_general,
+                "commons_categories": commons_categories,
             }
             plants.append(plant)
             all_plants.append(plant)
@@ -409,23 +464,31 @@ input.addEventListener('input', () => {{
 
 
 def render_plant_page(plant, prev_p, next_p):
-  hero_external = plant.get("commons_images", [{}])[0].get("url", "") if plant.get("commons_images") else ""
+  categories = plant.get("commons_categories", {})
+  general_pool = plant.get("commons_images", [])
+  hero_match = (categories.get("full_plant") or [None])[0] or (general_pool[0] if general_pool else None)
+  hero_external = hero_match["url"] if hero_match else ""
   hero_src = hero_external or (plant["images"][0] if plant["images"] else "")
-  visual_commons = [source for source in plant.get("commons_images", []) if source.get("url") != hero_external]
-  visual_local = plant["images"][1:] if plant["images"] else []
-  visual_count = len(visual_commons) + len(visual_local)
-  gallery = ""
+
+  used_titles = {hero_match["title"]} if hero_match else set()
+  fallback_pool = [m for m in general_pool if m["title"] not in used_titles]
+
+  gallery_figs = []
+  for cat_key, cat_label, _keywords in CATEGORY_SPECS:
+    match = (categories.get(cat_key) or [None])[0]
+    if not match or match["title"] in used_titles:
+      match = next((m for m in fallback_pool if m["title"] not in used_titles), None)
+    if not match:
+      continue
+    used_titles.add(match["title"])
+    idx = len(gallery_figs) + 1
+    gallery_figs.append(
+      f'      <figure class="gallery-item gallery-item-{idx}"><img src="{esc(match["url"])}" alt="{esc(plant["display_name"])} {esc(cat_label.lower())}" loading="lazy"><figcaption>{esc(cat_label)}</figcaption></figure>'
+    )
+
+  visual_count = len(gallery_figs)
   if visual_count:
-    figs = []
-    for i, source in enumerate(visual_commons):
-      figs.append(
-        f'      <figure class="gallery-item gallery-external gallery-item-{i + 1}"><img src="{esc(source["url"])}" alt="{esc(plant["display_name"])} reference image from Wikimedia Commons" loading="lazy"></figure>'
-      )
-    for i, src in enumerate(visual_local, start=len(figs) + 1):
-      figs.append(
-        f'      <figure class="gallery-item gallery-item-{i}"><img src="../{src}" alt="{esc(plant["display_name"])} field photo {i}" loading="lazy"></figure>'
-      )
-    gallery_body = "\n".join(figs)
+    gallery_body = "\n".join(gallery_figs)
     gallery = (
       f'<section class="gallery gallery-footer"><div class="gallery-heading"><span>Visual record</span></div>'
       f'<div class="gallery-grid">\n{gallery_body}\n    </div></section>'
@@ -433,19 +496,44 @@ def render_plant_page(plant, prev_p, next_p):
   else:
     gallery = '<section class="gallery gallery-footer gallery-empty"><p>No additional reference photographs on file yet.</p></section>'
 
-  facts_rows = []
-  if plant["scientific_name"]:
-      facts_rows.append(f'<tr><th>Scientific name</th><td class="sci">{esc(plant["scientific_name"])}</td></tr>')
+  facts_rows = ['<tr><th>Kingdom</th><td>Plantae</td></tr>']
   if plant["family"]:
       facts_rows.append(f'<tr><th>Family</th><td>{esc(plant["family"])}</td></tr>')
+  if plant["genus"]:
+      facts_rows.append(f'<tr><th>Genus</th><td class="sci">{esc(plant["genus"])}</td></tr>')
+  if plant["species_binomial"]:
+      facts_rows.append(f'<tr><th>Species</th><td class="sci">{esc(plant["species_binomial"])}</td></tr>')
+  if plant["scientific_name"]:
+      facts_rows.append(f'<tr><th>Scientific name</th><td class="sci">{esc(plant["scientific_name"])}</td></tr>')
   if plant["ptype"]:
       facts_rows.append(f'<tr><th>Type</th><td>{esc(plant["ptype"])}</td></tr>')
   facts_rows.append(f'<tr><th>Category</th><td>{esc(plant["category_label"])}</td></tr>')
   facts_table = "<table class=\"facts\">\n" + "\n".join(facts_rows) + "\n</table>"
 
-  habitat_html = render_list(plant["habitat"]) or "<p class=\"muted\">Habitat notes pending.</p>"
-  economic_html = render_list(plant["economic"]) or "<p class=\"muted\">Economic notes pending.</p>"
-  medicinal_html = render_list(plant["medicinal"]) or "<p class=\"muted\">Medicinal notes pending.</p>"
+  habitat_section = (
+    f'<section class="block"><h3>Habitat &amp; Growing Conditions</h3>{render_list(plant["habitat"])}</section>'
+    if plant["habitat"] else ""
+  )
+  uses_section = (
+    f'<section class="block"><h3>Uses</h3>{render_list(plant["uses"])}</section>'
+    if plant["uses"] else ""
+  )
+  biodiversity_section = (
+    f'<section class="block"><h3>Biodiversity Value</h3>{render_list(plant["biodiversity"])}</section>'
+    if plant["biodiversity"] else ""
+  )
+  economic_section = (
+    f'<section class="block"><h3>Economic &amp; Ecological Importance</h3>{render_list(plant["economic"])}</section>'
+    if plant["economic"] else ""
+  )
+  medicinal_section = (
+    f'<section class="block"><h3>Medicinal Importance</h3>{render_list(plant["medicinal"])}</section>'
+    if plant["medicinal"] else ""
+  )
+  ayurvedic_section = (
+    f'<section class="block"><h3>Authentic Ayurvedic Reference</h3>{render_list(plant["ayurvedic"])}</section>'
+    if plant["ayurvedic"] else ""
+  )
   other_html = f'<section class="block"><h3>Field Notes</h3>{render_list(plant["other"])}</section>' if plant["other"] else ""
   hero_image = (
     f'<img src="{esc(hero_src)}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
@@ -492,19 +580,13 @@ def render_plant_page(plant, prev_p, next_p):
       {facts_table}
     </div>
     <div class="col-text">
-      <section class="block">
-        <h3>Habitat &amp; Growing Conditions</h3>
-        {habitat_html}
-      </section>
+      {habitat_section}
       {inline_photo}
-      <section class="block">
-        <h3>Economic Importance</h3>
-        {economic_html}
-      </section>
-      <section class="block">
-        <h3>Medicinal Importance</h3>
-        {medicinal_html}
-      </section>
+      {uses_section}
+      {biodiversity_section}
+      {economic_section}
+      {medicinal_section}
+      {ayurvedic_section}
       {other_html}
     </div>
   </div>
@@ -866,8 +948,9 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 145px; gap: .8rem; }
 .gallery-item { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); border-radius: 8px; }
 .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.9) contrast(1.03); transition: transform .5s ease, filter .5s ease; }
+.gallery-item img { width: 100%; height: calc(100% - 1.9rem); object-fit: cover; display: block; filter: saturate(.9) contrast(1.03); transition: transform .5s ease, filter .5s ease; }
 .gallery-item:hover img { transform: scale(1.045); filter: saturate(1.1) contrast(1.05); }
+.gallery-item figcaption { height: 1.9rem; display: flex; align-items: center; padding: 0 .65rem; color: var(--ink-soft); background: var(--paper); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; }
 .gallery-external { border: 2px solid rgba(30,81,55,.28); }
 .gallery-empty { border: 1px dashed var(--rule); border-radius: 8px; }
 
