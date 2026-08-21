@@ -4,4 +4,5 @@ Family: Cucurbitaceae
 
 Habitat: A vine found in rainforests and dry rainforests, thickets, monsoon forests, and lowland to upland disturbed areas.
 
-Biodiversity Value: In Marathi it is called shivlingi because its seed resembles a lingam, giving it cultural and devotional significance in parts of India.
+Biodiversity Value:
+- In Marathi it is called shivlingi because its seed resembles a lingam, giving it cultural and devotional significance in parts of India.

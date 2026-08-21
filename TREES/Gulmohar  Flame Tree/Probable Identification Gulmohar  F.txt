@@ -4,6 +4,11 @@ Common Name: Gulmohar
 Scientific Name: Delonix regia (Bojer ex Hook.) Raf.
 Plant Type: Tree
 Habitat: Commonly planted along roadsides, parks, gardens, campuses, and urban areas. It grows well in tropical and subtropical climates with well-drained soil.
+
+Biodiversity Value:
+- Its roots help bind the soil and reduce soil erosion.
+- The leaves and flowers provide shelter and food for birds and insects.
+
 Economic Importance (8–10 lines)
 Gulmohar is a large deciduous ornamental tree belonging to the family Fabaceae.
 It is famous for its bright red-orange flowers that bloom during summer.

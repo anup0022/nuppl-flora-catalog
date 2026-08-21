@@ -10,6 +10,11 @@ Habitat:
 - Deep taproot makes it survive long dry spells. Commonly seen in rural UP
 - Naturalizes easily. The plant in your photo is growing wild among grass
 
+Biodiversity Value:
+- Major host plant for lac insect.
+- Prevents soil erosion.
+- Flowers are a good nectar source for bees
+
 Economic importance:
 - Fruit crop: Major fruit tree of dry regions. The small, round berries turn yellow to reddish when ripe. Eaten fresh, dried, or made into candy, chutney, and powder. Rich in vitamin C
 - Drought fruit: One of the few fruits that gives good yield in arid zones with minimal care. Important for farmer income in UP and Rajasthan
@@ -18,4 +23,3 @@ Economic importance:
 - Fencing: Thorny branches make excellent bio-fencing for fields to keep animals out
 - Timber & Fuel: Hard wood used for agricultural tools and as firewood
 - Lac cultivation: Major host plant for lac insect. Lac resin collected from Ber trees is economically important
-- Ecological: Prevents soil erosion. Deep roots stabilize bunds. Flowers are a good nectar source for bees

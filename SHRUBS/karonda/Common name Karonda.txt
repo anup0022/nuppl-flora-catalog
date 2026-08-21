@@ -2,6 +2,11 @@ Common name: Karonda
 Scientific name: Carissa carandas L.
 Plant type: Shrub
 Habit/Habitat: A hardy, thorny evergreen shrub found in dry wastelands, scrub forests, roadsides, and cultivated areas in tropical and subtropical regions of India.
+
+Biodiversity Value:
+- It helps prevent soil erosion.
+- It provides food for birds and wildlife.
+
 Economic importance (8–10 lines):
 Karonda is a thorny evergreen shrub.
 It grows well in dry and rocky soils.
