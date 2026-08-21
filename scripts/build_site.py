@@ -18,6 +18,8 @@ CATEGORIES = [
     ("HERBS", "Herbs", "herb"),
     ("SHRUBS", "Shrubs", "shrub"),
     ("GRASS", "Grasses", "grass"),
+    ("VINES", "Vines / Climbers", "vine"),
+    ("FLOWERING", "Flowering / Ornamental", "flower"),
 ]
 
 IMG_EXTS = (".jpg", ".jpeg", ".png")
@@ -627,6 +629,8 @@ def write_css():
   --shrub: #7a6a1e;
   --herb: #b5541f;
   --grass: #4d7a1f;
+  --vine: #6a3f9e;
+  --flower: #b5306a;
   --rule: rgba(35, 40, 31, 0.18);
   font-size: 17px;
 }
@@ -719,6 +723,8 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem 4rem; }
 .cat-shrub .cat-count { background: var(--shrub); }
 .cat-herb .cat-count { background: var(--herb); }
 .cat-grass .cat-count { background: var(--grass); }
+.cat-vine .cat-count { background: var(--vine); }
+.cat-flower .cat-count { background: var(--flower); }
 
 .index-grid {
   list-style: none;
@@ -776,6 +782,8 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem 4rem; }
 .plant-page.cat-shrub .eyebrow { color: var(--shrub); }
 .plant-page.cat-herb .eyebrow { color: var(--herb); }
 .plant-page.cat-grass .eyebrow { color: var(--grass); }
+.plant-page.cat-vine .eyebrow { color: var(--vine); }
+.plant-page.cat-flower .eyebrow { color: var(--flower); }
 
 .plant-main { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 2rem; }
 
