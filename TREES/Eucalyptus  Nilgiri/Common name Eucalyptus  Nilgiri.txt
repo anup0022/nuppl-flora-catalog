@@ -7,3 +7,7 @@ Habitat: A genus of over 700 species, most native to Australia, with a small num
 Economic Importance: One of the most important plantation tree genera globally, grown for pulpwood and paper manufacture, timber, firewood, charcoal and eucalyptus oil (used in cleaning, antiseptics, decongestants and insect repellents); also planted historically in India and other countries to drain swampy ground and reduce malaria risk, though its high water demand and allelopathic effect on neighbouring plants have made some plantations controversial.
 
 Medicinal Importance: Eucalyptus oil, steam-distilled from the leaves, has long been used as an antiseptic, decongestant and in aromatherapy; oil-rich leaves are also highly flammable, making eucalyptus plantations a notable fire risk in dry climates.
+
+Biodiversity Value:
+- Oil-rich leaves are largely avoided by Indian herbivores, but flowers provide bee forage in dry months.
+- Fast growth supports quick reforestation of wasteland, though dense stands can lower water tables and limit undergrowth.

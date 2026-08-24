@@ -5,3 +5,7 @@ Family: Poaceae
 Habitat: Native throughout much of tropical and subtropical Asia, northern Australia, and eastern and northern Africa. A perennial grass growing up to three metres tall with spreading rhizomatous roots.
 
 Economic Importance: A wild relative of cultivated sugarcane; it has hybridized with Saccharum officinarum to help produce cultivated sugarcane varieties such as Saccharum barberi and Saccharum sinense.
+
+Biodiversity Value:
+- Extensive rhizomes bind loose river-bank and floodplain soil, reducing erosion during monsoon floods.
+- Provides cover and nesting habitat for birds and small wildlife in riverine grasslands.

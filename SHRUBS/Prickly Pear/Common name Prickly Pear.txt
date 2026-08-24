@@ -7,3 +7,7 @@ Habitat: A genus of cacti native to the Americas, domesticated in central Mexico
 Economic Importance: The fruit ("tuna" or prickly pear) and young pads (nopales) are widely eaten, especially in Mexican cuisine; also used for fodder, cochineal dye production (via the scale insect Dactylopius coccus), biofuel research and as living fences in arid regions.
 
 Medicinal Importance: Used in Mexican folk medicine for wound healing and digestive or urinary tract inflammation, though robust clinical evidence for these uses remains limited.
+
+Biodiversity Value:
+- Flowers attract bees and other pollinators; ripe fruit is eaten by birds and small mammals, aiding seed dispersal.
+- Extreme drought tolerance lets it colonise degraded, rocky land, though it can become locally invasive.

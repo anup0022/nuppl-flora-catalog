@@ -5,3 +5,7 @@ Family: Poaceae
 Habitat: Believed to have originated in Asia and now found throughout the tropical belt and many temperate regions of both hemispheres. An annual grass growing up to 1 m tall, forming scruffy patches via rooting stem runners; colonizes coastal dunes, tidal marshes and disturbed or degraded ground, often among the first species to establish on altered land in the tropics.
 
 Economic Importance: Utilized as a forage crop for livestock, with cultivars such as 'Red River Crabgrass', 'Impact' and 'Quick-n-Big' grown as a highly nutritious warm-season pasture grass. Considered an aggressive invasive weed in some countries, including China, Mexico and the United States.
+
+Biodiversity Value:
+- Rooting stem runners quickly stabilise loose, sandy soils on dunes, riverbanks and disturbed ground.
+- Seed heads are readily eaten by seed-eating birds.

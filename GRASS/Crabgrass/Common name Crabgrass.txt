@@ -5,3 +5,7 @@ Family: Poaceae
 Habitat: An annual grass known nearly worldwide as a common weed of lawns, roadsides and disturbed ground, with an inflorescence of long thin radiating branches, often reddish or purplish.
 
 Economic Importance: Cultivated by Slavic peoples in Eastern Europe during the Middle Ages for grain, cooked in soups and porridges, earning it the name "Polish millet". Brought to the United States by immigrants as a hand-foraged grain and used as animal fodder and hay; relatively high in protein compared with other grasses. Considered a difficult-to-control lawn weed today.
+
+Biodiversity Value:
+- Fast-spreading, low growth quickly covers bare soil, helping limit erosion on disturbed ground.
+- Seeds are an important food source for many small birds.

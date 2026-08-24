@@ -5,3 +5,7 @@ Family: Rutaceae
 Habitat: A small evergreen tree, believed to have originated in northeast India as a natural hybrid of the citron and the bitter orange, from where it spread via Persia to the Mediterranean by the second century AD. Cultivated worldwide in tropical and subtropical climates; needs a minimum temperature of about 7 degrees C and is not frost-hardy.
 
 Economic Importance: One of the most widely grown citrus fruits, cultivated globally for its juice, zest and pulp used in beverages, culinary dishes, marmalades, cleaning products and cosmetics; India and Mexico together account for around a third of world lemon and lime production.
+
+Biodiversity Value:
+- Fragrant flowers are an important nectar source for bees and butterflies.
+- Leaves serve as a larval host plant for citrus swallowtail butterflies.

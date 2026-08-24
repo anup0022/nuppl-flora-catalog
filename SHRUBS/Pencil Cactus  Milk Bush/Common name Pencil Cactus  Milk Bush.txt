@@ -7,3 +7,7 @@ Habitat: Native to Africa, growing in semi-arid tropical climates on black clay 
 Economic Importance: Grown as hedging and cattle fodder in dry savanna regions; its hydrocarbon-rich latex has been studied as a potential biofuel and rubber source, notably by the Brazilian national petroleum company in the 1980s.
 
 Medicinal Importance: Used in traditional medicine across Brazil, India, Indonesia and Malaysia for ailments including asthma, cough, earache and rheumatism, although the latex is a skin and eye irritant and the plant's purported anticancer effects are not supported by rigorous research; contact requires protective gloves and eyewear.
+
+Biodiversity Value:
+- Leafless, water-storing stems allow it to survive extreme drought on poor, dry soils.
+- Caustic latex deters browsing animals, letting it persist as a living fence in arid regions.

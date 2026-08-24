@@ -5,3 +5,7 @@ Family: Asteraceae
 Habitat: Native to Mexico, Central America and the Caribbean, now growing throughout the Neotropics and widely cultivated elsewhere. A spreading, mat-forming perennial herb up to 30 cm tall with bright yellow flowers, rooting at the stem nodes; grows best in sunny areas with well-drained, moist soil at low elevations.
 
 Economic Importance: Widely cultivated and sold as an ornamental groundcover. However, it is listed among the IUCN's "100 of the world's worst invasive species": it spreads vegetatively (not by seed) via garden waste and forms dense mats that crowd out other vegetation, and is a recognized invasive weed of agricultural land, roadsides, streams and mangrove-swamp borders across the Pacific Islands, Hong Kong, South Africa, Australia, Indonesia and Sri Lanka.
+
+Biodiversity Value:
+- Fast-spreading, mat-forming growth is popular as ground cover but can smother native vegetation if unchecked.
+- Bright yellow flowers provide nectar for bees and butterflies almost year-round.

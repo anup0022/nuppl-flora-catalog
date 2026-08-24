@@ -5,3 +5,7 @@ Family: Fabaceae
 Habitat: Grows wild throughout most of the tropics and is considered a weed in many places, though its native range is thought to be Central America. Closely related and often historically confused with Senna obtusifolia.
 
 Economic Importance: Its seeds (commonly called "tora" or "chakvad" seeds in India) have traditional use as a coffee substitute and in folk food and medicine preparations across South and Southeast Asia.
+
+Biodiversity Value:
+- Yellow flowers attract bees; pods split and scatter seed widely, letting it establish quickly on disturbed ground.
+- As a legume, it can improve nitrogen levels in the soils it grows in.

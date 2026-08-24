@@ -5,3 +5,9 @@ Family: Asteraceae
 Habitat: Native to the tropical Americas including Mexico, now introduced to tropical, subtropical and mild temperate regions worldwide. Found in fields, meadows, croplands, disturbed areas, lawns and roadsides; listed as a noxious weed in several US states due to its prolific, wind-dispersed seed production.
 
 Medicinal Importance: Traditionally used in India for wound healing, as an anticoagulant, antifungal and insect repellent, and by local healers as a treatment for boils, blisters and cuts. Young leaves are crushed to yield a green juice applied directly to wounds to stop bleeding, including after leech bites.
+
+Biodiversity Value:
+- Small daisy-like flowers are a reliable nectar source for bees and butterflies almost year-round.
+
+Economic & Ecological Importance:
+- Considered a noxious cropland weed due to prolific seeding, but its ground cover limits erosion on wasteland.

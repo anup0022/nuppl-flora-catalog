@@ -5,3 +5,7 @@ Family: Malvaceae
 Habitat: Abutilon is a large genus in the mallow family distributed throughout the tropics and subtropics of the Americas, Africa, Asia and Australia; herbage is generally hairy to woolly, with bell-shaped yellow, orange or reddish flowers. Abutilon theophrasti (velvetleaf) grows 0.5-3 m tall and is a common weed of disturbed and cultivated ground.
 
 Economic Importance: Several Abutilon species and hybrids are cultivated as ornamental garden plants (sometimes called flowering maple or parlor maple). Velvetleaf itself is more often regarded as a competitive agricultural weed.
+
+Biodiversity Value:
+- Large hairy leaves and tall growth quickly shade out competing seedlings on disturbed farmland.
+- Yellow flowers attract bees; seeds can remain viable in soil for many years, aiding long-term persistence.

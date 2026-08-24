@@ -5,3 +5,10 @@ Family: Menispermaceae
 Habitat: Native to South and Southeast Asia; a large, deciduous, extensively spreading climbing vine with several elongated twining branches and heart-shaped leaves, from which it gets the name heart-leaved moonseed. Fruit is reddish, aggregated in clusters.
 
 Medicinal Importance: Used for centuries in Ayurveda under the name giloy in an attempt to treat various disorders. However, reviews of clinical research have found no good evidence that it is of benefit as a medicine, and its use can lead to potentially fatal herb-induced liver injury; it was the most commonly reported cause of herb-induced liver injury in India in one review. During the COVID-19 pandemic, India's Ministry of AYUSH recommended giloy as a home remedy for immune support, but this was associated with a cluster of hepatitis cases in Mumbai linked to boiled or capsule preparations of the plant. Note: given the documented liver-injury risk, any use should only be under qualified medical supervision.
+
+Biodiversity Value:
+- Climbing stems and heart-shaped leaves provide cover for small birds and insects in host trees.
+- Bright red fruit clusters attract birds, which help disperse its seeds.
+
+Economic & Ecological Importance:
+- A major herb in Ayurveda used in immunity-boosting formulations, supporting a large wild-collection and cultivation trade.

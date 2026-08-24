@@ -225,51 +225,71 @@ def parse_txt(text):
         "Other uses",
     )
     label_pattern = "|".join(re.escape(label) for label in labels)
-    text = re.sub(
-        rf"(?<!^)(?<!\n)(?=({label_pattern})\s*:)",
-        "\n",
-        text,
-        flags=re.IGNORECASE,
+    all_heading_prefixes = ("common name", "scientific name", "family", "plant type", "type", "synonym") + tuple(
+        prefix for prefix, _section in HEADING_RULES
     )
+    # Split crammed labels onto their own line (e.g. "Habitat: x Economic importance: y"),
+    # but skip bullet list lines (so "- Medicinal: ..." isn't torn away from its "-" marker
+    # and misread as a standalone heading) and lines that are already a single clean
+    # heading (so "Economic & Ecological Importance:" isn't torn apart at "Ecological").
+    split_lines = []
+    for line in text.split("\n"):
+        stripped = line.strip()
+        is_bullet = stripped[:1] in ("-", "*", "\u2022")
+        already_clean_heading = re.sub(r"^[^A-Za-z]+", "", stripped).lower().startswith(all_heading_prefixes)
+        if is_bullet or already_clean_heading:
+            split_lines.append(line)
+            continue
+        split_lines.append(re.sub(
+            rf"(?<!^)(?<!\n)(?=({label_pattern})\s*:)",
+            "\n",
+            line,
+            flags=re.IGNORECASE,
+        ))
+    text = "\n".join(split_lines)
 
     for raw_line in text.splitlines():
         raw = raw_line.strip()
         if not raw:
             continue
-        detect = re.sub(r"^[^A-Za-z]+", "", raw)
-        lower = detect.lower()
+        # bullet list items (e.g. "- Medicinal: ...") are never real section headings,
+        # even if their first word happens to match a HEADING_RULES prefix like "medicinal"
+        is_bullet = raw[:1] in ("-", "*", "\u2022")
+        if not is_bullet:
+            detect = re.sub(r"^[^A-Za-z]+", "", raw)
+            lower = detect.lower()
 
-        if lower.startswith("common name"):
-            if ":" in raw:
-                data["common_name"] = raw.split(":", 1)[1].strip()
-            continue
-        if lower.startswith("scientific name"):
-            if ":" in raw:
-                data["scientific_name"] = raw.split(":", 1)[1].strip()
-            continue
-        if lower.startswith("family"):
-            if ":" in raw:
-                data["family"] = raw.split(":", 1)[1].strip()
-            continue
-        if lower.startswith("plant type") or lower.startswith("type"):
-            if ":" in raw:
-                data["ptype"] = raw.split(":", 1)[1].strip()
-            continue
-        if lower.startswith(SKIP_HEADING_STARTS):
-            continue
-
-        matched_heading = False
-        for prefix, section in HEADING_RULES:
-            if lower.startswith(prefix):
-                current = section
+            if lower.startswith("common name"):
                 if ":" in raw:
-                    after = raw.split(":", 1)[1].strip()
-                    if after:
-                        sections[current].append(after)
-                matched_heading = True
-                break
-        if matched_heading:
-            continue
+                    data["common_name"] = raw.split(":", 1)[1].strip()
+                continue
+            if lower.startswith("scientific name"):
+                if ":" in raw:
+                    data["scientific_name"] = raw.split(":", 1)[1].strip()
+                continue
+            if lower.startswith("family"):
+                if ":" in raw:
+                    data["family"] = raw.split(":", 1)[1].strip()
+                continue
+            if lower.startswith("plant type") or lower.startswith("type"):
+                if ":" in raw:
+                    data["ptype"] = raw.split(":", 1)[1].strip()
+                continue
+            if lower.startswith(SKIP_HEADING_STARTS):
+                continue
+
+            matched_heading = False
+            for prefix, section in HEADING_RULES:
+                if lower.startswith(prefix):
+                    current = section
+                    if ":" in raw:
+                        after = raw.split(":", 1)[1].strip()
+                        if after:
+                            sections[current].append(after)
+                    matched_heading = True
+                    break
+            if matched_heading:
+                continue
 
         content_line = re.sub(r"^[\-\*\u2022]\s*", "", raw)
         if content_line:
