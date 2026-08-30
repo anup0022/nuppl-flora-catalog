@@ -480,10 +480,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Annona squamosa in Jardin des Plantes de Toulouse 01.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Annona_squamosa_in_Jardin_des_Plantes_de_Toulouse_01.jpg/1920px-Annona_squamosa_in_Jardin_des_Plantes_de_Toulouse_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Custard apple tree in Hainan - 04.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Custard_apple_tree_in_Hainan_-_04.JPG/1920px-Custard_apple_tree_in_Hainan_-_04.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC0"
         }
       ],
       "flower": [
@@ -549,10 +549,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-030523-0125-Moringa oleifera-habit-State nursery Kahului-Maui (24608592886).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Starr-030523-0125-Moringa_oleifera-habit-State_nursery_Kahului-Maui_%2824608592886%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Drumstick tree (Moringa oleifera).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Drumstick_tree_%28Moringa_oleifera%29.jpg/1920px-Drumstick_tree_%28Moringa_oleifera%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "flower": [
@@ -574,11 +574,14 @@
       "stem": [],
       "leaf": [
         {
-          "title": "Mboum Traditional sauce with nébéday leaf (Moringa oleifera).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Mboum_Traditional_sauce_with_n%C3%A9b%C3%A9day_leaf_%28Moringa_oleifera%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "2011.06-382-550,551 Drumstick tree(Moringa oleifera),lf,e-s greenhouse Radix Serre@Wageningen University,NL fri24jun2011.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/2011.06-382-550%2C551_Drumstick_tree%28Moringa_oleifera%29%2Clf%2Ce-s_greenhouse_Radix_Serre%40Wageningen_University%2CNL_fri24jun2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
+      ],
+      "omit": [
+        "stem"
       ]
     }
   },
@@ -718,16 +721,16 @@
       ],
       "stem": [
         {
-          "title": "Laurel plant (Laurus cinnamomum); flowering stem. Aquatint b Wellcome V0043219.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Laurel_plant_%28Laurus_cinnamomum%29%3B_flowering_stem._Aquatint_b_Wellcome_V0043219.jpg/1920px-Laurel_plant_%28Laurus_cinnamomum%29%3B_flowering_stem._Aquatint_b_Wellcome_V0043219.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Starr-110330-4062-Cinnamomum verum-stem with cinnamon smelling bark-Garden of Eden Keanae-Maui (24713506849).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Starr-110330-4062-Cinnamomum_verum-stem_with_cinnamon_smelling_bark-Garden_of_Eden_Keanae-Maui_%2824713506849%29.jpg/1920px-Starr-110330-4062-Cinnamomum_verum-stem_with_cinnamon_smelling_bark-Garden_of_Eden_Keanae-Maui_%2824713506849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
+          "license": "CC BY 3.0 us"
         }
       ],
       "leaf": [
         {
-          "title": "Cinnamomum cassia Leaf.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Cinnamomum_cassia_Leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Cinnamomum verum 002.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Cinnamomum_verum_002.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0"
         }
@@ -1365,10 +1368,16 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-020630-0009-Delonix regia-habit-Kahului-Maui (24467921941).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Starr-020630-0009-Delonix_regia-habit-Kahului-Maui_%2824467921941%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Delonix regia - Gulmohar Theppakadu Junction Mudumalai Apr24 A7C 10871.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Delonix_regia_-_Gulmohar_Theppakadu_Junction_Mudumalai_Apr24_A7C_10871.jpg/1920px-Delonix_regia_-_Gulmohar_Theppakadu_Junction_Mudumalai_Apr24_A7C_10871.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Delonix regia (Gulmohar) Banyan Restaurant Parking Theppakadu Mudumalai Apr24 A7C 10877.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Delonix_regia_%28Gulmohar%29_Banyan_Restaurant_Parking_Theppakadu_Mudumalai_Apr24_A7C_10877.jpg/1920px-Delonix_regia_%28Gulmohar%29_Banyan_Restaurant_Parking_Theppakadu_Mudumalai_Apr24_A7C_10877.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [
@@ -1517,10 +1526,16 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Syzygium cumini Tree 3.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Syzygium_cumini_Tree_3.jpg/1920px-Syzygium_cumini_Tree_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Plum tree (Syzygium cumini).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Plum_tree_%28Syzygium_cumini%29.jpg/1920px-Plum_tree_%28Syzygium_cumini%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 2.0"
+          "license": "CC0"
+        },
+        {
+          "title": "Syzygium-cumini-SF24280-01.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Syzygium-cumini-SF24280-01.jpg/1920px-Syzygium-cumini-SF24280-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [
@@ -6698,32 +6713,32 @@
   "tree-eucalyptus-nilgiri": {
     "general": [
       {
+        "title": "Gippsland Blue Gum (6280838477).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Gippsland_Blue_Gum_%286280838477%29.jpg/1920px-Gippsland_Blue_Gum_%286280838477%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY 2.0"
+      },
+      {
+        "title": "OAK Shedding Eucalyptus Tree 20150924.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/OAK_Shedding_Eucalyptus_Tree_20150924.jpg/1920px-OAK_Shedding_Eucalyptus_Tree_20150924.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "OAK Shedding Eucalyptus Tree 2 20150924.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/OAK_Shedding_Eucalyptus_Tree_2_20150924.jpg/1920px-OAK_Shedding_Eucalyptus_Tree_2_20150924.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Pond with a fallen brown leaf from a southern blue gum (Eucalyptus globulus) tree, Jardim da Fundação Calouste Gulbenkian, Lisbon, Portugal julesvernex2.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Pond_with_a_fallen_brown_leaf_from_a_southern_blue_gum_%28Eucalyptus_globulus%29_tree%2C_Jardim_da_Funda%C3%A7%C3%A3o_Calouste_Gulbenkian%2C_Lisbon%2C_Portugal_julesvernex2.jpg/1920px-Pond_with_a_fallen_brown_leaf_from_a_southern_blue_gum_%28Eucalyptus_globulus%29_tree%2C_Jardim_da_Funda%C3%A7%C3%A3o_Calouste_Gulbenkian%2C_Lisbon%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
         "title": "A critical revision of the genus Eucalyptus (1903) (20088927024) - Eucalyptus acmenoides.jpg",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/A_critical_revision_of_the_genus_Eucalyptus_%281903%29_%2820088927024%29_-_Eucalyptus_acmenoides.jpg/1920px-A_critical_revision_of_the_genus_Eucalyptus_%281903%29_%2820088927024%29_-_Eucalyptus_acmenoides.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "No restrictions"
-      },
-      {
-        "title": "A critical revision of the genus Eucalyptus (1903) (20088927024) - Eucalyptus alpina, E. microcorys and E. umbra.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/A_critical_revision_of_the_genus_Eucalyptus_%281903%29_%2820088927024%29_-_Eucalyptus_alpina%2C_E._microcorys_and_E._umbra.jpg/1920px-A_critical_revision_of_the_genus_Eucalyptus_%281903%29_%2820088927024%29_-_Eucalyptus_alpina%2C_E._microcorys_and_E._umbra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "No restrictions"
-      },
-      {
-        "title": "A critical revision of the genus Eucalyptus (1903) (20088927024) - Eucalyptus capitellata.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/A_critical_revision_of_the_genus_Eucalyptus_%281903%29_%2820088927024%29_-_Eucalyptus_capitellata.jpg/1920px-A_critical_revision_of_the_genus_Eucalyptus_%281903%29_%2820088927024%29_-_Eucalyptus_capitellata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "No restrictions"
-      },
-      {
-        "title": "A critical revision of the genus Eucalyptus (1903) (20088927024) - Eucalyptus regnans.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/A_critical_revision_of_the_genus_Eucalyptus_%281903%29_%2820088927024%29_-_Eucalyptus_regnans.jpg/1920px-A_critical_revision_of_the_genus_Eucalyptus_%281903%29_%2820088927024%29_-_Eucalyptus_regnans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "No restrictions"
-      },
-      {
-        "title": "A critical revision of the genus Eucalyptus (1903) (20088927024) - Eucalyptus virgata.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/A_critical_revision_of_the_genus_Eucalyptus_%281903%29_%2820088927024%29_-_Eucalyptus_virgata.jpg/1920px-A_critical_revision_of_the_genus_Eucalyptus_%281903%29_%2820088927024%29_-_Eucalyptus_virgata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "No restrictions"
       }
@@ -6733,6 +6748,12 @@
         {
           "title": "OAK Eucalyptus Tree 20150924.jpg",
           "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/OAK_Eucalyptus_Tree_20150924.jpg/1920px-OAK_Eucalyptus_Tree_20150924.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "OAK Eucalyptus Tree 2 20150924.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/OAK_Eucalyptus_Tree_2_20150924.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
@@ -6807,10 +6828,16 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-041106-0414-Cinnamomum camphora-habit-Ulupalakua-Maui (24092412393).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Starr-041106-0414-Cinnamomum_camphora-habit-Ulupalakua-Maui_%2824092412393%29.jpg/1920px-Starr-041106-0414-Cinnamomum_camphora-habit-Ulupalakua-Maui_%2824092412393%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Cinnamomum tamala (Bay leaf) tree in RDA, Bogra 01.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Cinnamomum_tamala_%28Bay_leaf%29_tree_in_RDA%2C_Bogra_01.jpg/1920px-Cinnamomum_tamala_%28Bay_leaf%29_tree_in_RDA%2C_Bogra_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Cinnamomum tamala (Bay leaf) tree in RDA, Bogra 02.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Cinnamomum_tamala_%28Bay_leaf%29_tree_in_RDA%2C_Bogra_02.jpg/1920px-Cinnamomum_tamala_%28Bay_leaf%29_tree_in_RDA%2C_Bogra_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
         }
       ],
       "flower": [
@@ -6829,13 +6856,9 @@
           "license": "CC BY-SA 4.0"
         }
       ],
-      "stem": [
-        {
-          "title": "Laurel plant (Laurus cinnamomum); flowering stem. Aquatint b Wellcome V0043219.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Laurel_plant_%28Laurus_cinnamomum%29%3B_flowering_stem._Aquatint_b_Wellcome_V0043219.jpg/1920px-Laurel_plant_%28Laurus_cinnamomum%29%3B_flowering_stem._Aquatint_b_Wellcome_V0043219.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
-        }
+      "stem": [],
+      "omit": [
+        "stem"
       ],
       "leaf": [
         {
@@ -6899,10 +6922,10 @@
       ],
       "fruit_seed": [
         {
-          "title": "Artocarpus heterophyllus, fruit Laos.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Artocarpus_heterophyllus%2C_fruit_Laos.jpg/1920px-Artocarpus_heterophyllus%2C_fruit_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "(Artocarpus heterophyllus) Jack fruits on Simhachalam Hills 01.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/%28Artocarpus_heterophyllus%29_Jack_fruits_on_Simhachalam_Hills_01.jpg/1920px-%28Artocarpus_heterophyllus%29_Jack_fruits_on_Simhachalam_Hills_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "stem": [
@@ -6959,10 +6982,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-080117-1623-Citrus paradisi x maxima-habit-Walmart Kahului-Maui (24900456755).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Starr-080117-1623-Citrus_paradisi_x_maxima-habit-Walmart_Kahului-Maui_%2824900456755%29.jpg/1920px-Starr-080117-1623-Citrus_paradisi_x_maxima-habit-Walmart_Kahului-Maui_%2824900456755%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Citrus x limon (Outjo).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Citrus_x_limon_%28Outjo%29.jpg/1920px-Citrus_x_limon_%28Outjo%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 2.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "flower": [
@@ -6975,19 +6998,15 @@
       ],
       "fruit_seed": [
         {
-          "title": "Citrus Trees heavily laden with ripe fruit.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Citrus_Trees_heavily_laden_with_ripe_fruit.jpg/1920px-Citrus_Trees_heavily_laden_with_ripe_fruit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Starr-140201-3252-Citrus limon-Eureka Pink Variegated lemon young fruit showing stripes-Hawea Pl Olinda-Maui (24612776513).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Starr-140201-3252-Citrus_limon-Eureka_Pink_Variegated_lemon_young_fruit_showing_stripes-Hawea_Pl_Olinda-Maui_%2824612776513%29.jpg/1920px-Starr-140201-3252-Citrus_limon-Eureka_Pink_Variegated_lemon_young_fruit_showing_stripes-Hawea_Pl_Olinda-Maui_%2824612776513%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY 3.0 us"
         }
       ],
-      "stem": [
-        {
-          "title": "A lemon plant (Citrus japonica); flowering and fruiting stem Wellcome V0044760.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/A_lemon_plant_%28Citrus_japonica%29%3B_flowering_and_fruiting_stem_Wellcome_V0044760.jpg/1920px-A_lemon_plant_%28Citrus_japonica%29%3B_flowering_and_fruiting_stem_Wellcome_V0044760.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
-        }
+      "stem": [],
+      "omit": [
+        "stem"
       ],
       "leaf": [
         {
