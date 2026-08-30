@@ -142,7 +142,9 @@ def fetch_plant_images(plant):
     categories = dict(entry.get("categories", {}))
 
     seen_titles = {m["title"] for m in general}
-    for cat_matches in categories.values():
+    for cat_key, cat_matches in categories.items():
+        if cat_key == "omit":
+            continue
         seen_titles.update(m["title"] for m in cat_matches)
 
     # general reference pool (hero image + fallback source for categories)
@@ -524,9 +526,12 @@ def render_plant_page(plant, prev_p, next_p):
 
   used_titles = {hero_match["title"]} if hero_match else set()
   fallback_pool = [m for m in general_pool if m["title"] not in used_titles]
+  omit_categories = set(categories.get("omit") or [])
 
   gallery_figs = []
   for cat_key, cat_label, _keywords in CATEGORY_SPECS:
+    if cat_key in omit_categories:
+      continue
     match = (categories.get(cat_key) or [None])[0]
     if not match or match["title"] in used_titles:
       match = next((m for m in fallback_pool if m["title"] not in used_titles), None)

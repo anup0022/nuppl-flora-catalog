@@ -1521,10 +1521,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Syzygium cumini tree Coonoor.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Syzygium_cumini_tree_Coonoor.jpg/1920px-Syzygium_cumini_tree_Coonoor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Syzygium cumini Tree 3.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Syzygium_cumini_Tree_3.jpg/1920px-Syzygium_cumini_Tree_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY 2.0"
         }
       ],
       "flower": [
@@ -5795,10 +5795,11 @@
       ],
       "flower": [
         {
-          "title": "EB1911 Flower - Peduncle of Ficus carica enclosing male and female flowers.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/EB1911_Flower_-_Peduncle_of_Ficus_carica_enclosing_male_and_female_flowers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Ficus carica 1.1R.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Ficus_carica_1.1R.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "Public domain"
+          "license": "Public domain",
+          "label": "Flowers (inside a halved fig)"
         }
       ],
       "fruit_seed": [
@@ -5811,10 +5812,10 @@
       ],
       "stem": [
         {
-          "title": "A fig plant (Ficus carica); fruiting stem and halved fruit. Wellcome V0044761.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/A_fig_plant_%28Ficus_carica%29%3B_fruiting_stem_and_halved_fruit._Wellcome_V0044761.jpg/1920px-A_fig_plant_%28Ficus_carica%29%3B_fruiting_stem_and_halved_fruit._Wellcome_V0044761.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Ficus carica bonsai A D161215 trunk & lawn.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Ficus_carica_bonsai_A_D161215_trunk_%26_lawn.jpg/1920px-Ficus_carica_bonsai_A_D161215_trunk_%26_lawn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
+          "license": "Public domain"
         }
       ],
       "leaf": [
@@ -6250,14 +6251,7 @@
           "license": "CC BY-SA 3.0"
         }
       ],
-      "fruit_seed": [
-        {
-          "title": "Chicago Botanic Gdn, Fruit Veg Island, entrance 180723 423 Helianthus annuus 'Buttercream', Tagetes erecta 'Vanilla, Amaranthus tricolor 'Aurora', Thuja occidentalis 'Brandon'.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Chicago_Botanic_Gdn%2C_Fruit_Veg_Island%2C_entrance_180723_423_Helianthus_annuus_%27Buttercream%27%2C_Tagetes_erecta_%27Vanilla%2C_Amaranthus_tricolor_%27Aurora%27%2C_Thuja_occidentalis_%27Brandon%27.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 2.0"
-        }
-      ],
+      "fruit_seed": [],
       "stem": [],
       "leaf": [
         {
@@ -6266,6 +6260,10 @@
           "source": "Wikimedia Commons",
           "license": "CC BY 4.0"
         }
+      ],
+      "omit": [
+        "fruit_seed",
+        "stem"
       ]
     }
   },
@@ -6443,10 +6441,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-080607-7353-Hibiscus rosa sinensis-habit with white tern in rain-Midway Mall Sand Island-Midway Atoll (24822649371).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Starr-080607-7353-Hibiscus_rosa_sinensis-habit_with_white_tern_in_rain-Midway_Mall_Sand_Island-Midway_Atoll_%2824822649371%29.jpg/1920px-Starr-080607-7353-Hibiscus_rosa_sinensis-habit_with_white_tern_in_rain-Midway_Mall_Sand_Island-Midway_Atoll_%2824822649371%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Hibiscus rosa-sinensis plant 1.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Hibiscus_rosa-sinensis_plant_1.jpg/1920px-Hibiscus_rosa-sinensis_plant_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [
