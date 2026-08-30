@@ -35,10 +35,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-050107-2842-Terminalia myriocarpa-habit-Waikamoi trail-Maui (24640269301).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Starr-050107-2842-Terminalia_myriocarpa-habit-Waikamoi_trail-Maui_%2824640269301%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Terminalia arjuna - Bagh-e-Jinnah.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Terminalia_arjuna_-_Bagh-e-Jinnah.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [
@@ -67,10 +67,10 @@
       ],
       "leaf": [
         {
-          "title": "Badamia exclamationis caterpillar eating Terminalia catappa leaf. Dededo, Guam.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Badamia_exclamationis_caterpillar_eating_Terminalia_catappa_leaf._Dededo%2C_Guam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Terminalia arjuna leaves 01 by Line1.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Terminalia_arjuna_leaves_01_by_Line1.JPG/1920px-Terminalia_arjuna_leaves_01_by_Line1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC0"
+          "license": "CC BY-SA 3.0"
         }
       ]
     }
@@ -111,8 +111,8 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Pongamia pinnata - Karanja tree (26509).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pongamia_pinnata_-_Karanja_tree_%2826509%29.jpg/1920px-Pongamia_pinnata_-_Karanja_tree_%2826509%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Pongamia pinnata-Rajasthan.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Pongamia_pinnata-Rajasthan.jpg/1920px-Pongamia_pinnata-Rajasthan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
@@ -408,19 +408,15 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Ficus abutilifolia, habitus op Roodekrans, Walter Sisulu NBT, a.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ficus_abutilifolia%2C_habitus_op_Roodekrans%2C_Walter_Sisulu_NBT%2C_a.jpg/1280px-Ficus_abutilifolia%2C_habitus_op_Roodekrans%2C_Walter_Sisulu_NBT%2C_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Cluster fig tree (Ficus racemosa) in West Bangal.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cluster_fig_tree_%28Ficus_racemosa%29_in_West_Bangal.jpg/1920px-Cluster_fig_tree_%28Ficus_racemosa%29_in_West_Bangal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
       ],
-      "flower": [
-        {
-          "title": "20220605 Hortus Botanicus - Opuntia ficus-indica (flower).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/20220605_Hortus_Botanicus_-_Opuntia_ficus-indica_%28flower%29.jpg/1920px-20220605_Hortus_Botanicus_-_Opuntia_ficus-indica_%28flower%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
-        }
+      "flower": [],
+      "omit": [
+        "flower"
       ],
       "fruit_seed": [
         {
@@ -622,10 +618,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-040713-0129-Psidium guajava-habit-Wailua-Maui (24688329706).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Starr-040713-0129-Psidium_guajava-habit-Wailua-Maui_%2824688329706%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Psidium guajava (Chinese guava) tree in RDA, Bogra 01.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Psidium_guajava_%28Chinese_guava%29_tree_in_RDA%2C_Bogra_01.jpg/1920px-Psidium_guajava_%28Chinese_guava%29_tree_in_RDA%2C_Bogra_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "flower": [
@@ -646,8 +642,8 @@
       ],
       "stem": [
         {
-          "title": "Starr-010704-0068-Psidium cattleianum-stems-Haiku-Maui (24450619661).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Starr-010704-0068-Psidium_cattleianum-stems-Haiku-Maui_%2824450619661%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Starr-150811-0540-Psidium guajava-trunk and bark-Enchanting Floral Gardens of Kula-Maui (25202561421).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Starr-150811-0540-Psidium_guajava-trunk_and_bark-Enchanting_Floral_Gardens_of_Kula-Maui_%2825202561421%29.jpg/1920px-Starr-150811-0540-Psidium_guajava-trunk_and_bark-Enchanting_Floral_Gardens_of_Kula-Maui_%2825202561421%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY 3.0 us"
         }
@@ -6657,11 +6653,46 @@
       }
     ],
     "categories": {
-      "full_plant": [],
-      "flower": [],
-      "fruit_seed": [],
-      "stem": [],
-      "leaf": []
+      "full_plant": [
+        {
+          "title": "Robinia pseudoacacia - Robinie - Mörfelden-Walldorf - Germany - 01.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Robinia_pseudoacacia_-_Robinie_-_M%C3%B6rfelden-Walldorf_-_Germany_-_01.jpg/1920px-Robinia_pseudoacacia_-_Robinie_-_M%C3%B6rfelden-Walldorf_-_Germany_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "flower": [
+        {
+          "title": "Robinia Pseudoacacia flower, Zabrze, Poland, June 2019 01.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Robinia_Pseudoacacia_flower%2C_Zabrze%2C_Poland%2C_June_2019_01.jpg/1920px-Robinia_Pseudoacacia_flower%2C_Zabrze%2C_Poland%2C_June_2019_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "fruit_seed": [
+        {
+          "title": "Robinia pseudoacacia seed pod.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Robinia_pseudoacacia_seed_pod.jpg/1920px-Robinia_pseudoacacia_seed_pod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "Public domain"
+        }
+      ],
+      "stem": [
+        {
+          "title": "Robinia pseudoacacia 002.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Robinia_pseudoacacia_002.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "leaf": [
+        {
+          "title": "Robinia pseudoacacia leaves and thorns.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Robinia_pseudoacacia_leaves_and_thorns.jpg/1920px-Robinia_pseudoacacia_leaves_and_thorns.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        }
+      ]
     }
   },
   "tree-eucalyptus-nilgiri": {
