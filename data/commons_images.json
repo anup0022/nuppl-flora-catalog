@@ -4869,35 +4869,32 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-080531-4703-Bougainvillea spectabilis-habit with field of Laysan albatross-Midway House Sand Island-Midway Atoll (24884307706).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Starr-080531-4703-Bougainvillea_spectabilis-habit_with_field_of_Laysan_albatross-Midway_House_Sand_Island-Midway_Atoll_%2824884307706%29.jpg/1920px-Starr-080531-4703-Bougainvillea_spectabilis-habit_with_field_of_Laysan_albatross-Midway_House_Sand_Island-Midway_Atoll_%2824884307706%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Bougainvillea spectabilis Plant TorreLaMata.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Bougainvillea_spectabilis_Plant_TorreLaMata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "Public domain"
         }
       ],
       "flower": [
         {
-          "title": "Bougainvillea glabra (Paper flower) leaves in RDA, Bogra.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bougainvillea_glabra_%28Paper_flower%29_leaves_in_RDA%2C_Bogra.jpg/1920px-Bougainvillea_glabra_%28Paper_flower%29_leaves_in_RDA%2C_Bogra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
-        }
-      ],
-      "fruit_seed": [
-        {
-          "title": "White Bougainvillea Seedling.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/White_Bougainvillea_Seedling.jpg/1920px-White_Bougainvillea_Seedling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Bougainvillea glabra flower 02.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Bougainvillea_glabra_flower_02.jpg/1920px-Bougainvillea_glabra_flower_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
       ],
+      "fruit_seed": [],
       "stem": [],
+      "omit": [
+        "fruit_seed",
+        "stem"
+      ],
       "leaf": [
         {
-          "title": "Coccoidea on Bougainvillea leaf.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Coccoidea_on_Bougainvillea_leaf.jpg/1920px-Coccoidea_on_Bougainvillea_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "leaf of Bougainvillea 02.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/%D8%A8%D8%B1%DA%AF_%DA%AF%D9%84_%DA%A9%D8%A7%D8%BA%D8%B0%DB%8C-_leaf_of_Bougainvillea_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 4.0"
         }
       ]
     }
@@ -9181,42 +9178,32 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Croton phebalioides growth habit.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Croton_phebalioides_growth_habit.jpg/1920px-Croton_phebalioides_growth_habit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Croton bonplandianus from Aziyar Dam IMG 20180518 145949961.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Croton_bonplandianus_from_Aziyar_Dam_IMG_20180518_145949961.jpg/1920px-Croton_bonplandianus_from_Aziyar_Dam_IMG_20180518_145949961.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [
         {
-          "title": "Croton phebalioides flower buds.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Croton_phebalioides_flower_buds.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Croton bonplandianus in Hyderabad, AP W IMG 9291.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Croton_bonplandianus_in_Hyderabad%2C_AP_W_IMG_9291.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 4.0"
         }
       ],
-      "fruit_seed": [
-        {
-          "title": "Croton (Codiaeum variegatum (L.) Blume); flowering and fruit Wellcome V0042688.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Croton_%28Codiaeum_variegatum_%28L.%29_Blume%29%3B_flowering_and_fruit_Wellcome_V0042688.jpg/1920px-Croton_%28Codiaeum_variegatum_%28L.%29_Blume%29%3B_flowering_and_fruit_Wellcome_V0042688.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
-        }
-      ],
-      "stem": [
-        {
-          "title": "Cascarilla bark plant (Croton eluteria); flowering stem, bar Wellcome V0044410.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Cascarilla_bark_plant_%28Croton_eluteria%29%3B_flowering_stem%2C_bar_Wellcome_V0044410.jpg/1920px-Cascarilla_bark_plant_%28Croton_eluteria%29%3B_flowering_stem%2C_bar_Wellcome_V0044410.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
-        }
+      "fruit_seed": [],
+      "stem": [],
+      "omit": [
+        "fruit_seed",
+        "stem"
       ],
       "leaf": [
         {
-          "title": "A stoma on croton leaf.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/A_stoma_on_croton_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Croton bonplandianus from Aziyar Dam IMG 20180518 150000882.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Croton_bonplandianus_from_Aziyar_Dam_IMG_20180518_150000882.jpg/1920px-Croton_bonplandianus_from_Aziyar_Dam_IMG_20180518_150000882.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
+          "license": "CC BY-SA 4.0"
         }
       ]
     }
