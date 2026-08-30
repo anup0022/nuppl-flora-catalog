@@ -534,8 +534,10 @@ def render_plant_page(plant, prev_p, next_p):
       continue
     used_titles.add(match["title"])
     idx = len(gallery_figs) + 1
+    # allows e.g. a conifer's "cone" photo to caption correctly in the "flower" slot
+    label = match.get("label") or cat_label
     gallery_figs.append(
-      f'      <figure class="gallery-item gallery-item-{idx}"><img src="{esc(match["url"])}" alt="{esc(plant["display_name"])} {esc(cat_label.lower())}" loading="lazy"><figcaption>{esc(cat_label)}</figcaption></figure>'
+      f'      <figure class="gallery-item gallery-item-{idx}"><img src="{esc(match["url"])}" alt="{esc(plant["display_name"])} {esc(label.lower())}" loading="lazy"><figcaption>{esc(label)}</figcaption></figure>'
     )
 
   visual_count = len(gallery_figs)
