@@ -1,5 +1,6 @@
 Common name: Norfolk Island Pine / Christmas Tree Pine / Araucaria  
 Scientific name: Araucaria heterophylla  
+Conservation Status: Vulnerable (VU) — IUCN Red List. Endemic to Norfolk Island.
 Synonym: Araucaria excelsa  
 Family: Araucariaceae
 

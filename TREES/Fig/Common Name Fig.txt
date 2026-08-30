@@ -1,6 +1,7 @@
 Common Name: Fig
 
 Scientific Name: Ficus carica
+Conservation Status: Least Concern (LC) — IUCN Red List
 
 Family: Moraceae
 

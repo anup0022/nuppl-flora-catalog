@@ -1,5 +1,6 @@
 Common name: Mesquite / Vilayati Babul / Jungli Babul / Ganda Babul  
 Scientific name: Prosopis juliflora  
+Conservation Status: Least Concern (LC) — IUCN Red List
 Family: Fabaceae
 
 Habitat:

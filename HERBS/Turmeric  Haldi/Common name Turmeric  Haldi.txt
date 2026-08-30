@@ -1,5 +1,6 @@
 Common name: Turmeric / Haldi  
 Scientific name: Curcuma longa  
+Conservation Status: Data Deficient (DD) — IUCN Red List. Endemic to South and Southeast Asia.
 Family: Zingiberaceae
 
 Habitat:

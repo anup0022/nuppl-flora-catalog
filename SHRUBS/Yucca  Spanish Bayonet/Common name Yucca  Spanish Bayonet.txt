@@ -1,5 +1,6 @@
 Common name: Yucca / Spanish Bayonet / Adam's Needle  
 Scientific name: Yucca aloifolia  
+Conservation Status: Data Deficient (DD) — IUCN Red List
 Family: Asparagaceae
 
 Habitat:

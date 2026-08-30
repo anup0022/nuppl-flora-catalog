@@ -1,6 +1,7 @@
 Common Name: Indian Cinnamon
 
 Scientific Name: Cinnamomum verum (true cinnamon) or Cinnamomum tamala (Indian bay leaf, closely related)
+Conservation Status: Vulnerable (VU) — IUCN Red List
 
 Family: Lauraceae
 

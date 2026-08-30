@@ -222,6 +222,24 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem 4rem; }
 .facts th { color: var(--ink-soft); font-weight: 500; width: 40%; }
 .facts .sci { font-style: italic; }
 
+.iucn-badge {
+  display: inline-block;
+  margin-left: .4rem;
+  padding: .1rem .5rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+  color: #fff;
+}
+.iucn-lc { background: #2f7a3a; }
+.iucn-nt { background: #7a9a2e; }
+.iucn-vu { background: #c98a1f; }
+.iucn-en { background: #cf5a1f; }
+.iucn-cr { background: #b0271f; }
+.iucn-ew, .iucn-ex { background: #2a2a2a; }
+.iucn-dd { background: #6c6c6c; }
+
 .block { margin-bottom: 2rem; }
 .block h3 {
   font-size: 1.1rem;

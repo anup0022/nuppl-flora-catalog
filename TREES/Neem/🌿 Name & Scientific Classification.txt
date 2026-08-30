@@ -2,6 +2,7 @@
 Common Name: Neem
 
 Scientific Name: Azadirachta indica
+Conservation Status: Least Concern (LC) — IUCN Red List
 
 Family: Meliaceae
 

@@ -1,5 +1,6 @@
 Common Name: Sensitive Plant / Touch-me-not
 Scientific Name: Mimosa pudica L.
+Conservation Status: Least Concern (LC) — IUCN Red List
 Family: Fabaceae (Legume family)
 
 Habitat

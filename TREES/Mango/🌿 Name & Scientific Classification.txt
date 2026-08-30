@@ -2,6 +2,7 @@
 Common Name: Mango
 
 Scientific Name: Mangifera indica
+Conservation Status: Data Deficient (DD) — IUCN Red List
 
 Family: Anacardiaceae
 

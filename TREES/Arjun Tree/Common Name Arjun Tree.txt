@@ -1,5 +1,6 @@
 Common Name: Arjun Tree
 Scientific Name: Terminalia arjuna (Roxb.) Wight & Arn.
+Conservation Status: Least Concern (LC) — IUCN Red List
 Plant Type: Tree
 Habitat: Common along riverbanks, forests, parks, roadsides, and tropical to subtropical regions of India.
 

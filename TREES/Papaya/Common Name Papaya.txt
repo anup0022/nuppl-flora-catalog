@@ -1,6 +1,7 @@
 Common Name: Papaya
 
 Scientific Name: Carica papaya
+Conservation Status: Data Deficient (DD) — IUCN Red List
 
 Family: Caricaceae
 

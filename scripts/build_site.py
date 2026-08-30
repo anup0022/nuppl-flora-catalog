@@ -214,7 +214,7 @@ SKIP_HEADING_STARTS = (
 
 
 def parse_txt(text):
-    data = {"common_name": None, "scientific_name": None, "family": None, "ptype": None}
+    data = {"common_name": None, "scientific_name": None, "family": None, "ptype": None, "iucn": None}
     sections = {"habitat": [], "economic": [], "medicinal": [], "other": [], "uses": [], "biodiversity": [], "ayurvedic": []}
     current = "other"
 
@@ -222,10 +222,13 @@ def parse_txt(text):
         "Common name", "Scientific name", "Plant Type", "Family", "Synonym",
         "Habitat", "Growth form", "Features", "Economic importance",
         "Ecological importance", "Ecological", "Medicinal importance", "Medicinal",
-        "Other uses",
+        "Other uses", "IUCN Red List Status", "IUCN Status", "Conservation Status",
     )
     label_pattern = "|".join(re.escape(label) for label in labels)
-    all_heading_prefixes = ("common name", "scientific name", "family", "plant type", "type", "synonym") + tuple(
+    all_heading_prefixes = (
+        "common name", "scientific name", "family", "plant type", "type", "synonym",
+        "iucn red list status", "iucn status", "conservation status",
+    ) + tuple(
         prefix for prefix, _section in HEADING_RULES
     )
     # Split crammed labels onto their own line (e.g. "Habitat: x Economic importance: y"),
@@ -274,6 +277,10 @@ def parse_txt(text):
             if lower.startswith("plant type") or lower.startswith("type"):
                 if ":" in raw:
                     data["ptype"] = raw.split(":", 1)[1].strip()
+                continue
+            if lower.startswith(("iucn red list status", "iucn status", "conservation status")):
+                if ":" in raw:
+                    data["iucn"] = raw.split(":", 1)[1].strip()
                 continue
             if lower.startswith(SKIP_HEADING_STARTS):
                 continue
@@ -359,6 +366,7 @@ def build():
                 "species_binomial": species_binomial,
                 "family": data["family"],
                 "ptype": data["ptype"],
+                "iucn": data["iucn"],
                 "habitat": sections["habitat"],
                 "uses": sections["uses"],
                 "biodiversity": sections["biodiversity"],
@@ -393,6 +401,26 @@ def esc(text):
         .replace("<", "&lt;")
         .replace(">", "&gt;")
     )
+
+
+IUCN_CODE_NAMES = {
+    "ex": "Extinct", "ew": "Extinct in the Wild", "cr": "Critically Endangered",
+    "en": "Endangered", "vu": "Vulnerable", "nt": "Near Threatened",
+    "lc": "Least Concern", "dd": "Data Deficient",
+}
+
+
+def iucn_status_code(text):
+    """Pull a short IUCN category code (lc/nt/vu/en/cr/ew/ex/dd) out of a status string
+    like 'Least Concern (LC)' for badge styling; returns '' if none recognised."""
+    match = re.search(r"\(([A-Za-z]{2})\)", text or "")
+    if match and match.group(1).lower() in IUCN_CODE_NAMES:
+        return match.group(1).lower()
+    lower = (text or "").lower()
+    for code, name in IUCN_CODE_NAMES.items():
+        if name.lower() in lower:
+            return code
+    return ""
 
 
 def render_list(items):
@@ -532,6 +560,10 @@ def render_plant_page(plant, prev_p, next_p):
   if plant["ptype"]:
       facts_rows.append(f'<tr><th>Type</th><td>{esc(plant["ptype"])}</td></tr>')
   facts_rows.append(f'<tr><th>Category</th><td>{esc(plant["category_label"])}</td></tr>')
+  if plant["iucn"]:
+      iucn_code = iucn_status_code(plant["iucn"])
+      badge = f' <span class="iucn-badge iucn-{iucn_code}">{iucn_code.upper()}</span>' if iucn_code else ""
+      facts_rows.append(f'<tr><th>IUCN Red List</th><td>{esc(plant["iucn"])}{badge}</td></tr>')
   facts_table = "<table class=\"facts\">\n" + "\n".join(facts_rows) + "\n</table>"
 
   habitat_section = (
@@ -858,6 +890,24 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem 4rem; }
 }
 .facts th { color: var(--ink-soft); font-weight: 500; width: 40%; }
 .facts .sci { font-style: italic; }
+
+.iucn-badge {
+  display: inline-block;
+  margin-left: .4rem;
+  padding: .1rem .5rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+  color: #fff;
+}
+.iucn-lc { background: #2f7a3a; }
+.iucn-nt { background: #7a9a2e; }
+.iucn-vu { background: #c98a1f; }
+.iucn-en { background: #cf5a1f; }
+.iucn-cr { background: #b0271f; }
+.iucn-ew, .iucn-ex { background: #2a2a2a; }
+.iucn-dd { background: #6c6c6c; }
 
 .block { margin-bottom: 2rem; }
 .block h3 {

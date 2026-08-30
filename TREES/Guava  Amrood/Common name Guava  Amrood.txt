@@ -1,5 +1,6 @@
 Common name: Guava / Amrood
 Scientific name: Psidium guajava
+Conservation Status: Least Concern (LC) — IUCN Red List
 Type: Evergreen to semi-deciduous shrub or small tree
 
 Habitat:
