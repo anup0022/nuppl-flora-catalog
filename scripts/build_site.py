@@ -604,11 +604,13 @@ def render_plant_page(plant, prev_p, next_p):
     f'<img src="../{hero_src}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
   ) if hero_src else ""
   inline_src = plant["images"][1] if len(plant["images"]) > 1 else ""
+  # pick a photo not already shown as the hero or in the gallery, so the inline detail shot isn't a duplicate
+  inline_match = next((m for m in fallback_pool if m["title"] not in used_titles), None) if not inline_src else None
   inline_image = (
     f'<img src="../{inline_src}" alt="{esc(plant["display_name"])} field detail" loading="lazy">'
     if inline_src else
-    f'<img src="{esc(plant["commons_images"][0]["url"])}" alt="{esc(plant["display_name"])} reference detail" loading="lazy">'
-    if plant.get("commons_images") else ""
+    f'<img src="{esc(inline_match["url"])}" alt="{esc(plant["display_name"])} reference detail" loading="lazy">'
+    if inline_match else ""
   )
   inline_photo = (
     f'<figure class="inline-photo">{inline_image}</figure>'
