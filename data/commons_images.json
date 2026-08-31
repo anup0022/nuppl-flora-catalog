@@ -3598,24 +3598,24 @@
       ],
       "flower": [
         {
-          "title": "A flower of Datura metel (Indian thornapple) at night.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/A_flower_of_Datura_metel_%28Indian_thornapple%29_at_night.jpg/1920px-A_flower_of_Datura_metel_%28Indian_thornapple%29_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Datura stramonium 143369567.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Datura_stramonium_143369567.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY 4.0"
         }
       ],
       "fruit_seed": [
         {
-          "title": "Datura ferox, Open fruit - 1.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Datura_ferox%2C_Open_fruit_-_1.jpg/1920px-Datura_ferox%2C_Open_fruit_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Datura stramonium, Seed capsule.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Datura_stramonium%2C_Seed_capsule.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "stem": [
         {
-          "title": "Datura metel 'Fastuosa' - glossy, black stems.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Datura_metel_%27Fastuosa%27_-_glossy%2C_black_stems.jpg/1920px-Datura_metel_%27Fastuosa%27_-_glossy%2C_black_stems.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Datura stramonium 118267384.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Datura_stramonium_118267384.jpg/1920px-Datura_stramonium_118267384.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
@@ -5224,8 +5224,8 @@
       ],
       "flower": [
         {
-          "title": "(Arya) Calotropis gigantea flower Pilangsari 2019.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/%28Arya%29_Calotropis_gigantea_flower_Pilangsari_2019.jpg/1920px-%28Arya%29_Calotropis_gigantea_flower_Pilangsari_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Calotropis procera flower at ALC.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Calotropis_procera_flower_at_ALC.jpg/1920px-Calotropis_procera_flower_at_ALC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
@@ -5238,13 +5238,20 @@
           "license": "CC BY-SA 4.0"
         }
       ],
-      "stem": [],
+      "stem": [
+        {
+          "title": "Calotropis procera kz01.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Calotropis_procera_kz01.jpg/1920px-Calotropis_procera_kz01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
       "leaf": [
         {
-          "title": "Calotropis gigantea Leaf.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Calotropis_gigantea_Leaf.jpg/1280px-Calotropis_gigantea_Leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Calotropis procera kz02.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Calotropis_procera_kz02.jpg/1920px-Calotropis_procera_kz02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 4.0"
         }
       ]
     }
@@ -8679,10 +8686,10 @@
       "flower": [],
       "fruit_seed": [
         {
-          "title": "Cyperus conicus fruit.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Cyperus_conicus_fruit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Starr 080609-8007 Cyperus involucratus.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Starr_080609-8007_Cyperus_involucratus.jpg/1920px-Starr_080609-8007_Cyperus_involucratus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY 3.0 us"
         }
       ],
       "stem": [
@@ -9533,10 +9540,10 @@
       ],
       "stem": [
         {
-          "title": "EB1911 Stem - Opuntia monacanthia.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/EB1911_Stem_-_Opuntia_monacanthia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Prickly Pear cactus genus Opuntia Grenada.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Prickly_Pear_cactus_genus_Opuntia_Grenada.jpg/1920px-Prickly_Pear_cactus_genus_Opuntia_Grenada.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "Public domain"
+          "license": "CC BY 4.0"
         }
       ],
       "leaf": [
