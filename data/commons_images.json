@@ -306,6 +306,12 @@
   "tree-burflower-tree-kadam": {
     "general": [
       {
+        "title": "Neolamarckia cadamba 6226 (whole tree).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Neolamarckia_cadamba_6226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
         "title": "Cadamba tree Neolamarckia cadamba by Raju Kasambe DSCN5650.JPG 03.jpg",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Cadamba_tree_Neolamarckia_cadamba_by_Raju_Kasambe_DSCN5650.JPG_03.jpg/1920px-Cadamba_tree_Neolamarckia_cadamba_by_Raju_Kasambe_DSCN5650.JPG_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
@@ -339,10 +345,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Neolamarckia cadamba - habit (5383886397).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Neolamarckia_cadamba_-_habit_%285383886397%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Neolamarckia cadamba 6226.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Neolamarckia_cadamba_6226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 2.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "flower": [
