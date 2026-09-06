@@ -142,9 +142,7 @@ def fetch_plant_images(plant):
     categories = dict(entry.get("categories", {}))
 
     seen_titles = {m["title"] for m in general}
-    for cat_key, cat_matches in categories.items():
-        if cat_key == "omit":
-            continue
+    for cat_matches in categories.values():
         seen_titles.update(m["title"] for m in cat_matches)
 
     # general reference pool (hero image + fallback source for categories)
@@ -216,7 +214,7 @@ SKIP_HEADING_STARTS = (
 
 
 def parse_txt(text):
-    data = {"common_name": None, "scientific_name": None, "family": None, "ptype": None, "iucn": None}
+    data = {"common_name": None, "scientific_name": None, "family": None, "ptype": None}
     sections = {"habitat": [], "economic": [], "medicinal": [], "other": [], "uses": [], "biodiversity": [], "ayurvedic": []}
     current = "other"
 
@@ -224,81 +222,54 @@ def parse_txt(text):
         "Common name", "Scientific name", "Plant Type", "Family", "Synonym",
         "Habitat", "Growth form", "Features", "Economic importance",
         "Ecological importance", "Ecological", "Medicinal importance", "Medicinal",
-        "Other uses", "IUCN Red List Status", "IUCN Status", "Conservation Status",
+        "Other uses",
     )
     label_pattern = "|".join(re.escape(label) for label in labels)
-    all_heading_prefixes = (
-        "common name", "scientific name", "family", "plant type", "type", "synonym",
-        "iucn red list status", "iucn status", "conservation status",
-    ) + tuple(
-        prefix for prefix, _section in HEADING_RULES
+    text = re.sub(
+        rf"(?<!^)(?<!\n)(?=({label_pattern})\s*:)",
+        "\n",
+        text,
+        flags=re.IGNORECASE,
     )
-    # Split crammed labels onto their own line (e.g. "Habitat: x Economic importance: y"),
-    # but skip bullet list lines (so "- Medicinal: ..." isn't torn away from its "-" marker
-    # and misread as a standalone heading) and lines that are already a single clean
-    # heading (so "Economic & Ecological Importance:" isn't torn apart at "Ecological").
-    split_lines = []
-    for line in text.split("\n"):
-        stripped = line.strip()
-        is_bullet = stripped[:1] in ("-", "*", "\u2022")
-        already_clean_heading = re.sub(r"^[^A-Za-z]+", "", stripped).lower().startswith(all_heading_prefixes)
-        if is_bullet or already_clean_heading:
-            split_lines.append(line)
-            continue
-        split_lines.append(re.sub(
-            rf"(?<!^)(?<!\n)(?=({label_pattern})\s*:)",
-            "\n",
-            line,
-            flags=re.IGNORECASE,
-        ))
-    text = "\n".join(split_lines)
 
     for raw_line in text.splitlines():
         raw = raw_line.strip()
         if not raw:
             continue
-        # bullet list items (e.g. "- Medicinal: ...") are never real section headings,
-        # even if their first word happens to match a HEADING_RULES prefix like "medicinal"
-        is_bullet = raw[:1] in ("-", "*", "\u2022")
-        if not is_bullet:
-            detect = re.sub(r"^[^A-Za-z]+", "", raw)
-            lower = detect.lower()
+        detect = re.sub(r"^[^A-Za-z]+", "", raw)
+        lower = detect.lower()
 
-            if lower.startswith("common name"):
-                if ":" in raw:
-                    data["common_name"] = raw.split(":", 1)[1].strip()
-                continue
-            if lower.startswith("scientific name"):
-                if ":" in raw:
-                    data["scientific_name"] = raw.split(":", 1)[1].strip()
-                continue
-            if lower.startswith("family"):
-                if ":" in raw:
-                    data["family"] = raw.split(":", 1)[1].strip()
-                continue
-            if lower.startswith("plant type") or lower.startswith("type"):
-                if ":" in raw:
-                    data["ptype"] = raw.split(":", 1)[1].strip()
-                continue
-            if lower.startswith(("iucn red list status", "iucn status", "conservation status")):
-                if ":" in raw:
-                    data["iucn"] = raw.split(":", 1)[1].strip()
-                continue
-            if lower.startswith(SKIP_HEADING_STARTS):
-                continue
+        if lower.startswith("common name"):
+            if ":" in raw:
+                data["common_name"] = raw.split(":", 1)[1].strip()
+            continue
+        if lower.startswith("scientific name"):
+            if ":" in raw:
+                data["scientific_name"] = raw.split(":", 1)[1].strip()
+            continue
+        if lower.startswith("family"):
+            if ":" in raw:
+                data["family"] = raw.split(":", 1)[1].strip()
+            continue
+        if lower.startswith("plant type") or lower.startswith("type"):
+            if ":" in raw:
+                data["ptype"] = raw.split(":", 1)[1].strip()
+            continue
+        if lower.startswith(SKIP_HEADING_STARTS):
+            continue
 
-            matched_heading = False
-            for prefix, section in HEADING_RULES:
-                if lower.startswith(prefix):
-                    current = section
-                    if ":" in raw:
-                        after = raw.split(":", 1)[1].strip()
-                        if after:
-                            sections[current].append(after)
-                    matched_heading = True
-                    break
-            if matched_heading:
-                continue
+        matched_heading = False
+        for prefix, section in HEADING_RULES:
+            if lower.startswith(prefix):
+                current = section
+                if ":" in raw:
+                    after = raw.split(":", 1)[1].strip()
+                    if after:
+                        sections[current].append(after)
+                matched_heading = True
+                break
+        if matched_heading:
+            continue
 
         content_line = re.sub(r"^[\-\*\u2022]\s*", "", raw)
         if content_line:
@@ -368,7 +339,6 @@ def build():
                 "species_binomial": species_binomial,
                 "family": data["family"],
                 "ptype": data["ptype"],
-                "iucn": data["iucn"],
                 "habitat": sections["habitat"],
                 "uses": sections["uses"],
                 "biodiversity": sections["biodiversity"],
@@ -403,26 +373,6 @@ def esc(text):
         .replace("<", "&lt;")
         .replace(">", "&gt;")
     )
-
-
-IUCN_CODE_NAMES = {
-    "ex": "Extinct", "ew": "Extinct in the Wild", "cr": "Critically Endangered",
-    "en": "Endangered", "vu": "Vulnerable", "nt": "Near Threatened",
-    "lc": "Least Concern", "dd": "Data Deficient",
-}
-
-
-def iucn_status_code(text):
-    """Pull a short IUCN category code (lc/nt/vu/en/cr/ew/ex/dd) out of a status string
-    like 'Least Concern (LC)' for badge styling; returns '' if none recognised."""
-    match = re.search(r"\(([A-Za-z]{2})\)", text or "")
-    if match and match.group(1).lower() in IUCN_CODE_NAMES:
-        return match.group(1).lower()
-    lower = (text or "").lower()
-    for code, name in IUCN_CODE_NAMES.items():
-        if name.lower() in lower:
-            return code
-    return ""
 
 
 def render_list(items):
@@ -526,12 +476,9 @@ def render_plant_page(plant, prev_p, next_p):
 
   used_titles = {hero_match["title"]} if hero_match else set()
   fallback_pool = [m for m in general_pool if m["title"] not in used_titles]
-  omit_categories = set(categories.get("omit") or [])
 
   gallery_figs = []
   for cat_key, cat_label, _keywords in CATEGORY_SPECS:
-    if cat_key in omit_categories:
-      continue
     match = (categories.get(cat_key) or [None])[0]
     if not match or match["title"] in used_titles:
       match = next((m for m in fallback_pool if m["title"] not in used_titles), None)
@@ -539,10 +486,8 @@ def render_plant_page(plant, prev_p, next_p):
       continue
     used_titles.add(match["title"])
     idx = len(gallery_figs) + 1
-    # allows e.g. a conifer's "cone" photo to caption correctly in the "flower" slot
-    label = match.get("label") or cat_label
     gallery_figs.append(
-      f'      <figure class="gallery-item gallery-item-{idx}"><img src="{esc(match["url"])}" alt="{esc(plant["display_name"])} {esc(label.lower())}" loading="lazy"><figcaption>{esc(label)}</figcaption></figure>'
+      f'      <figure class="gallery-item gallery-item-{idx}"><img src="{esc(match["url"])}" alt="{esc(plant["display_name"])} {esc(cat_label.lower())}" loading="lazy"><figcaption>{esc(cat_label)}</figcaption></figure>'
     )
 
   visual_count = len(gallery_figs)
@@ -567,10 +512,6 @@ def render_plant_page(plant, prev_p, next_p):
   if plant["ptype"]:
       facts_rows.append(f'<tr><th>Type</th><td>{esc(plant["ptype"])}</td></tr>')
   facts_rows.append(f'<tr><th>Category</th><td>{esc(plant["category_label"])}</td></tr>')
-  if plant["iucn"]:
-      iucn_code = iucn_status_code(plant["iucn"])
-      badge = f' <span class="iucn-badge iucn-{iucn_code}">{iucn_code.upper()}</span>' if iucn_code else ""
-      facts_rows.append(f'<tr><th>IUCN Red List</th><td>{esc(plant["iucn"])}{badge}</td></tr>')
   facts_table = "<table class=\"facts\">\n" + "\n".join(facts_rows) + "\n</table>"
 
   habitat_section = (
@@ -604,13 +545,11 @@ def render_plant_page(plant, prev_p, next_p):
     f'<img src="../{hero_src}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
   ) if hero_src else ""
   inline_src = plant["images"][1] if len(plant["images"]) > 1 else ""
-  # pick a photo not already shown as the hero or in the gallery, so the inline detail shot isn't a duplicate
-  inline_match = next((m for m in fallback_pool if m["title"] not in used_titles), None) if not inline_src else None
   inline_image = (
     f'<img src="../{inline_src}" alt="{esc(plant["display_name"])} field detail" loading="lazy">'
     if inline_src else
-    f'<img src="{esc(inline_match["url"])}" alt="{esc(plant["display_name"])} reference detail" loading="lazy">'
-    if inline_match else ""
+    f'<img src="{esc(plant["commons_images"][0]["url"])}" alt="{esc(plant["display_name"])} reference detail" loading="lazy">'
+    if plant.get("commons_images") else ""
   )
   inline_photo = (
     f'<figure class="inline-photo">{inline_image}</figure>'
@@ -899,24 +838,6 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem 4rem; }
 }
 .facts th { color: var(--ink-soft); font-weight: 500; width: 40%; }
 .facts .sci { font-style: italic; }
-
-.iucn-badge {
-  display: inline-block;
-  margin-left: .4rem;
-  padding: .1rem .5rem;
-  border-radius: 999px;
-  font-size: .72rem;
-  font-weight: 600;
-  letter-spacing: .03em;
-  color: #fff;
-}
-.iucn-lc { background: #2f7a3a; }
-.iucn-nt { background: #7a9a2e; }
-.iucn-vu { background: #c98a1f; }
-.iucn-en { background: #cf5a1f; }
-.iucn-cr { background: #b0271f; }
-.iucn-ew, .iucn-ex { background: #2a2a2a; }
-.iucn-dd { background: #6c6c6c; }
 
 .block { margin-bottom: 2rem; }
 .block h3 {

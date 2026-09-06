@@ -421,9 +421,6 @@
         }
       ],
       "flower": [],
-      "omit": [
-        "flower"
-      ],
       "fruit_seed": [
         {
           "title": "Pickled ficus racemosa fruits.jpg",
@@ -585,9 +582,6 @@
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0"
         }
-      ],
-      "omit": [
-        "stem"
       ]
     }
   },
@@ -633,8 +627,8 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-091115-1241-Psidium guajava-habit-Olinda-Maui (24962855676).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Starr-091115-1241-Psidium_guajava-habit-Olinda-Maui_%2824962855676%29.jpg/1920px-Starr-091115-1241-Psidium_guajava-habit-Olinda-Maui_%2824962855676%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Starr-110330-3762-Psidium guajava-habit-Garden of Eden Keanae-Maui (24712761509).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Starr-110330-3762-Psidium_guajava-habit-Garden_of_Eden_Keanae-Maui_%2824712761509%29.jpg/1920px-Starr-110330-3762-Psidium_guajava-habit-Garden_of_Eden_Keanae-Maui_%2824712761509%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY 3.0 us"
         }
@@ -723,14 +717,7 @@
           "license": "CC BY-SA 4.0"
         }
       ],
-      "fruit_seed": [
-        {
-          "title": "Cinnamomum camphora foliage and fruit 7th Brigade Park Chermside L1060848.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cinnamomum_camphora_foliage_and_fruit_7th_Brigade_Park_Chermside_L1060848.jpg/1920px-Cinnamomum_camphora_foliage_and_fruit_7th_Brigade_Park_Chermside_L1060848.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
-        }
-      ],
+      "fruit_seed": [],
       "stem": [
         {
           "title": "Cinnamomum zeylanicum bark.JPG",
@@ -827,6 +814,12 @@
   },
   "tree-mango": {
     "general": [
+      {
+        "title": "Mangifera Indica plant, April 2023.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Mangifera_Indica_plant%2C_April_2023.jpg/1920px-Mangifera_Indica_plant%2C_April_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
       {
         "title": "Mango Orchard in Nazra Village, Benipatti Block, Madhubani District, Bihar, India.jpg",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Mango_Orchard_in_Nazra_Village%2C_Benipatti_Block%2C_Madhubani_District%2C_Bihar%2C_India.jpg/1920px-Mango_Orchard_in_Nazra_Village%2C_Benipatti_Block%2C_Madhubani_District%2C_Bihar%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1165,8 +1158,8 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-050516-1218-Ficus religiosa-habit-Hoolehua-Molokai (24394730999).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Starr-050516-1218-Ficus_religiosa-habit-Hoolehua-Molokai_%2824394730999%29.jpg/1920px-Starr-050516-1218-Ficus_religiosa-habit-Hoolehua-Molokai_%2824394730999%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Starr-090806-3906-Ficus religiosa-habit-Maui Community College Kahului-Maui (24971572995).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Starr-090806-3906-Ficus_religiosa-habit-Maui_Community_College_Kahului-Maui_%2824971572995%29.jpg/1920px-Starr-090806-3906-Ficus_religiosa-habit-Maui_Community_College_Kahului-Maui_%2824971572995%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY 3.0 us"
         }
@@ -1220,12 +1213,6 @@
         "license": "CC BY-SA 2.0"
       },
       {
-        "title": "Roystonea-regia-range-png.png",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Roystonea-regia-range-png.png/1920px-Roystonea-regia-range-png.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
-      },
-      {
         "title": "Cuban Royal Palm Roystonea regia circle City Botanic Gardens Brisbane 01.jpg",
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Cuban_Royal_Palm_Roystonea_regia_circle_City_Botanic_Gardens_Brisbane_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
@@ -1234,6 +1221,12 @@
       {
         "title": "Cuban Royal Palm Roystonea regia circle City Botanic Gardens Brisbane 02.jpg",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Cuban_Royal_Palm_Roystonea_regia_circle_City_Botanic_Gardens_Brisbane_02.jpg/1280px-Cuban_Royal_Palm_Roystonea_regia_circle_City_Botanic_Gardens_Brisbane_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Cuban Royal Palm Roystonea regia circle City Botanic Gardens Brisbane P1100534.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Cuban_Royal_Palm_Roystonea_regia_circle_City_Botanic_Gardens_Brisbane_P1100534.jpg/1920px-Cuban_Royal_Palm_Roystonea_regia_circle_City_Botanic_Gardens_Brisbane_P1100534.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       }
@@ -4908,10 +4901,6 @@
       ],
       "fruit_seed": [],
       "stem": [],
-      "omit": [
-        "fruit_seed",
-        "stem"
-      ],
       "leaf": [
         {
           "title": "leaf of Bougainvillea 02.jpg",
@@ -6287,10 +6276,6 @@
           "source": "Wikimedia Commons",
           "license": "CC BY 4.0"
         }
-      ],
-      "omit": [
-        "fruit_seed",
-        "stem"
       ]
     }
   },
@@ -6876,9 +6861,6 @@
         }
       ],
       "stem": [],
-      "omit": [
-        "stem"
-      ],
       "leaf": [
         {
           "title": "Cinnamomum cassia Leaf.jpg",
@@ -6974,12 +6956,6 @@
         "license": "CC BY 3.0"
       },
       {
-        "title": "Citrus-x-paradisi-20080322.JPG",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Citrus-x-paradisi-20080322.JPG/1920px-Citrus-x-paradisi-20080322.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
-      },
-      {
         "title": "Citrus x limon (Outjo).jpg",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Citrus_x_limon_%28Outjo%29.jpg/1920px-Citrus_x_limon_%28Outjo%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
@@ -6996,13 +6972,19 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Citrus_x_limonia_%282%29.jpg/1920px-Citrus_x_limonia_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Citrus-x-paradisi-20080322.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Citrus-x-paradisi-20080322.JPG/1920px-Citrus-x-paradisi-20080322.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
       }
     ],
     "categories": {
       "full_plant": [
         {
-          "title": "Citrus x limon (Outjo).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Citrus_x_limon_%28Outjo%29.jpg/1920px-Citrus_x_limon_%28Outjo%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Citrus x Limon JPG1a.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Citrus_x_Limon_JPG1a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0"
         }
@@ -7024,9 +7006,6 @@
         }
       ],
       "stem": [],
-      "omit": [
-        "stem"
-      ],
       "leaf": [
         {
           "title": "(Citrus latifolia) lemon Leaf at Madhurawada.JPG",
@@ -7039,6 +7018,12 @@
   },
   "tree-rubber-plant-rubber-fig": {
     "general": [
+      {
+        "title": "Ficus elastica - La Palma 01.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ficus_elastica_-_La_Palma_01.jpg/1920px-Ficus_elastica_-_La_Palma_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
       {
         "title": "Starr-031108-0124-Ficus elastica-habit-Anna Maria-Florida (24306578629).jpg",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Starr-031108-0124-Ficus_elastica-habit-Anna_Maria-Florida_%2824306578629%29.jpg/1920px-Starr-031108-0124-Ficus_elastica-habit-Anna_Maria-Florida_%2824306578629%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -9282,10 +9267,6 @@
       ],
       "fruit_seed": [],
       "stem": [],
-      "omit": [
-        "fruit_seed",
-        "stem"
-      ],
       "leaf": [
         {
           "title": "Croton bonplandianus from Aziyar Dam IMG 20180518 150000882.jpg",
