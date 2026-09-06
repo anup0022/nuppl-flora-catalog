@@ -1808,6 +1808,12 @@
   "herb-cattail-elephant-grass": {
     "general": [
       {
+        "title": "Typha latifolia Library Garden.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Typha_latifolia_Library_Garden.JPG/1920px-Typha_latifolia_Library_Garden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
         "title": "Grote lisdodde (Typha latifolia).JPG",
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Grote_lisdodde_%28Typha_latifolia%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
@@ -1818,12 +1824,6 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/P%C3%B6rtschach_Winklern_Brockweg_Brockhof_Teich_Typha_latifolia_06022016_0568.jpg/1920px-P%C3%B6rtschach_Winklern_Brockweg_Brockhof_Teich_Typha_latifolia_06022016_0568.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
-      },
-      {
-        "title": "Typha latifolia Library Garden.JPG",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Typha_latifolia_Library_Garden.JPG/1920px-Typha_latifolia_Library_Garden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
       },
       {
         "title": "Mosgroei op oude stengels van de grote lisdodde (Typha latifolia). Locatie, De Famberhorst 01.JPG",
@@ -2221,14 +2221,7 @@
           "license": "CC BY 3.0 us"
         }
       ],
-      "fruit_seed": [
-        {
-          "title": "Starr-081031-0341-Plectranthus parviflorus-fruiting habit-Makawao-Maui (24631107250).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Starr-081031-0341-Plectranthus_parviflorus-fruiting_habit-Makawao-Maui_%2824631107250%29.jpg/1920px-Starr-081031-0341-Plectranthus_parviflorus-fruiting_habit-Makawao-Maui_%2824631107250%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
-        }
-      ],
+      "fruit_seed": [],
       "stem": [
         {
           "title": "Plectranthus mollis - Soft-Stem Mintleaf - Wayanad 2021 (1).jpg",
@@ -3057,24 +3050,6 @@
   "herb-mung-bean": {
     "general": [
       {
-        "title": "Bean pod of Vigna radiata (mung bean).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bean_pod_of_Vigna_radiata_%28mung_bean%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
-      },
-      {
-        "title": "Mung bean (Vigna radiata).png",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Mung_bean_%28Vigna_radiata%29.png/1920px-Mung_bean_%28Vigna_radiata%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
-      },
-      {
-        "title": "Mung beans (Vigna radiata).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Mung_beans_%28Vigna_radiata%29.jpg/1920px-Mung_beans_%28Vigna_radiata%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
-      },
-      {
         "title": "Vigna radiata (2853703702).jpg",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Vigna_radiata_%282853703702%29.jpg/1920px-Vigna_radiata_%282853703702%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
@@ -3085,38 +3060,63 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Vigna_radiata_%285000647141%29.jpg/1920px-Vigna_radiata_%285000647141%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 2.0"
+      },
+      {
+        "title": "Mung beans (Vigna radiata).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Mung_beans_%28Vigna_radiata%29.jpg/1920px-Mung_beans_%28Vigna_radiata%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Bean pod of Vigna radiata (mung bean).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bean_pod_of_Vigna_radiata_%28mung_bean%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "Mung bean (Vigna radiata).png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Mung_bean_%28Vigna_radiata%29.png/1920px-Mung_bean_%28Vigna_radiata%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
       }
     ],
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-050405-5744-Vigna marina-habit-Alau-Maui (24115876753).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Starr-050405-5744-Vigna_marina-habit-Alau-Maui_%2824115876753%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Moong plant - panoramio.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Moong_plant_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "CC BY 3.0"
         }
       ],
       "flower": [
         {
-          "title": "African gram or Three-lobe-leaf cowpea- Vigna trilobata flower with Plains Cupid (Chilades pandava) in Hyderabad W IMG 8074.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/African_gram_or_Three-lobe-leaf_cowpea-_Vigna_trilobata_flower_with_Plains_Cupid_%28Chilades_pandava%29_in_Hyderabad_W_IMG_8074.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Mungbohne Blüte.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Mungbohne_Bl%C3%BCte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0"
         }
       ],
       "fruit_seed": [
         {
-          "title": "Vigna angularis fruit.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Vigna_angularis_fruit.jpg/1920px-Vigna_angularis_fruit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Bean pod of Vigna radiata (mung bean).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bean_pod_of_Vigna_radiata_%28mung_bean%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
-      "stem": [],
+      "stem": [
+        {
+          "title": "Vigna radiata twig with leaves and beans.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Vigna_radiata_twig_with_leaves_and_beans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
       "leaf": [
         {
-          "title": "African gram or Three-lobe-leaf cowpea- Vigna trilobata flower in Hyderabad W IMG 8077.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/African_gram_or_Three-lobe-leaf_cowpea-_Vigna_trilobata_flower_in_Hyderabad_W_IMG_8077.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Mungbohne mit Fruchtstand.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mungbohne_mit_Fruchtstand.jpg/1920px-Mungbohne_mit_Fruchtstand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0"
         }
@@ -3202,12 +3202,6 @@
   "herb-patharchatta-life-plant-miracle-leaf": {
     "general": [
       {
-        "title": "(Bryophyllum pinnatum), da Coleção Brasiliana Iconográfica.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/%28Bryophyllum_pinnatum%29%2C_da_Cole%C3%A7%C3%A3o_Brasiliana_Iconogr%C3%A1fica.jpg/1920px-%28Bryophyllum_pinnatum%29%2C_da_Cole%C3%A7%C3%A3o_Brasiliana_Iconogr%C3%A1fica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "Public domain"
-      },
-      {
         "title": "Bryophyllum pinnatum.JPG",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bryophyllum_pinnatum.JPG/1920px-Bryophyllum_pinnatum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
@@ -3230,15 +3224,21 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bryophyllum_pinnatum_%286331758010%29.jpg/1920px-Bryophyllum_pinnatum_%286331758010%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 2.0"
+      },
+      {
+        "title": "(Bryophyllum pinnatum), da Coleção Brasiliana Iconográfica.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/%28Bryophyllum_pinnatum%29%2C_da_Cole%C3%A7%C3%A3o_Brasiliana_Iconogr%C3%A1fica.jpg/1920px-%28Bryophyllum_pinnatum%29%2C_da_Cole%C3%A7%C3%A3o_Brasiliana_Iconogr%C3%A1fica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "Public domain"
       }
     ],
     "categories": {
       "full_plant": [
         {
-          "title": "Life plant (Bryophyllum pinnatum) flowers.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Life_plant_%28Bryophyllum_pinnatum%29_flowers.jpg/1920px-Life_plant_%28Bryophyllum_pinnatum%29_flowers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Kalanchoe pinnata (Habitus).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Kalanchoe_pinnata_%28Habitus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "flower": [
@@ -3252,18 +3252,18 @@
       "fruit_seed": [],
       "stem": [
         {
-          "title": "EB1911 Stem - Leaf of Bryophyllum calycinum.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/EB1911_Stem_-_Leaf_of_Bryophyllum_calycinum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Kalanchoe pinnata-2-yercaud-salem-India.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Kalanchoe_pinnata-2-yercaud-salem-India.JPG/1920px-Kalanchoe_pinnata-2-yercaud-salem-India.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "Public domain"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "leaf": [
         {
-          "title": "Bryophyllum daigremontiana leaf (6981858807).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Bryophyllum_daigremontiana_leaf_%286981858807%29.jpg/1920px-Bryophyllum_daigremontiana_leaf_%286981858807%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Kalanchoe pinnata leaf.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kalanchoe_pinnata_leaf.jpg/1920px-Kalanchoe_pinnata_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 2.0"
+          "license": "CC BY-SA 4.0"
         }
       ]
     }
@@ -7444,10 +7444,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Commelina ensifolia habit.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Commelina_ensifolia_habit.jpg/1920px-Commelina_ensifolia_habit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Commelina-benghalensis-SF22060-1.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Commelina-benghalensis-SF22060-1.jpg/1920px-Commelina-benghalensis-SF22060-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [
@@ -7589,10 +7589,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-090714-2682-Phyllanthus acidus-fruiting habit-Napili-Maui (24342711013).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Starr-090714-2682-Phyllanthus_acidus-fruiting_habit-Napili-Maui_%2824342711013%29.jpg/1920px-Starr-090714-2682-Phyllanthus_acidus-fruiting_habit-Napili-Maui_%2824342711013%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Phyllanthus urinaria (chamber bitter).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Phyllanthus_urinaria_%28chamber_bitter%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [],
@@ -7858,8 +7858,8 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Corchorus sidoides habit.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Corchorus_sidoides_habit.jpg/1920px-Corchorus_sidoides_habit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Corchorus aestuans, East Indian Mallow, Jute, West African mallow.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Corchorus_aestuans%2C_East_Indian_Mallow%2C_Jute%2C_West_African_mallow.jpg/1920px-Corchorus_aestuans%2C_East_Indian_Mallow%2C_Jute%2C_West_African_mallow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
@@ -7949,6 +7949,12 @@
   "herb-gotu-kola": {
     "general": [
       {
+        "title": "Centella asiatica2.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Centella_asiatica2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
         "title": "'Manimuni' or Indian pennywort or Centella asiatica.jpg",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/%27Manimuni%27_or_Indian_pennywort_or_Centella_asiatica.jpg/1920px-%27Manimuni%27_or_Indian_pennywort_or_Centella_asiatica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
@@ -7965,12 +7971,6 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Centella-asiatica-seeds-ethnoplants.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
         "license": "CC BY 4.0"
-      },
-      {
-        "title": "Centella asiatica2.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Centella_asiatica2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
       },
       {
         "title": "Centella asiatica (L.) Urb. (6935470969).jpg",
@@ -8258,33 +8258,19 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Philodendron 'Xanadu' kz1.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Philodendron_%27Xanadu%27_kz1.jpg/1920px-Philodendron_%27Xanadu%27_kz1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Starr 080117-1608 Philodendron sp..jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Starr_080117-1608_Philodendron_sp..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY 3.0 us"
         }
       ],
-      "flower": [
-        {
-          "title": "Philodendron Flower.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Philodendron_Flower.jpg/1920px-Philodendron_Flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
-        }
-      ],
+      "flower": [],
       "fruit_seed": [],
-      "stem": [
-        {
-          "title": "201211 081 San Diego Botanic Gdn - Dickinson Family Conservatory, Vriesea x 'Strawberry Ice Cream', Philodendron 'Florida Beauty Red Stem', Philodendron billietiae.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/201211_081_San_Diego_Botanic_Gdn_-_Dickinson_Family_Conservatory%2C_Vriesea_x_%27Strawberry_Ice_Cream%27%2C_Philodendron_%27Florida_Beauty_Red_Stem%27%2C_Philodendron_billietiae.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 2.0"
-        }
-      ],
+      "stem": [],
       "leaf": [
         {
-          "title": "Philodendron Gloriosum Leaves .jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Philodendron_Gloriosum_Leaves_.jpg/1920px-Philodendron_Gloriosum_Leaves_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Philodendron xanadu AK1.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Philodendron_xanadu_AK1.jpg/1920px-Philodendron_xanadu_AK1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
@@ -8906,10 +8892,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Melilotus alba Habitus 2009-5-17 SierraMadrona.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Melilotus_alba_Habitus_2009-5-17_SierraMadrona.jpg/1920px-Melilotus_alba_Habitus_2009-5-17_SierraMadrona.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Melilotus indicus MHNT.BOT.2011.3.80.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Melilotus_indicus_MHNT.BOT.2011.3.80.jpg/1920px-Melilotus_indicus_MHNT.BOT.2011.3.80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "Public domain"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "flower": [
