@@ -132,6 +132,15 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem 4rem; }
   color: var(--ink-soft);
   font-weight: 400;
 }
+.iucn-alert {
+  color: #a62929;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  margin-left: .55rem;
+  white-space: nowrap;
+}
+.iucn-alert span { font-size: .78rem; }
 
 .site-footer {
   text-align: center;

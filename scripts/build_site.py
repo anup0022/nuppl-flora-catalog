@@ -278,6 +278,22 @@ def parse_txt(text):
     return data, sections
 
 
+def extract_iucn_status(text):
+    match = re.search(r"Conservation Status\s*:\s*([^\r\n]+)", text, re.IGNORECASE)
+    if not match:
+        return ""
+    status = match.group(1).strip()
+    return status if re.search(r"\b(CR|EN|VU)\b", status, re.IGNORECASE) else ""
+
+
+def render_iucn_badge(status):
+    match = re.search(r"\b(CR|EN|VU)\b", status or "", re.IGNORECASE)
+    if not match:
+        return ""
+    code = match.group(1).upper()
+    return f'<span class="iucn-alert" title="{esc(status)}"><span aria-hidden="true">&#9888;</span> IUCN {code}</span>'
+
+
 def build():
     if os.path.exists(DOCS):
         shutil.rmtree(DOCS)
@@ -310,6 +326,7 @@ def build():
             data, sections = parse_txt(combined_text)
             display_name = clean_name(plant_dir)
             slug = slugify(f"{badge}-{display_name}")
+            iucn_status = extract_iucn_status(combined_text)
 
             # copy photos
             img_dir = os.path.join(DOCS, "assets", "img", slug)
@@ -335,6 +352,7 @@ def build():
                 "badge": badge,
                 "common_name": data["common_name"] or display_name,
                 "scientific_name": data["scientific_name"],
+                "iucn_status": iucn_status,
                 "genus": genus,
                 "species_binomial": species_binomial,
                 "family": data["family"],
@@ -416,9 +434,10 @@ def render_index(by_category):
         if not cat or not cat["plants"]:
             continue
         items = "\n".join(
-            f'          <li><a class="index-link" href="plants/{p["slug"]}.html">{esc(p["display_name"])}'
-            + (f'<span class="sci">{esc(p["scientific_name"])}</span>' if p["scientific_name"] else "")
-            + "</a></li>"
+          f'          <li><a class="index-link" href="plants/{p["slug"]}.html">{esc(p["display_name"])}'
+          + render_iucn_badge(p.get("iucn_status", ""))
+          + (f'<span class="sci">{esc(p["scientific_name"])}</span>' if p["scientific_name"] else "")
+          + "</a></li>"
             for p in cat["plants"]
         )
         sections_html.append(f"""
@@ -759,6 +778,15 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem 4rem; }
   color: var(--ink-soft);
   font-weight: 400;
 }
+.iucn-alert {
+  color: #a62929;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  margin-left: .55rem;
+  white-space: nowrap;
+}
+.iucn-alert span { font-size: .78rem; }
 
 .site-footer {
   text-align: center;
