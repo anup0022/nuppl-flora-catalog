@@ -2284,7 +2284,14 @@
         }
       ],
       "fruit_seed": [],
-      "stem": [],
+      "stem": [
+        {
+          "title": "Croton bonplandianus from Aziyar Dam IMG 20180518 150014311.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Croton_bonplandianus_from_Aziyar_Dam_IMG_20180518_150014311.jpg/1920px-Croton_bonplandianus_from_Aziyar_Dam_IMG_20180518_150014311.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
       "leaf": []
     }
   },
@@ -5844,7 +5851,7 @@
       ]
     }
   },
-  "tree-mulberry": {
+  "tree-shahtoot-mulberry": {
     "general": [
       {
         "title": "(MHNT) Morus alba - immatures inflorescences and flowers.jpg",
@@ -5904,8 +5911,8 @@
       ],
       "stem": [
         {
-          "title": "Morus nigra - stem.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Morus_nigra_-_stem.jpg/1920px-Morus_nigra_-_stem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Morus alba - Chaparral bark.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Morus_alba_-_Chaparral_bark.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
@@ -9665,10 +9672,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Bermuda grass (Cynodon dactylon).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bermuda_grass_%28Cynodon_dactylon%29.jpg/1920px-Bermuda_grass_%28Cynodon_dactylon%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Cynodon dactylon.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Cynodon_dactylon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "Public domain"
         }
       ],
       "flower": [],
@@ -10017,10 +10024,10 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-050405-0070-Digitaria ciliaris-habit-Mokupipi-Maui (24374658409).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Starr-050405-0070-Digitaria_ciliaris-habit-Mokupipi-Maui_%2824374658409%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Digitaria ciliaris.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Digitaria_ciliaris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "flower": [
@@ -10060,8 +10067,8 @@
   "vine-giloy-guduchi": {
     "general": [
       {
-        "title": "CS of Tinospora cordifolia root 01.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/CS_of_Tinospora_cordifolia_root_01.jpg/1920px-CS_of_Tinospora_cordifolia_root_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Tinospora cordifolia (giloy) (1) 01.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Tinospora_cordifolia_%28giloy%29_%281%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
@@ -10093,8 +10100,8 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Tinospora habit.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Tinospora_habit.jpg/1920px-Tinospora_habit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Tinospora cordifolia (giloy) (1) 01.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Tinospora_cordifolia_%28giloy%29_%281%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }

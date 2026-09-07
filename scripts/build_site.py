@@ -471,15 +471,24 @@ def render_plant_page(plant, prev_p, next_p):
   categories = plant.get("commons_categories", {})
   general_pool = plant.get("commons_images", [])
   hero_match = (categories.get("full_plant") or [None])[0] or (general_pool[0] if general_pool else None)
-  hero_external = hero_match["url"] if hero_match else ""
-  hero_src = hero_external or (plant["images"][0] if plant["images"] else "")
+  local_photo = plant["images"][0] if plant["images"] else ""
+  local_full_photo = plant["images"][-1] if plant["images"] else ""
+  hero_external = "" if local_photo else (hero_match["url"] if hero_match else "")
+  hero_src = local_full_photo or hero_external
 
-  used_titles = {hero_match["title"]} if hero_match else set()
+  used_titles = {hero_match["title"]} if hero_match and not local_photo else set()
   fallback_pool = [m for m in general_pool if m["title"] not in used_titles]
 
   gallery_figs = []
   for cat_key, cat_label, _keywords in CATEGORY_SPECS:
+    if cat_key == "full_plant" and local_full_photo:
+      gallery_figs.append(
+        f'      <figure class="gallery-item gallery-item-1"><img src="../{esc(local_full_photo)}" alt="{esc(plant["display_name"])} full plant" loading="lazy"><figcaption>{esc(cat_label)}</figcaption></figure>'
+      )
+      continue
     match = (categories.get(cat_key) or [None])[0]
+    if cat_key == "full_plant" and match:
+      used_titles.discard(match["title"])
     if not match or match["title"] in used_titles:
       match = next((m for m in fallback_pool if m["title"] not in used_titles), None)
     if not match:
@@ -544,7 +553,7 @@ def render_plant_page(plant, prev_p, next_p):
     if hero_external else
     f'<img src="../{hero_src}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
   ) if hero_src else ""
-  inline_src = plant["images"][1] if len(plant["images"]) > 1 else ""
+  inline_src = plant["images"][1] if len(plant["images"]) > 1 else local_photo
   inline_image = (
     f'<img src="../{inline_src}" alt="{esc(plant["display_name"])} field detail" loading="lazy">'
     if inline_src else

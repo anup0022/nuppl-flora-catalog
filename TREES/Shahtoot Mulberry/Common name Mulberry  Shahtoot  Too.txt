@@ -1,7 +1,8 @@
-Common name: Mulberry / Shahtoot / Toot
+Common name: Shahtoot Mulberry / Mulberry / Toot
 Scientific name: Morus alba 
 Conservation Status: Least Concern (LC) — IUCN Red List. Endemic to China.
 Type: Deciduous shrub or small tree
+Family: Moraceae
 
 Habitat:
 - Native to northern China but widely naturalized across India. Very common in UP, including Kanpur region
@@ -11,9 +12,16 @@ Habitat:
 - Planted in home gardens, farms, roadsides, and field boundaries. Also found wild/escaped near villages
 - Fast growing. Can be coppiced/pruned heavily and regrows quickly
 
+Features:
+- Small to medium deciduous tree with a spreading crown and milky sap
+- Leaves are alternate, glossy green, and often variable in shape, with lobed and unlobed forms on the same tree
+- Fruits are elongated aggregate berries that ripen from white or pink to deep purple-black, depending on the variety
+- Male and female flowers are small and usually borne in separate catkins; some cultivated trees are dioecious
+
 Biodiversity Value:
 - Primary host plant for silkworms Bombyx mori.
 - Used for afforestation, soil conservation, and as windbreaks.
+- Fruits provide food for birds, insects, and small mammals.
 
 Economic importance:
 - Sericulture: Primary host plant for silkworms Bombyx mori. Leaves are the sole food for silkworms. Backbone of India’s silk industry. UP has sericulture farms
