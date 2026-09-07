@@ -124,7 +124,6 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem 4rem; }
   border-bottom: 1px solid transparent;
   display: block;
 }
-.index-link:hover { border-bottom-color: var(--link-blue); }
 .index-link .sci {
   display: block;
   font-style: italic;
@@ -328,8 +327,7 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .cat-count { border-radius: 50%; min-width: 2.4rem; height: 2.4rem; display: inline-grid; place-items: center; padding: 0; font-size: .74rem; }
 .index-grid { columns: 4 200px; column-gap: 2.6rem; margin-top: 2rem; }
 .index-grid li { margin-bottom: .75rem; }
-.index-link { color: var(--blue); font-size: .96rem; padding: .32rem 0; transition: transform .18s ease, color .18s ease; }
-.index-link:hover { border: 0; color: var(--green); transform: translateX(6px); }
+.index-link { color: var(--blue); font-size: .96rem; padding: .32rem 0; }
 .index-link .sci { font-size: .72rem; margin-top: .08rem; }
 
 .plant-header { max-width: 1180px; padding: 2.2rem 3rem 1.4rem; position: relative; }
