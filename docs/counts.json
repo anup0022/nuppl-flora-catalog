@@ -1,8 +1,9 @@
 {
-  "TREES": 34,
-  "HERBS": 62,
-  "SHRUBS": 22,
-  "GRASS": 11,
+  "TREES": 36,
+  "HERBS": 73,
+  "SHRUBS": 25,
+  "GRASS": 12,
   "VINES": 10,
-  "FLOWERING": 8
+  "FLOWERING": 19,
+  "VEGETABLES": 14
 }

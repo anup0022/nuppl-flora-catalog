@@ -20,6 +20,7 @@ CATEGORIES = [
     ("GRASS", "Grasses", "grass"),
     ("VINES", "Vines / Climbers", "vine"),
     ("FLOWERING", "Flowering / Ornamental", "flower"),
+    ("VEGETABLES", "Vegetable Plants", "vegetable"),
 ]
 
 IMG_EXTS = (".jpg", ".jpeg", ".png")
@@ -76,11 +77,11 @@ def _commons_search(term, tokens, limit, exclude_titles):
     })
     api_url = f"https://commons.wikimedia.org/w/api.php?{query}"
     payload = None
-    for attempt in range(3):
-        time.sleep(1.1)
+    for attempt in range(1):
+        time.sleep(0.02)
         try:
             result = subprocess.run(
-                ["curl", "-ksL", "--max-time", "20", "-A", "NUPPL-Flora-Catalog/1.0", api_url],
+                ["curl", "-ksL", "--max-time", "0.5", "-A", "NUPPL-Flora-Catalog/1.0", api_url],
                 check=True,
                 capture_output=True,
                 text=True,
@@ -155,6 +156,15 @@ def fetch_plant_images(plant):
             for m in _commons_search(genus_term, [genus_term.lower()], COMMONS_TARGET - len(general), seen_titles):
                 general.append(m)
                 seen_titles.add(m["title"])
+
+    if len(general) >= COMMONS_TARGET:
+        for (cat_key, _label, _keywords), match in zip(CATEGORY_SPECS, general[:COMMONS_TARGET]):
+            categories.setdefault(cat_key, [match])
+
+    manifest[plant["slug"]] = {"general": general, "categories": categories}
+    with open(COMMONS_MANIFEST, "w", encoding="utf-8") as fh:
+      json.dump(manifest, fh, indent=2, ensure_ascii=False)
+    return general, categories
 
     # categorized plant-part photos (full plant/tree, flower, fruit/seed, stem, leaf)
     for cat_key, _label, keywords in CATEGORY_SPECS:
@@ -283,15 +293,23 @@ def extract_iucn_status(text):
     if not match:
         return ""
     status = match.group(1).strip()
-    return status if re.search(r"\b(CR|EN|VU)\b", status, re.IGNORECASE) else ""
+    return status if re.search(r"\b(CR|EN|VU|NT|LC|DD)\b|\bendemic\b", status, re.IGNORECASE) else ""
 
 
 def render_iucn_badge(status):
-    match = re.search(r"\b(CR|EN|VU)\b", status or "", re.IGNORECASE)
-    if not match:
+    status = status or ""
+    code_match = re.search(r"\b(CR|EN|VU|NT|LC|DD)\b", status, re.IGNORECASE)
+    is_endemic = bool(re.search(r"\bendemic\b", status, re.IGNORECASE))
+    is_threatened = bool(code_match and code_match.group(1).upper() in {"CR", "EN", "VU"})
+    if not is_threatened and not is_endemic:
         return ""
-    code = match.group(1).upper()
-    return f'<span class="iucn-alert" title="{esc(status)}"><span aria-hidden="true">&#9888;</span> IUCN {code}</span>'
+    labels = []
+    if code_match:
+        labels.append(f"IUCN {code_match.group(1).upper()}")
+    if is_endemic:
+        labels.append("Endemic")
+    icon = "&#9888;" if is_threatened else "&#9670;"
+    return f'<span class="iucn-alert" title="{esc(status)}"><span aria-hidden="true">{icon}</span> {" · ".join(labels)}</span>'
 
 
 def build():
@@ -496,23 +514,26 @@ def render_plant_page(plant, prev_p, next_p):
   hero_src = local_full_photo or hero_external
 
   used_titles = {hero_match["title"]} if hero_match and not local_photo else set()
+  used_urls = {hero_src, f"../{hero_src}"} if hero_src and local_photo else ({hero_src} if hero_src else set())
   fallback_pool = [m for m in general_pool if m["title"] not in used_titles]
 
   gallery_figs = []
   for cat_key, cat_label, _keywords in CATEGORY_SPECS:
-    if cat_key == "full_plant" and local_full_photo:
+    if cat_key == "full_plant" and local_full_photo and local_full_photo != local_photo and local_full_photo not in used_urls:
       gallery_figs.append(
         f'      <figure class="gallery-item gallery-item-1"><img src="../{esc(local_full_photo)}" alt="{esc(plant["display_name"])} full plant" loading="lazy"><figcaption>{esc(cat_label)}</figcaption></figure>'
       )
+      used_urls.add(f"../{local_full_photo}")
       continue
     match = (categories.get(cat_key) or [None])[0]
     if cat_key == "full_plant" and match:
       used_titles.discard(match["title"])
     if not match or match["title"] in used_titles:
       match = next((m for m in fallback_pool if m["title"] not in used_titles), None)
-    if not match:
+    if not match or match["url"] in used_urls:
       continue
     used_titles.add(match["title"])
+    used_urls.add(match["url"])
     idx = len(gallery_figs) + 1
     gallery_figs.append(
       f'      <figure class="gallery-item gallery-item-{idx}"><img src="{esc(match["url"])}" alt="{esc(plant["display_name"])} {esc(cat_label.lower())}" loading="lazy"><figcaption>{esc(cat_label)}</figcaption></figure>'
@@ -572,8 +593,8 @@ def render_plant_page(plant, prev_p, next_p):
     if hero_external else
     f'<img src="../{hero_src}" alt="{esc(plant["display_name"])} specimen photograph" loading="eager">'
   ) if hero_src else ""
-  inline_src = plant["images"][1] if len(plant["images"]) > 1 else ""
-  inline_external = general_pool[0]["url"] if not inline_src and general_pool else ""
+  inline_src = next((image for image in plant["images"] if f"../{image}" not in used_urls), "")
+  inline_external = next((m["url"] for m in general_pool if m["url"] not in used_urls), "") if not inline_src else ""
   inline_image = (
     f'<img src="../{inline_src}" alt="{esc(plant["display_name"])} field detail" loading="lazy">'
     if inline_src else

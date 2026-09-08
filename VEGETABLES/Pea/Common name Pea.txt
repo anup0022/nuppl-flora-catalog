@@ -1,0 +1,10 @@
+Common name: Pea
+Scientific name: Pisum sativum
+Family: Fabaceae
+Type: Annual climbing herb
+Conservation Status: Not evaluated (NE) - IUCN Red List
+Habitat: Cool-season fields and gardens with fertile soil, sun, and support for climbing varieties.
+Features: Compound leaves end in tendrils; white or pink pea flowers produce pods containing edible seeds.
+Biodiversity Value: Flowers feed bees and root nodules fix nitrogen in soil.
+Economic importance: Important vegetable and pulse crop eaten fresh, dried, or processed.
+Medicinal importance: Nutritious food source; therapeutic use requires evidence and medical guidance.
