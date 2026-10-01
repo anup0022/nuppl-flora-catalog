@@ -1198,6 +1198,75 @@
       ]
     }
   },
+  "tree-royal-palm-cuban-royal-palm": {
+    "general": [
+      {
+        "title": "Cuban royal palm circle (Roystonea regia) City Botanic Gardens Brisbane L1000241.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cuban_royal_palm_circle_%28Roystonea_regia%29_City_Botanic_Gardens_Brisbane_L1000241.jpg/1920px-Cuban_royal_palm_circle_%28Roystonea_regia%29_City_Botanic_Gardens_Brisbane_L1000241.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Palma real (Roystonea regia) (14498490656).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Palma_real_%28Roystonea_regia%29_%2814498490656%29.jpg/1920px-Palma_real_%28Roystonea_regia%29_%2814498490656%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "title": "Cuban Royal Palm Roystonea regia circle City Botanic Gardens Brisbane 01.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Cuban_Royal_Palm_Roystonea_regia_circle_City_Botanic_Gardens_Brisbane_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Cuban Royal Palm Roystonea regia circle City Botanic Gardens Brisbane 02.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Cuban_Royal_Palm_Roystonea_regia_circle_City_Botanic_Gardens_Brisbane_02.jpg/1280px-Cuban_Royal_Palm_Roystonea_regia_circle_City_Botanic_Gardens_Brisbane_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Cuban Royal Palm Roystonea regia circle City Botanic Gardens Brisbane P1100534.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Cuban_Royal_Palm_Roystonea_regia_circle_City_Botanic_Gardens_Brisbane_P1100534.jpg/1920px-Cuban_Royal_Palm_Roystonea_regia_circle_City_Botanic_Gardens_Brisbane_P1100534.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "categories": {
+      "full_plant": [
+        {
+          "title": "Royal palm tree (Roystonea regia).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Royal_palm_tree_%28Roystonea_regia%29.jpg/1920px-Royal_palm_tree_%28Roystonea_regia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC0"
+        }
+      ],
+      "flower": [
+        {
+          "title": "Starr-110330-3798-Roystonea regia-flowers and fruit-Garden of Eden Keanae-Maui (24987436731).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Starr-110330-3798-Roystonea_regia-flowers_and_fruit-Garden_of_Eden_Keanae-Maui_%2824987436731%29.jpg/1920px-Starr-110330-3798-Roystonea_regia-flowers_and_fruit-Garden_of_Eden_Keanae-Maui_%2824987436731%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 3.0 us"
+        }
+      ],
+      "fruit_seed": [
+        {
+          "title": "Starr-090505-7396-Roystonea regia-fruiting habit-YMCA Keanae-Maui (24954451845).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Starr-090505-7396-Roystonea_regia-fruiting_habit-YMCA_Keanae-Maui_%2824954451845%29.jpg/1920px-Starr-090505-7396-Roystonea_regia-fruiting_habit-YMCA_Keanae-Maui_%2824954451845%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 3.0 us"
+        }
+      ],
+      "stem": [],
+      "leaf": [
+        {
+          "title": "Starr-120522-6148-Roystonea regia-frond-Iao Tropical Gardens of Maui-Maui (24512555924).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Starr-120522-6148-Roystonea_regia-frond-Iao_Tropical_Gardens_of_Maui-Maui_%2824512555924%29.jpg/1920px-Starr-120522-6148-Roystonea_regia-frond-Iao_Tropical_Gardens_of_Maui-Maui_%2824512555924%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 3.0 us"
+        }
+      ]
+    }
+  },
   "tree-sagwan-sagun": {
     "general": [
       {
@@ -11662,75 +11731,123 @@
   "flower-rajnigandha-tuberose": {
     "general": [
       {
-        "title": "Agave amica রজনীগন্ধা bd.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Agave_amica_%E0%A6%B0%E0%A6%9C%E0%A6%A8%E0%A7%80%E0%A6%97%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A6%BE_bd.jpg/1920px-Agave_amica_%E0%A6%B0%E0%A6%9C%E0%A6%A8%E0%A7%80%E0%A6%97%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A6%BE_bd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Polianthes tuberosa, Burdwan, West Bengal, India 31 01 2013.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthes_tuberosa%2C_Burdwan%2C_West_Bengal%2C_India_31_01_2013.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "Polianthes tuberosa flower.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthes_tuberosa_flower.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "20250702 Agave americana.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/20250702_Agave_americana.jpg/1920px-20250702_Agave_americana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Tube Rose - കദംബം 02.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tube_Rose_-_%E0%B4%95%E0%B4%A6%E0%B4%82%E0%B4%AC%E0%B4%82_02.JPG?width=1600",
         "source": "Wikimedia Commons",
-        "license": "CC BY 4.0"
+        "license": "CC BY-SA 3.0"
       },
       {
-        "title": "Agave-americana Aono-Ryuzetsuran Tokyo 2019-08-02 012.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_012.jpg/1280px-Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Tuberose flower.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuberose_flower.jpg?width=1600",
         "source": "Wikimedia Commons",
-        "license": "CC BY 4.0"
+        "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Agave-americana Aono-Ryuzetsuran Tokyo 2019-08-02 019.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_019.jpg/1280px-Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Polianthes tuberosa, Burdwan, West Bengal, India 10 01 2013.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthes_tuberosa%2C_Burdwan%2C_West_Bengal%2C_India_10_01_2013.jpg?width=1600",
         "source": "Wikimedia Commons",
-        "license": "CC BY 4.0"
+        "license": "CC BY-SA 3.0"
       },
       {
-        "title": "Agave-americana Aono-Ryuzetsuran Tokyo 2019-08-02 023.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_023.jpg/1280px-Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Tuberose seeds.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuberose_seeds.jpg?width=1600",
         "source": "Wikimedia Commons",
-        "license": "CC BY 4.0"
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Polianthus tuberosa-1-bsi-yercaud-salem-India.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthus_tuberosa-1-bsi-yercaud-salem-India.JPG?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Polianthes tuberosa, Burdwan, West Bengal, India 25 10 2012.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthes_tuberosa%2C_Burdwan%2C_West_Bengal%2C_India_25_10_2012.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "Polianthes tuberosa (Tuberose).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthes_tuberosa_%28Tuberose%29.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC0"
       }
     ],
     "categories": {
       "full_plant": [
         {
-          "title": "Agave amica রজনীগন্ধা bd.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Agave_amica_%E0%A6%B0%E0%A6%9C%E0%A6%A8%E0%A7%80%E0%A6%97%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A6%BE_bd.jpg/1920px-Agave_amica_%E0%A6%B0%E0%A6%9C%E0%A6%A8%E0%A7%80%E0%A6%97%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A6%BE_bd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Polianthes tuberosa, Burdwan, West Bengal, India 31 01 2013.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthes_tuberosa%2C_Burdwan%2C_West_Bengal%2C_India_31_01_2013.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Tube Rose - കദംബം 02.JPG",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tube_Rose_-_%E0%B4%95%E0%B4%A6%E0%B4%82%E0%B4%AC%E0%B4%82_02.JPG?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Polianthes tuberosa (Tuberose).jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthes_tuberosa_%28Tuberose%29.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC0"
         }
       ],
       "flower": [
         {
-          "title": "20250702 Agave americana.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/20250702_Agave_americana.jpg/1920px-20250702_Agave_americana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Tuberose flower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuberose_flower.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Polianthes tuberosa flower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthes_tuberosa_flower.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Polianthes tuberosa, Burdwan, West Bengal, India 10 01 2013.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthes_tuberosa%2C_Burdwan%2C_West_Bengal%2C_India_10_01_2013.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
         }
       ],
       "fruit_seed": [
         {
-          "title": "Agave-americana Aono-Ryuzetsuran Tokyo 2019-08-02 012.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_012.jpg/1280px-Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Tuberose seeds.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuberose_seeds.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "stem": [
         {
-          "title": "Agave-americana Aono-Ryuzetsuran Tokyo 2019-08-02 019.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_019.jpg/1280px-Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Polianthes tuberosa, Burdwan, West Bengal, India 25 10 2012.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthes_tuberosa%2C_Burdwan%2C_West_Bengal%2C_India_25_10_2012.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "leaf": [
         {
-          "title": "Agave-americana Aono-Ryuzetsuran Tokyo 2019-08-02 023.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_023.jpg/1280px-Agave-americana_Aono-Ryuzetsuran_Tokyo_2019-08-02_023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Polianthus tuberosa-1-bsi-yercaud-salem-India.JPG",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polianthus_tuberosa-1-bsi-yercaud-salem-India.JPG?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
+          "license": "CC BY-SA 4.0"
         }
       ]
     }
@@ -12035,75 +12152,75 @@
   "vegetable-beetroot": {
     "general": [
       {
-        "title": "276 Beta vulgaris L.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/276_Beta_vulgaris_L.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Beet (Beta vulgaris) - Alcúdia, Spain 2022-04-20.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Beet_%28Beta_vulgaris%29_-_Alc%C3%BAdia%2C_Spain_2022-04-20.jpg/1920px-Beet_%28Beta_vulgaris%29_-_Alc%C3%BAdia%2C_Spain_2022-04-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "Public domain"
+        "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Beta vulgaris, San Francisco farmers market.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Beta_vulgaris%2C_San_Francisco_farmers_market.jpg/1920px-Beta_vulgaris%2C_San_Francisco_farmers_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Beta vulgaris sl1.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Beta_vulgaris_sl1.jpg/1920px-Beta_vulgaris_sl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "CC0"
+        "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Beta vulgaris (Köhler).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Beta_vulgaris_%28K%C3%B6hler%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Beta vulgaris var conditiva Буряк столовий - супліддя.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Beta_vulgaris_var_conditiva_%D0%91%D1%83%D1%80%D1%8F%D0%BA_%D1%81%D1%82%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8%D0%B9_-_%D1%81%D1%83%D0%BF%D0%BB%D1%96%D0%B4%D0%B4%D1%8F.jpg/1920px-Beta_vulgaris_var_conditiva_%D0%91%D1%83%D1%80%D1%8F%D0%BA_%D1%81%D1%82%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8%D0%B9_-_%D1%81%D1%83%D0%BF%D0%BB%D1%96%D0%B4%D0%B4%D1%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "CC BY 2.5"
+        "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Beta vulgaris - Köhler–s Medizinal-Pflanzen-167.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Beta_vulgaris_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-167.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Beet (Barbabietola) (Beta vulgaris) - Cagliari, Italy 2024-04-01.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Beet_%28Barbabietola%29_%28Beta_vulgaris%29_-_Cagliari%2C_Italy_2024-04-01.jpg/1920px-Beet_%28Barbabietola%29_%28Beta_vulgaris%29_-_Cagliari%2C_Italy_2024-04-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "Public domain"
+        "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Beta vulgaris 2.JPG",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Beta_vulgaris_2.JPG/1920px-Beta_vulgaris_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Beta vulgaris - Parc Floral.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Beta_vulgaris_-_Parc_Floral.jpg/1920px-Beta_vulgaris_-_Parc_Floral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
+        "license": "CC BY-SA 4.0"
       }
     ],
     "categories": {
       "full_plant": [
         {
-          "title": "276 Beta vulgaris L.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/276_Beta_vulgaris_L.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Beet (Beta vulgaris) - Alcúdia, Spain 2022-04-20.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Beet_%28Beta_vulgaris%29_-_Alc%C3%BAdia%2C_Spain_2022-04-20.jpg/1920px-Beet_%28Beta_vulgaris%29_-_Alc%C3%BAdia%2C_Spain_2022-04-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "Public domain"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [
         {
-          "title": "Beta vulgaris, San Francisco farmers market.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Beta_vulgaris%2C_San_Francisco_farmers_market.jpg/1920px-Beta_vulgaris%2C_San_Francisco_farmers_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Beta vulgaris sl1.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Beta_vulgaris_sl1.jpg/1920px-Beta_vulgaris_sl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC0"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "fruit_seed": [
         {
-          "title": "Beta vulgaris (Köhler).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Beta_vulgaris_%28K%C3%B6hler%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Beta vulgaris var conditiva Буряк столовий - супліддя.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Beta_vulgaris_var_conditiva_%D0%91%D1%83%D1%80%D1%8F%D0%BA_%D1%81%D1%82%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8%D0%B9_-_%D1%81%D1%83%D0%BF%D0%BB%D1%96%D0%B4%D0%B4%D1%8F.jpg/1920px-Beta_vulgaris_var_conditiva_%D0%91%D1%83%D1%80%D1%8F%D0%BA_%D1%81%D1%82%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8%D0%B9_-_%D1%81%D1%83%D0%BF%D0%BB%D1%96%D0%B4%D0%B4%D1%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 2.5"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "stem": [
         {
-          "title": "Beta vulgaris - Köhler–s Medizinal-Pflanzen-167.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Beta_vulgaris_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-167.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Beet (Barbabietola) (Beta vulgaris) - Cagliari, Italy 2024-04-01.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Beet_%28Barbabietola%29_%28Beta_vulgaris%29_-_Cagliari%2C_Italy_2024-04-01.jpg/1920px-Beet_%28Barbabietola%29_%28Beta_vulgaris%29_-_Cagliari%2C_Italy_2024-04-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "Public domain"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "leaf": [
         {
-          "title": "Beta vulgaris 2.JPG",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Beta_vulgaris_2.JPG/1920px-Beta_vulgaris_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Beta vulgaris - Parc Floral.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Beta_vulgaris_-_Parc_Floral.jpg/1920px-Beta_vulgaris_-_Parc_Floral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 4.0"
         }
       ]
     }
@@ -12263,75 +12380,87 @@
   "vegetable-cauliflower": {
     "general": [
       {
-        "title": "2018-06-01 (131) Leaves of young Brassica oleracea var. gongylodes (Kohlrabi) at Bichlhäusl in Frankenfels, Austria.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/2018-06-01_%28131%29_Leaves_of_young_Brassica_oleracea_var._gongylodes_%28Kohlrabi%29_at_Bichlh%C3%A4usl_in_Frankenfels%2C_Austria.jpg/1920px-2018-06-01_%28131%29_Leaves_of_young_Brassica_oleracea_var._gongylodes_%28Kohlrabi%29_at_Bichlh%C3%A4usl_in_Frankenfels%2C_Austria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Bloemkool.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Bloemkool.jpg/1920px-Bloemkool.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "A cauliflower farm in Sohagpur Village of Chhindwara District.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/A_cauliflower_farm_in_Sohagpur_Village_of_Chhindwara_District.jpg/1920px-A_cauliflower_farm_in_Sohagpur_Village_of_Chhindwara_District.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC0"
+      },
+      {
+        "title": "Brassica oleracea var. botrytis (Coliflor).jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Brassica_oleracea_var._botrytis_%28Coliflor%29.jpg/1920px-Brassica_oleracea_var._botrytis_%28Coliflor%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Brassica oleracea0.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Brassica_oleracea0.jpg/1920px-Brassica_oleracea0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Cauliflower-with-leaves.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Cauliflower-with-leaves.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
-        "license": "CC BY 2.5"
+        "license": "CC BY-SA 3.0"
       },
       {
-        "title": "Brassica oleracea (cultivars) IMG 7157 02.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Brassica_oleracea_%28cultivars%29_IMG_7157_02.jpg/1920px-Brassica_oleracea_%28cultivars%29_IMG_7157_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "7367-Brassica oleracea var. botrytis.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/7367-Brassica_oleracea_var._botrytis.JPG/1920px-7367-Brassica_oleracea_var._botrytis.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
+        "license": "CC BY-SA 3.0"
       },
       {
-        "title": "Brassica oleracea - Rhizoctonia solani -1- Hinrichs-Berger.png",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Brassica_oleracea_-_Rhizoctonia_solani_-1-_Hinrichs-Berger.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Cauliflower-with-leaves3.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cauliflower-with-leaves3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
-      },
-      {
-        "title": "Brassica oleracea - Rhizoctonia solani -2- Hinrichs-Berger.png",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Brassica_oleracea_-_Rhizoctonia_solani_-2-_Hinrichs-Berger.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
+        "license": "CC BY-SA 3.0"
       }
     ],
     "categories": {
       "full_plant": [
         {
-          "title": "2018-06-01 (131) Leaves of young Brassica oleracea var. gongylodes (Kohlrabi) at Bichlhäusl in Frankenfels, Austria.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/2018-06-01_%28131%29_Leaves_of_young_Brassica_oleracea_var._gongylodes_%28Kohlrabi%29_at_Bichlh%C3%A4usl_in_Frankenfels%2C_Austria.jpg/1920px-2018-06-01_%28131%29_Leaves_of_young_Brassica_oleracea_var._gongylodes_%28Kohlrabi%29_at_Bichlh%C3%A4usl_in_Frankenfels%2C_Austria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Bloemkool.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Bloemkool.jpg/1920px-Bloemkool.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "A cauliflower farm in Sohagpur Village of Chhindwara District.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/A_cauliflower_farm_in_Sohagpur_Village_of_Chhindwara_District.jpg/1920px-A_cauliflower_farm_in_Sohagpur_Village_of_Chhindwara_District.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC0"
         }
       ],
       "flower": [
         {
-          "title": "Brassica oleracea0.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Brassica_oleracea0.jpg/1920px-Brassica_oleracea0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Brassica oleracea var. botrytis (Coliflor).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Brassica_oleracea_var._botrytis_%28Coliflor%29.jpg/1920px-Brassica_oleracea_var._botrytis_%28Coliflor%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 2.5"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "fruit_seed": [
         {
-          "title": "Brassica oleracea (cultivars) IMG 7157 02.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Brassica_oleracea_%28cultivars%29_IMG_7157_02.jpg/1920px-Brassica_oleracea_%28cultivars%29_IMG_7157_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Cauliflower-with-leaves.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Cauliflower-with-leaves.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "stem": [
         {
-          "title": "Brassica oleracea - Rhizoctonia solani -1- Hinrichs-Berger.png",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Brassica_oleracea_-_Rhizoctonia_solani_-1-_Hinrichs-Berger.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "7367-Brassica oleracea var. botrytis.JPG",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/7367-Brassica_oleracea_var._botrytis.JPG/1920px-7367-Brassica_oleracea_var._botrytis.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "leaf": [
         {
-          "title": "Brassica oleracea - Rhizoctonia solani -2- Hinrichs-Berger.png",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Brassica_oleracea_-_Rhizoctonia_solani_-2-_Hinrichs-Berger.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Cauliflower-with-leaves3.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cauliflower-with-leaves3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ]
     }
@@ -12339,32 +12468,38 @@
   "vegetable-chilli-plant": {
     "general": [
       {
-        "title": "Baby Bell pepper ''Capsicum annuum'' .jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Baby_Bell_pepper_%27%27Capsicum_annuum%27%27_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
-      },
-      {
-        "title": "Baby Bell pepper Capsicum annuum 3.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Baby_Bell_pepper_Capsicum_annuum_3.jpg/1920px-Baby_Bell_pepper_Capsicum_annuum_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
-      },
-      {
-        "title": "Capsicum annuum.JPG",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Capsicum_annuum.JPG/1920px-Capsicum_annuum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
-      },
-      {
-        "title": "Capsicum annuum 'Black Pearl' 03039.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Capsicum_annuum_%27Black_Pearl%27_03039.jpg/1920px-Capsicum_annuum_%27Black_Pearl%27_03039.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "AgroFidanishtja Havolli peppers.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/AgroFidanishtja_Havolli_peppers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Capsicum annuum 'Black Pearl' 09287.JPG",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Capsicum_annuum_%27Black_Pearl%27_09287.JPG/1920px-Capsicum_annuum_%27Black_Pearl%27_09287.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "09833jfSan Rafael Bulacan Maasim River Diliman Paddy Vegetable Fields Roadsfvf 01.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/09833jfSan_Rafael_Bulacan_Maasim_River_Diliman_Paddy_Vegetable_Fields_Roadsfvf_01.JPG/1920px-09833jfSan_Rafael_Bulacan_Maasim_River_Diliman_Paddy_Vegetable_Fields_Roadsfvf_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "Public domain"
+      },
+      {
+        "title": "C annuum beaver dam flower.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/C_annuum_beaver_dam_flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "Chili-Harvest-2012.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Chili-Harvest-2012.jpg/1920px-Chili-Harvest-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Aji pepper.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Aji_pepper.jpg/1920px-Aji_pepper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "A plant of Capsicum annuum in West Bengal, India.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/A_plant_of_Capsicum_annuum_in_West_Bengal%2C_India.jpg/1920px-A_plant_of_Capsicum_annuum_in_West_Bengal%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       }
@@ -12372,40 +12507,46 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Baby Bell pepper ''Capsicum annuum'' .jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Baby_Bell_pepper_%27%27Capsicum_annuum%27%27_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "AgroFidanishtja Havolli peppers.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/AgroFidanishtja_Havolli_peppers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "09833jfSan Rafael Bulacan Maasim River Diliman Paddy Vegetable Fields Roadsfvf 01.JPG",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/09833jfSan_Rafael_Bulacan_Maasim_River_Diliman_Paddy_Vegetable_Fields_Roadsfvf_01.JPG/1920px-09833jfSan_Rafael_Bulacan_Maasim_River_Diliman_Paddy_Vegetable_Fields_Roadsfvf_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "Public domain"
         }
       ],
       "flower": [
         {
-          "title": "Baby Bell pepper Capsicum annuum 3.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Baby_Bell_pepper_Capsicum_annuum_3.jpg/1920px-Baby_Bell_pepper_Capsicum_annuum_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "C annuum beaver dam flower.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/C_annuum_beaver_dam_flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0"
         }
       ],
       "fruit_seed": [
         {
-          "title": "Capsicum annuum.JPG",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Capsicum_annuum.JPG/1920px-Capsicum_annuum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
-        }
-      ],
-      "stem": [
-        {
-          "title": "Capsicum annuum 'Black Pearl' 03039.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Capsicum_annuum_%27Black_Pearl%27_03039.jpg/1920px-Capsicum_annuum_%27Black_Pearl%27_03039.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Chili-Harvest-2012.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Chili-Harvest-2012.jpg/1920px-Chili-Harvest-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
       ],
+      "stem": [
+        {
+          "title": "Aji pepper.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Aji_pepper.jpg/1920px-Aji_pepper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
       "leaf": [
         {
-          "title": "Capsicum annuum 'Black Pearl' 09287.JPG",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Capsicum_annuum_%27Black_Pearl%27_09287.JPG/1920px-Capsicum_annuum_%27Black_Pearl%27_09287.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "A plant of Capsicum annuum in West Bengal, India.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/A_plant_of_Capsicum_annuum_in_West_Bengal%2C_India.jpg/1920px-A_plant_of_Capsicum_annuum_in_West_Bengal%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
@@ -12415,16 +12556,22 @@
   "vegetable-green-pumpkin-pumpkin": {
     "general": [
       {
-        "title": "Cucurbita moschata 'Tromboncino'.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Cucurbita_moschata_%27Tromboncino%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Planta de zapallo, Mallin Ahogado, Patagonia, Argentina, 2025.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Planta_de_zapallo%2C_Mallin_Ahogado%2C_Patagonia%2C_Argentina%2C_2025.jpg/1920px-Planta_de_zapallo%2C_Mallin_Ahogado%2C_Patagonia%2C_Argentina%2C_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Calabasa vine.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Calabasa_vine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 3.0"
       },
       {
-        "title": "Cucurbita moschata (zapallo espontáneo) plántulas01 planta02 extraída raíz inhibida.JPG",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Cucurbita_moschata_%28zapallo_espont%C3%A1neo%29_pl%C3%A1ntulas01_planta02_extra%C3%ADda_ra%C3%ADz_inhibida.JPG/1920px-Cucurbita_moschata_%28zapallo_espont%C3%A1neo%29_pl%C3%A1ntulas01_planta02_extra%C3%ADda_ra%C3%ADz_inhibida.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Cucurbita moschata (giraumon 1).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Cucurbita_moschata_%28giraumon_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
-        "license": "CC0"
+        "license": "CC BY-SA 3.0"
       },
       {
         "title": "Cucurbita moschata 1.jpg",
@@ -12433,33 +12580,39 @@
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Cucurbita moschata BYN.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Cucurbita_moschata_BYN.jpg/1920px-Cucurbita_moschata_BYN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Cucurbita moschata, the Squash vine (9421284886).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cucurbita_moschata%2C_the_Squash_vine_%289421284886%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
+        "license": "CC BY 2.0"
       },
       {
-        "title": "Cucurbita moschata Butternut 2012 G1.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cucurbita_moschata_Butternut_2012_G1.jpg/1920px-Cucurbita_moschata_Butternut_2012_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Cucurbita moschata leaves.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cucurbita_moschata_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
-        "license": "Public domain"
+        "license": "CC BY-SA 3.0"
       }
     ],
     "categories": {
       "full_plant": [
         {
-          "title": "Cucurbita moschata 'Tromboncino'.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Cucurbita_moschata_%27Tromboncino%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Planta de zapallo, Mallin Ahogado, Patagonia, Argentina, 2025.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Planta_de_zapallo%2C_Mallin_Ahogado%2C_Patagonia%2C_Argentina%2C_2025.jpg/1920px-Planta_de_zapallo%2C_Mallin_Ahogado%2C_Patagonia%2C_Argentina%2C_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Calabasa vine.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Calabasa_vine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0"
         }
       ],
       "flower": [
         {
-          "title": "Cucurbita moschata (zapallo espontáneo) plántulas01 planta02 extraída raíz inhibida.JPG",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Cucurbita_moschata_%28zapallo_espont%C3%A1neo%29_pl%C3%A1ntulas01_planta02_extra%C3%ADda_ra%C3%ADz_inhibida.JPG/1920px-Cucurbita_moschata_%28zapallo_espont%C3%A1neo%29_pl%C3%A1ntulas01_planta02_extra%C3%ADda_ra%C3%ADz_inhibida.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Cucurbita moschata (giraumon 1).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Cucurbita_moschata_%28giraumon_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "fruit_seed": [
@@ -12472,18 +12625,18 @@
       ],
       "stem": [
         {
-          "title": "Cucurbita moschata BYN.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Cucurbita_moschata_BYN.jpg/1920px-Cucurbita_moschata_BYN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Cucurbita moschata, the Squash vine (9421284886).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cucurbita_moschata%2C_the_Squash_vine_%289421284886%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY 2.0"
         }
       ],
       "leaf": [
         {
-          "title": "Cucurbita moschata Butternut 2012 G1.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cucurbita_moschata_Butternut_2012_G1.jpg/1920px-Cucurbita_moschata_Butternut_2012_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Cucurbita moschata leaves.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cucurbita_moschata_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "Public domain"
+          "license": "CC BY-SA 3.0"
         }
       ]
     }
@@ -12491,16 +12644,22 @@
   "vegetable-pea": {
     "general": [
       {
-        "title": "-2019-07-20 Garden pea (Pisum sativum) in flower, Trimingham.JPG",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/-2019-07-20_Garden_pea_%28Pisum_sativum%29_in_flower%2C_Trimingham.JPG/1920px--2019-07-20_Garden_pea_%28Pisum_sativum%29_in_flower%2C_Trimingham.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "CSIRO ScienceImage 3211 Pea plants in flower.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/CSIRO_ScienceImage_3211_Pea_plants_in_flower.jpg/1920px-CSIRO_ScienceImage_3211_Pea_plants_in_flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
+        "license": "CC BY 3.0"
       },
       {
-        "title": "-2020-06-28 Garden pea (Pisum sativum), Trimingham, Norfolk (1).JPG",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/-2020-06-28_Garden_pea_%28Pisum_sativum%29%2C_Trimingham%2C_Norfolk_%281%29.JPG/1920px--2020-06-28_Garden_pea_%28Pisum_sativum%29%2C_Trimingham%2C_Norfolk_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "CSIRO ScienceImage 3599 Pea plants in flower.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/CSIRO_ScienceImage_3599_Pea_plants_in_flower.jpg/1920px-CSIRO_ScienceImage_3599_Pea_plants_in_flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
+        "license": "CC BY 3.0"
+      },
+      {
+        "title": "-365 pea flowers (26837257160).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/-365_pea_flowers_%2826837257160%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "Wikimedia Commons",
+        "license": "CC0"
       },
       {
         "title": "-2020-06-28 Garden pea (Pisum sativum), Trimingham, Norfolk (2).JPG",
@@ -12509,33 +12668,39 @@
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "88 Pisum sativum L.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/88_Pisum_sativum_L.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Pea tendrils.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Pea_tendrils.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
-        "license": "Public domain"
+        "license": "CC BY 2.0"
       },
       {
-        "title": "Doperwt rijserwt peulen Pisum sativum.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Doperwt_rijserwt_peulen_Pisum_sativum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Leaves of Pisum sativum (1).JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Leaves_of_Pisum_sativum_%281%29.JPG/1920px-Leaves_of_Pisum_sativum_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
+        "license": "CC BY 3.0"
       }
     ],
     "categories": {
       "full_plant": [
         {
-          "title": "-2019-07-20 Garden pea (Pisum sativum) in flower, Trimingham.JPG",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/-2019-07-20_Garden_pea_%28Pisum_sativum%29_in_flower%2C_Trimingham.JPG/1920px--2019-07-20_Garden_pea_%28Pisum_sativum%29_in_flower%2C_Trimingham.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "CSIRO ScienceImage 3211 Pea plants in flower.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/CSIRO_ScienceImage_3211_Pea_plants_in_flower.jpg/1920px-CSIRO_ScienceImage_3211_Pea_plants_in_flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "CSIRO ScienceImage 3599 Pea plants in flower.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/CSIRO_ScienceImage_3599_Pea_plants_in_flower.jpg/1920px-CSIRO_ScienceImage_3599_Pea_plants_in_flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 3.0"
         }
       ],
       "flower": [
         {
-          "title": "-2020-06-28 Garden pea (Pisum sativum), Trimingham, Norfolk (1).JPG",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/-2020-06-28_Garden_pea_%28Pisum_sativum%29%2C_Trimingham%2C_Norfolk_%281%29.JPG/1920px--2020-06-28_Garden_pea_%28Pisum_sativum%29%2C_Trimingham%2C_Norfolk_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "-365 pea flowers (26837257160).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/-365_pea_flowers_%2826837257160%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC0"
         }
       ],
       "fruit_seed": [
@@ -12548,18 +12713,18 @@
       ],
       "stem": [
         {
-          "title": "88 Pisum sativum L.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/88_Pisum_sativum_L.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Pea tendrils.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Pea_tendrils.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "Public domain"
+          "license": "CC BY 2.0"
         }
       ],
       "leaf": [
         {
-          "title": "Doperwt rijserwt peulen Pisum sativum.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Doperwt_rijserwt_peulen_Pisum_sativum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Leaves of Pisum sativum (1).JPG",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Leaves_of_Pisum_sativum_%281%29.JPG/1920px-Leaves_of_Pisum_sativum_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY 3.0"
         }
       ]
     }
@@ -12567,32 +12732,38 @@
   "vegetable-radish": {
     "general": [
       {
-        "title": "Radijs planten (Raphanus sativus subsp. sativus).jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Radijs_planten_%28Raphanus_sativus_subsp._sativus%29.jpg/1920px-Radijs_planten_%28Raphanus_sativus_subsp._sativus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "A Bunch of Radishes.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/A_Bunch_of_Radishes.JPG/1920px-A_Bunch_of_Radishes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
+        "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Rafe oleaginós - Raphanus sativus - Radis oléagineux.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Rafe_oleagin%C3%B3s_-_Raphanus_sativus_-_Radis_ol%C3%A9agineux.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Atlas roslin pl Rzodkiew zwyczajna 11438 8477.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Atlas_roslin_pl_Rzodkiew_zwyczajna_11438_8477.jpg/1920px-Atlas_roslin_pl_Rzodkiew_zwyczajna_11438_8477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "20140420Raphanus sativus1.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/20140420Raphanus_sativus1.jpg/1920px-20140420Raphanus_sativus1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC0"
       },
       {
-        "title": "Raphanus sativus, Albugo candida-1-JS.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Raphanus_sativus%2C_Albugo_candida-1-JS.jpg/1920px-Raphanus_sativus%2C_Albugo_candida-1-JS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Radieschen 1364.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Radieschen_1364.jpg/1920px-Radieschen_1364.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "(ALB) R. sativus-8.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/%28ALB%29_R._sativus-8.jpg/1920px-%28ALB%29_R._sativus-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Raphanus sativus, Albugo candida-2-JS.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Raphanus_sativus%2C_Albugo_candida-2-JS.jpg/1920px-Raphanus_sativus%2C_Albugo_candida-2-JS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
-      },
-      {
-        "title": "Raphanus sativus, Albugo candida-3-JS.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Raphanus_sativus%2C_Albugo_candida-3-JS.jpg/1920px-Raphanus_sativus%2C_Albugo_candida-3-JS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Atlas roslin pl Rzodkiew zwyczajna 11437 8477.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Atlas_roslin_pl_Rzodkiew_zwyczajna_11437_8477.jpg/1920px-Atlas_roslin_pl_Rzodkiew_zwyczajna_11437_8477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       }
@@ -12600,40 +12771,46 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Radijs planten (Raphanus sativus subsp. sativus).jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Radijs_planten_%28Raphanus_sativus_subsp._sativus%29.jpg/1920px-Radijs_planten_%28Raphanus_sativus_subsp._sativus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "A Bunch of Radishes.JPG",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/A_Bunch_of_Radishes.JPG/1920px-A_Bunch_of_Radishes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Atlas roslin pl Rzodkiew zwyczajna 11438 8477.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Atlas_roslin_pl_Rzodkiew_zwyczajna_11438_8477.jpg/1920px-Atlas_roslin_pl_Rzodkiew_zwyczajna_11438_8477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [
         {
-          "title": "Rafe oleaginós - Raphanus sativus - Radis oléagineux.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Rafe_oleagin%C3%B3s_-_Raphanus_sativus_-_Radis_ol%C3%A9agineux.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "20140420Raphanus sativus1.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/20140420Raphanus_sativus1.jpg/1920px-20140420Raphanus_sativus1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC0"
         }
       ],
       "fruit_seed": [
         {
-          "title": "Raphanus sativus, Albugo candida-1-JS.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Raphanus_sativus%2C_Albugo_candida-1-JS.jpg/1920px-Raphanus_sativus%2C_Albugo_candida-1-JS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Radieschen 1364.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Radieschen_1364.jpg/1920px-Radieschen_1364.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "stem": [
         {
-          "title": "Raphanus sativus, Albugo candida-2-JS.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Raphanus_sativus%2C_Albugo_candida-2-JS.jpg/1920px-Raphanus_sativus%2C_Albugo_candida-2-JS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "(ALB) R. sativus-8.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/%28ALB%29_R._sativus-8.jpg/1920px-%28ALB%29_R._sativus-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
       ],
       "leaf": [
         {
-          "title": "Raphanus sativus, Albugo candida-3-JS.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Raphanus_sativus%2C_Albugo_candida-3-JS.jpg/1920px-Raphanus_sativus%2C_Albugo_candida-3-JS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Atlas roslin pl Rzodkiew zwyczajna 11437 8477.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Atlas_roslin_pl_Rzodkiew_zwyczajna_11437_8477.jpg/1920px-Atlas_roslin_pl_Rzodkiew_zwyczajna_11437_8477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
@@ -12643,75 +12820,87 @@
   "vegetable-tomato": {
     "general": [
       {
-        "title": "'loskosi xaak' or Black nightshade(Solanum Nirgum).jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/%27loskosi_xaak%27_or_Black_nightshade%28Solanum_Nirgum%29.jpg/1920px-%27loskosi_xaak%27_or_Black_nightshade%28Solanum_Nirgum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Fruto de la tomatera en la planta.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Fruto_de_la_tomatera_en_la_planta.JPG/1920px-Fruto_de_la_tomatera_en_la_planta.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "20180518Solanum lycopersicum1.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/20180518Solanum_lycopersicum1.jpg/1920px-20180518Solanum_lycopersicum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC0"
+      },
+      {
+        "title": "20160729Solanum lycopersicum1.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/20160729Solanum_lycopersicum1.jpg/1920px-20160729Solanum_lycopersicum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC0"
+      },
+      {
+        "title": "20110802Tomaten Kurpfalzhof3.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/20110802Tomaten_Kurpfalzhof3.jpg/1920px-20110802Tomaten_Kurpfalzhof3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC0"
+      },
+      {
+        "title": "Solanum lycopersicum 15-p.bot-lyco.escu-043.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Solanum_lycopersicum_15-p.bot-lyco.escu-043.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Flower of Solanum aviculare.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Flower_of_Solanum_aviculare.jpg/1920px-Flower_of_Solanum_aviculare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Folla Tomate 006eue.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Folla_Tomate_006eue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
-      },
-      {
-        "title": "Flower of Solanum aviculare 2.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Flower_of_Solanum_aviculare_2.jpg/1920px-Flower_of_Solanum_aviculare_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
-      },
-      {
-        "title": "Fruits of black nightshade (Solanum nigrum).jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Fruits_of_black_nightshade_%28Solanum_nigrum%29.jpg/1920px-Fruits_of_black_nightshade_%28Solanum_nigrum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
-      },
-      {
-        "title": "Solanum, Manjappullu.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Solanum%2C_Manjappullu.jpg/1920px-Solanum%2C_Manjappullu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0"
+        "license": "CC BY-SA 3.0"
       }
     ],
     "categories": {
       "full_plant": [
         {
-          "title": "'loskosi xaak' or Black nightshade(Solanum Nirgum).jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/%27loskosi_xaak%27_or_Black_nightshade%28Solanum_Nirgum%29.jpg/1920px-%27loskosi_xaak%27_or_Black_nightshade%28Solanum_Nirgum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Fruto de la tomatera en la planta.JPG",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Fruto_de_la_tomatera_en_la_planta.JPG/1920px-Fruto_de_la_tomatera_en_la_planta.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "20180518Solanum lycopersicum1.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/20180518Solanum_lycopersicum1.jpg/1920px-20180518Solanum_lycopersicum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC0"
         }
       ],
       "flower": [
         {
-          "title": "Flower of Solanum aviculare.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Flower_of_Solanum_aviculare.jpg/1920px-Flower_of_Solanum_aviculare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "20160729Solanum lycopersicum1.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/20160729Solanum_lycopersicum1.jpg/1920px-20160729Solanum_lycopersicum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC0"
         }
       ],
       "fruit_seed": [
         {
-          "title": "Flower of Solanum aviculare 2.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Flower_of_Solanum_aviculare_2.jpg/1920px-Flower_of_Solanum_aviculare_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "20110802Tomaten Kurpfalzhof3.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/20110802Tomaten_Kurpfalzhof3.jpg/1920px-20110802Tomaten_Kurpfalzhof3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC0"
         }
       ],
       "stem": [
         {
-          "title": "Fruits of black nightshade (Solanum nigrum).jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Fruits_of_black_nightshade_%28Solanum_nigrum%29.jpg/1920px-Fruits_of_black_nightshade_%28Solanum_nigrum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Solanum lycopersicum 15-p.bot-lyco.escu-043.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Solanum_lycopersicum_15-p.bot-lyco.escu-043.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
       ],
       "leaf": [
         {
-          "title": "Solanum, Manjappullu.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Solanum%2C_Manjappullu.jpg/1920px-Solanum%2C_Manjappullu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Folla Tomate 006eue.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Folla_Tomate_006eue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ]
     }
@@ -13208,27 +13397,104 @@
   "vegetable-bitter-gourd-karela": {
     "general": [
       {
-        "title": "Momordica charantia.jpg",
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Momordica%20charantia.jpg",
+        "title": "Bitter guard garden.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Bitter_guard_garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
-        "license": "Commons license"
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Bitter melons hanging from a plant in West Bengal.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Bitter_melons_hanging_from_a_plant_in_West_Bengal.jpg/1920px-Bitter_melons_hanging_from_a_plant_in_West_Bengal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Bitter gourd flower yellow.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Bitter_gourd_flower_yellow.jpg/1920px-Bitter_gourd_flower_yellow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Bitter gourd cut.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Bitter_gourd_cut.jpg/1920px-Bitter_gourd_cut.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "A bitter gourd hanging from Momordica charantia.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/A_bitter_gourd_hanging_from_Momordica_charantia.jpg/1920px-A_bitter_gourd_hanging_from_Momordica_charantia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Leaf of bitter gourd.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Leaf_of_bitter_gourd.jpg/1920px-Leaf_of_bitter_gourd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
       }
     ],
-    "categories": {}
+    "categories": {
+      "full_plant": [
+        {
+          "title": "Bitter guard garden.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Bitter_guard_garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Bitter melons hanging from a plant in West Bengal.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Bitter_melons_hanging_from_a_plant_in_West_Bengal.jpg/1920px-Bitter_melons_hanging_from_a_plant_in_West_Bengal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "flower": [
+        {
+          "title": "Bitter gourd flower yellow.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Bitter_gourd_flower_yellow.jpg/1920px-Bitter_gourd_flower_yellow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "fruit_seed": [
+        {
+          "title": "Bitter gourd cut.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Bitter_gourd_cut.jpg/1920px-Bitter_gourd_cut.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "stem": [
+        {
+          "title": "A bitter gourd hanging from Momordica charantia.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/A_bitter_gourd_hanging_from_Momordica_charantia.jpg/1920px-A_bitter_gourd_hanging_from_Momordica_charantia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "leaf": [
+        {
+          "title": "Leaf of bitter gourd.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Leaf_of_bitter_gourd.jpg/1920px-Leaf_of_bitter_gourd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    }
   },
   "vegetable-climbing-bean-pole-bean": {
     "general": [
       {
-        "title": "Bohnen - Phaseolus vulgaris - Rhizoctonia solani - Howard F. Schwartz.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Bohnen_-_Phaseolus_vulgaris_-_Rhizoctonia_solani_-_Howard_F._Schwartz.jpg/1920px-Bohnen_-_Phaseolus_vulgaris_-_Rhizoctonia_solani_-_Howard_F._Schwartz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY 3.0"
-      },
-      {
-        "title": "Buschbohnen Samengewinnung-Josef Schlaghecken.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Buschbohnen_Samengewinnung-Josef_Schlaghecken.jpg/1920px-Buschbohnen_Samengewinnung-Josef_Schlaghecken.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "-2019-07-02 Purple dwarf bean plant in flower (Phaseolus vulgaris), Trimingham, Norfolk.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/-2019-07-02_Purple_dwarf_bean_plant_in_flower_%28Phaseolus_vulgaris%29%2C_Trimingham%2C_Norfolk.JPG/1920px--2019-07-02_Purple_dwarf_bean_plant_in_flower_%28Phaseolus_vulgaris%29%2C_Trimingham%2C_Norfolk.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Common Bean, blossoms.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Common_Bean%2C_blossoms.jpg/1920px-Common_Bean%2C_blossoms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
       },
       {
         "title": "Buschbohnen Hülsen Beurteilung-1-Josef Schlaghecken.jpg",
@@ -13243,27 +13509,27 @@
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Garden and farm seeds (16252081637).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Garden_and_farm_seeds_%2816252081637%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Eight leaf pinto bean.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Eight_leaf_pinto_bean.jpg/1920px-Eight_leaf_pinto_bean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "source": "Wikimedia Commons",
-        "license": "Public domain"
+        "license": "CC0"
       }
     ],
     "categories": {
       "full_plant": [
         {
-          "title": "Bohnen - Phaseolus vulgaris - Rhizoctonia solani - Howard F. Schwartz.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Bohnen_-_Phaseolus_vulgaris_-_Rhizoctonia_solani_-_Howard_F._Schwartz.jpg/1920px-Bohnen_-_Phaseolus_vulgaris_-_Rhizoctonia_solani_-_Howard_F._Schwartz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "-2019-07-02 Purple dwarf bean plant in flower (Phaseolus vulgaris), Trimingham, Norfolk.JPG",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/-2019-07-02_Purple_dwarf_bean_plant_in_flower_%28Phaseolus_vulgaris%29%2C_Trimingham%2C_Norfolk.JPG/1920px--2019-07-02_Purple_dwarf_bean_plant_in_flower_%28Phaseolus_vulgaris%29%2C_Trimingham%2C_Norfolk.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [
         {
-          "title": "Buschbohnen Samengewinnung-Josef Schlaghecken.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Buschbohnen_Samengewinnung-Josef_Schlaghecken.jpg/1920px-Buschbohnen_Samengewinnung-Josef_Schlaghecken.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Common Bean, blossoms.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Common_Bean%2C_blossoms.jpg/1920px-Common_Bean%2C_blossoms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "fruit_seed": [
@@ -13284,10 +13550,10 @@
       ],
       "leaf": [
         {
-          "title": "Garden and farm seeds (16252081637).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Garden_and_farm_seeds_%2816252081637%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Eight leaf pinto bean.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Eight_leaf_pinto_bean.jpg/1920px-Eight_leaf_pinto_bean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "source": "Wikimedia Commons",
-          "license": "Public domain"
+          "license": "CC0"
         }
       ]
     }
@@ -13295,16 +13561,83 @@
   "vegetable-cucumber-kheera": {
     "general": [
       {
-        "title": "Cucumis sativus.jpg",
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cucumis%20sativus.jpg",
+        "title": "Komkommer plant.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Komkommer_plant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "source": "Wikimedia Commons",
-        "license": "Commons license"
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "Flower of Cucumis sativus.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Flower_of_Cucumis_sativus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Seeds of cucumber.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Seeds_of_cucumber.jpg/1920px-Seeds_of_cucumber.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "2012 08 05 038 Gurkenranke.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/2012_08_05_038_Gurkenranke.jpg/1920px-2012_08_05_038_Gurkenranke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Leaves of Cucumber (a creeping vine plant).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Leaves_of_Cucumber_%28a_creeping_vine_plant%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
       }
     ],
-    "categories": {}
-  },
-  "tree-royal-palm-cuban-royal-palm": {
-    "general": [],
-    "categories": {}
+    "categories": {
+      "full_plant": [
+        {
+          "title": "Komkommer plant.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Komkommer_plant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Cucumber planted in a farm.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Cucumber_planted_in_a_farm.jpg/1920px-Cucumber_planted_in_a_farm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "flower": [
+        {
+          "title": "Flower of Cucumis sativus.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Flower_of_Cucumis_sativus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "fruit_seed": [
+        {
+          "title": "Seeds of cucumber.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Seeds_of_cucumber.jpg/1920px-Seeds_of_cucumber.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "stem": [
+        {
+          "title": "2012 08 05 038 Gurkenranke.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/2012_08_05_038_Gurkenranke.jpg/1920px-2012_08_05_038_Gurkenranke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "leaf": [
+        {
+          "title": "Leaves of Cucumber (a creeping vine plant).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Leaves_of_Cucumber_%28a_creeping_vine_plant%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    }
   }
 }

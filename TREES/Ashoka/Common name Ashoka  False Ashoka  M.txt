@@ -1,6 +1,5 @@
-Common name: Ashoka / False Ashoka / Mast Tree  
-Scientific name: Polyalthia longifolia 
-Note: Not to be confused with Saraca asoca which is the "true Ashoka"
+Common name: Ashoka / True Ashoka
+Scientific name: Saraca asoca
 Family: Annonaceae
 
 Habitat:
