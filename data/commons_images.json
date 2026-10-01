@@ -12821,38 +12821,50 @@
   "vegetable-radish": {
     "general": [
       {
-        "title": "A Bunch of Radishes.JPG",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/A_Bunch_of_Radishes.JPG/1920px-A_Bunch_of_Radishes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Raphanus sativus, red radish variant.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphanus_sativus%2C_red_radish_variant.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Atlas roslin pl Rzodkiew zwyczajna 11438 8477.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Atlas_roslin_pl_Rzodkiew_zwyczajna_11438_8477.jpg/1920px-Atlas_roslin_pl_Rzodkiew_zwyczajna_11438_8477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Radishes fresh from the garden.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radishes_fresh_from_the_garden.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "20140420Raphanus sativus1.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/20140420Raphanus_sativus1.jpg/1920px-20140420Raphanus_sativus1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC0"
-      },
-      {
-        "title": "Radieschen 1364.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Radieschen_1364.jpg/1920px-Radieschen_1364.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Radijs planten (Raphanus sativus subsp. sativus).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radijs_planten_%28Raphanus_sativus_subsp._sativus%29.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 3.0"
       },
       {
-        "title": "(ALB) R. sativus-8.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/%28ALB%29_R._sativus-8.jpg/1920px-%28ALB%29_R._sativus-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Radishes just harvested.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radishes_just_harvested.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "title": "Root of radish.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Root_of_radish.JPG?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "Raphanus sativus leaf.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphanus_sativus_leaf.JPG?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Atlas roslin pl Rzodkiew zwyczajna 11437 8477.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Atlas_roslin_pl_Rzodkiew_zwyczajna_11437_8477.jpg/1920px-Atlas_roslin_pl_Rzodkiew_zwyczajna_11437_8477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Kwiat rzodkiewki.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kwiat_rzodkiewki.JPG?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "Radieschen Knospen, Blüten und unreife Schoten.jpeg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radieschen_Knospen%2C_Bl%C3%BCten_und_unreife_Schoten.jpeg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       }
@@ -12860,46 +12872,70 @@
     "categories": {
       "full_plant": [
         {
-          "title": "A Bunch of Radishes.JPG",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/A_Bunch_of_Radishes.JPG/1920px-A_Bunch_of_Radishes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Radijs planten (Raphanus sativus subsp. sativus).jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radijs_planten_%28Raphanus_sativus_subsp._sativus%29.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Raphanus sativus, red radish variant.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphanus_sativus%2C_red_radish_variant.jpg?width=1600",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         },
         {
-          "title": "Atlas roslin pl Rzodkiew zwyczajna 11438 8477.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Atlas_roslin_pl_Rzodkiew_zwyczajna_11438_8477.jpg/1920px-Atlas_roslin_pl_Rzodkiew_zwyczajna_11438_8477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Radishes just harvested.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radishes_just_harvested.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 2.0"
         }
       ],
       "flower": [
         {
-          "title": "20140420Raphanus sativus1.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/20140420Raphanus_sativus1.jpg/1920px-20140420Raphanus_sativus1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Kwiat rzodkiewki.JPG",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kwiat_rzodkiewki.JPG?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC0"
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Radieschen Knospen, Blüten und unreife Schoten.jpeg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radieschen_Knospen%2C_Bl%C3%BCten_und_unreife_Schoten.jpeg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
         }
       ],
       "fruit_seed": [
         {
-          "title": "Radieschen 1364.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Radieschen_1364.jpg/1920px-Radieschen_1364.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Radieschen Knospen, Blüten und unreife Schoten.jpeg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radieschen_Knospen%2C_Bl%C3%BCten_und_unreife_Schoten.jpeg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Root of radish.JPG",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Root_of_radish.JPG?width=1600",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0"
         }
       ],
       "stem": [
         {
-          "title": "(ALB) R. sativus-8.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/%28ALB%29_R._sativus-8.jpg/1920px-%28ALB%29_R._sativus-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Root of radish.JPG",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Root_of_radish.JPG?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 3.0"
         }
       ],
       "leaf": [
         {
-          "title": "Atlas roslin pl Rzodkiew zwyczajna 11437 8477.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Atlas_roslin_pl_Rzodkiew_zwyczajna_11437_8477.jpg/1920px-Atlas_roslin_pl_Rzodkiew_zwyczajna_11437_8477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Raphanus sativus leaf.JPG",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphanus_sativus_leaf.JPG?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Radishes fresh from the garden.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radishes_fresh_from_the_garden.jpg?width=1600",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
