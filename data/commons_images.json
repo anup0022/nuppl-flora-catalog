@@ -4486,14 +4486,6 @@
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
         }
-      ],
-      "leaf": [
-        {
-          "title": "Angiosperm Morphology Abaxial Vascular Bundle in Yucca Leaf (36999098816).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Angiosperm_Morphology_Abaxial_Vascular_Bundle_in_Yucca_Leaf_%2836999098816%29.jpg/1920px-Angiosperm_Morphology_Abaxial_Vascular_Bundle_in_Yucca_Leaf_%2836999098816%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source": "Wikimedia Commons",
-          "license": "CC0"
-        }
       ]
     }
   },
@@ -9335,32 +9327,50 @@
   "shrub-lantana-wild-sage": {
     "general": [
       {
-        "title": "Closed wing position of Euploea core (Cramer, 1780) - Common Crow nectaring from Lantana camara WLB DSC 4078a.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Closed_wing_position_of_Euploea_core_%28Cramer%2C_1780%29_-_Common_Crow_nectaring_from_Lantana_camara_WLB_DSC_4078a.jpg/1920px-Closed_wing_position_of_Euploea_core_%28Cramer%2C_1780%29_-_Common_Crow_nectaring_from_Lantana_camara_WLB_DSC_4078a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Common Lantana (Lantana camara) growing in Ponnani, Kerala 01.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Lantana_%28Lantana_camara%29_growing_in_Ponnani%2C_Kerala_01.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Common mormon (Papilio polytes pasikrates) male underside on Lantana camara Xindian.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Common_mormon_%28Papilio_polytes_pasikrates%29_male_underside_on_Lantana_camara_Xindian.jpg/1920px-Common_mormon_%28Papilio_polytes_pasikrates%29_male_underside_on_Lantana_camara_Xindian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Lantana camara flowers (Common Lantana).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lantana_camara_flowers_%28Common_Lantana%29.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Lantana Camara FR 2012.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Lantana_Camara_FR_2012.jpg/1920px-Lantana_Camara_FR_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
-      },
-      {
-        "title": "Lantana camara-Silent Valley-2016-08-14-001.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Lantana_camara-Silent_Valley-2016-08-14-001.jpg/1920px-Lantana_camara-Silent_Valley-2016-08-14-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Common Lantana (Lantana camara) growing in Ponnani, Kerala 10.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Lantana_%28Lantana_camara%29_growing_in_Ponnani%2C_Kerala_10.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
-        "title": "Lantana camara-Silent Valley-2016-08-14-002.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lantana_camara-Silent_Valley-2016-08-14-002.jpg/1920px-Lantana_camara-Silent_Valley-2016-08-14-002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Flower Lantana camara (PV146).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flower_Lantana_camara_%28PV146%29.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Lantana camara flower buds 1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lantana_camara_flower_buds_1.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Common Lantana Fruits (Lantana camara).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Lantana_Fruits_%28Lantana_camara%29.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Lantana camara (Leaf).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lantana_camara_%28Leaf%29.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Common Lantana (Lantana camara) growing in Ponnani, Kerala 05.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Lantana_%28Lantana_camara%29_growing_in_Ponnani%2C_Kerala_05.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       }
@@ -9368,42 +9378,58 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Starr-050405-5765-Lantana camara-habit-Alau-Maui (24114605674).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Starr-050405-5765-Lantana_camara-habit-Alau-Maui_%2824114605674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Common Lantana (Lantana camara) growing in Ponnani, Kerala 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Lantana_%28Lantana_camara%29_growing_in_Ponnani%2C_Kerala_01.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0 us"
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Common Lantana (Lantana camara) growing in Ponnani, Kerala 10.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Lantana_%28Lantana_camara%29_growing_in_Ponnani%2C_Kerala_10.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Common Lantana (Lantana camara) growing in Ponnani, Kerala 05.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Lantana_%28Lantana_camara%29_growing_in_Ponnani%2C_Kerala_05.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
         }
       ],
       "flower": [
         {
           "title": "Flower Lantana camara (PV146).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Flower_Lantana_camara_%28PV146%29.jpg/1920px-Flower_Lantana_camara_%28PV146%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flower_Lantana_camara_%28PV146%29.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Lantana camara flowers (Common Lantana).jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lantana_camara_flowers_%28Common_Lantana%29.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Lantana camara flower buds 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lantana_camara_flower_buds_1.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
         }
       ],
       "fruit_seed": [
         {
           "title": "Common Lantana Fruits (Lantana camara).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Common_Lantana_Fruits_%28Lantana_camara%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Lantana_Fruits_%28Lantana_camara%29.jpg?width=1600",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
-        }
-      ],
-      "stem": [
-        {
-          "title": "Lantana camara stem NC1.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Lantana_camara_stem_NC1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 2.0"
         }
       ],
       "leaf": [
         {
           "title": "Lantana camara (Leaf).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Lantana_camara_%28Leaf%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lantana_camara_%28Leaf%29.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 4.0"
         }
       ]
     }
