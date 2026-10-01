@@ -318,6 +318,10 @@ def build():
     os.makedirs(os.path.join(DOCS, "assets", "img"))
     os.makedirs(os.path.join(DOCS, "plants"))
 
+    logo_src = os.path.join(ROOT, "assets", "nuppl-logo.png")
+    if os.path.exists(logo_src):
+        shutil.copy2(logo_src, os.path.join(DOCS, "assets", "nuppl-logo.png"))
+
     all_plants = []  # for index + prev/next navigation
     by_category = {}
 
@@ -469,6 +473,7 @@ def render_index(by_category):
     html = base_head("NUPPL Flora Catalog \u2014 Full Index") + f"""<body>
 <header class="site-header">
   <div class="hero-copy">
+    <img class="site-logo" src="assets/nuppl-logo.png" alt="NUPPL" width="360" height="304">
     <p class="eyebrow">NUPPL Flora Catalog</p>
     <h1>The Green Register</h1>
     <p class="tagline">A working catalog of {total} campus &amp; local species &mdash; trees, shrubs, herbs and grasses.</p>
@@ -525,7 +530,9 @@ def render_plant_page(plant, prev_p, next_p):
       )
       used_urls.add(f"../{local_full_photo}")
       continue
-    match = (categories.get(cat_key) or [None])[0]
+    cat_matches = categories.get(cat_key) or []
+    # prefer a variant not already used as the hero so the slot still renders
+    match = next((m for m in cat_matches if m["url"] not in used_urls), cat_matches[0] if cat_matches else None)
     if cat_key == "full_plant" and match:
       used_titles.discard(match["title"])
     if not match or match["title"] in used_titles:
@@ -969,6 +976,7 @@ body::before {
   letter-spacing: .16em;
 }
 .site-header .eyebrow { grid-column: 1 / -1; }
+.site-logo { display: block; width: clamp(96px, 9.5vw, 132px); height: auto; margin: 0 0 1.3rem; }
 .site-header h1 { font-size: clamp(3.4rem, 8vw, 7rem); letter-spacing: -.04em; max-width: 700px; }
 .tagline { margin: 0; max-width: 540px; font-size: 1.02rem; }
 #search { align-self: end; justify-self: end; max-width: 290px; border-radius: 0; border: 0; border-bottom: 2px solid var(--green); background: transparent; padding: .85rem 0; }
@@ -1034,6 +1042,7 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 @media (max-width: 760px) {
   .site-header { min-height: 0; padding: 4.5rem 1.4rem 3rem; display: block; }
   .site-header h1 { margin-top: 1.2rem; font-size: 3.3rem; }
+  .site-logo { width: 92px; margin-bottom: 1rem; }
   .hero-collage { min-height: 280px; margin: 2.3rem -.4rem 0; transform: scale(.9) rotate(2deg); transform-origin: top center; }
   #search { margin-top: 2rem; max-width: none; width: 100%; }
   main, .plant-main { padding-left: 1.4rem; padding-right: 1.4rem; }

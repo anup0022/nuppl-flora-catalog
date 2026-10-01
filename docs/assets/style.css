@@ -302,6 +302,7 @@ body::before {
   letter-spacing: .16em;
 }
 .site-header .eyebrow { grid-column: 1 / -1; }
+.site-logo { display: block; width: clamp(96px, 9.5vw, 132px); height: auto; margin: 0 0 1.3rem; }
 .site-header h1 { font-size: clamp(3.4rem, 8vw, 7rem); letter-spacing: -.04em; max-width: 700px; }
 .tagline { margin: 0; max-width: 540px; font-size: 1.02rem; }
 #search { align-self: end; justify-self: end; max-width: 290px; border-radius: 0; border: 0; border-bottom: 2px solid var(--green); background: transparent; padding: .85rem 0; }
@@ -367,6 +368,7 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 @media (max-width: 760px) {
   .site-header { min-height: 0; padding: 4.5rem 1.4rem 3rem; display: block; }
   .site-header h1 { margin-top: 1.2rem; font-size: 3.3rem; }
+  .site-logo { width: 92px; margin-bottom: 1rem; }
   .hero-collage { min-height: 280px; margin: 2.3rem -.4rem 0; transform: scale(.9) rotate(2deg); transform-origin: top center; }
   #search { margin-top: 2rem; max-width: none; width: 100%; }
   main, .plant-main { padding-left: 1.4rem; padding-right: 1.4rem; }
