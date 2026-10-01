@@ -473,7 +473,7 @@ def render_index(by_category):
     html = base_head("NUPPL Flora Catalog \u2014 Full Index") + f"""<body>
 <header class="site-header">
   <div class="hero-copy">
-    <img class="site-logo" src="assets/nuppl-logo.png" alt="NUPPL" width="360" height="304">
+    <img class="site-logo" src="assets/nuppl-logo.png" alt="NUPPL" width="200" height="200">
     <p class="eyebrow">NUPPL Flora Catalog</p>
     <h1>The Green Register</h1>
     <p class="tagline">A working catalog of {total} campus &amp; local species &mdash; trees, shrubs, herbs and grasses.</p>
