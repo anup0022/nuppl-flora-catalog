@@ -12821,14 +12821,32 @@
   "vegetable-radish": {
     "general": [
       {
-        "title": "Raphanus sativus, red radish variant.jpg",
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphanus_sativus%2C_red_radish_variant.jpg?width=1600",
+        "title": "White radishs at home.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/White_radishs_at_home.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
       {
         "title": "Radishes fresh from the garden.jpg",
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radishes_fresh_from_the_garden.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Raphanus sativus var. longipinnatus.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphanus_sativus_var._longipinnatus.JPG?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "Daikon radish - Minowase.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Daikon_radish_-_Minowase.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Raphanus sativus, red radish variant.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphanus_sativus%2C_red_radish_variant.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 4.0"
       },
@@ -12843,12 +12861,6 @@
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radishes_just_harvested.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY-SA 2.0"
-      },
-      {
-        "title": "Root of radish.JPG",
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Root_of_radish.JPG?width=1600",
-        "source": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0"
       },
       {
         "title": "Raphanus sativus leaf.JPG",
@@ -12872,22 +12884,22 @@
     "categories": {
       "full_plant": [
         {
+          "title": "Raphanus sativus var. longipinnatus.JPG",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphanus_sativus_var._longipinnatus.JPG?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        },
+        {
           "title": "Radijs planten (Raphanus sativus subsp. sativus).jpg",
           "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radijs_planten_%28Raphanus_sativus_subsp._sativus%29.jpg?width=1600",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0"
         },
         {
-          "title": "Raphanus sativus, red radish variant.jpg",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphanus_sativus%2C_red_radish_variant.jpg?width=1600",
+          "title": "White radishs at home.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/White_radishs_at_home.jpg?width=1600",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0"
-        },
-        {
-          "title": "Radishes just harvested.jpg",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radishes_just_harvested.jpg?width=1600",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 2.0"
         }
       ],
       "flower": [
@@ -12912,18 +12924,18 @@
           "license": "CC BY-SA 4.0"
         },
         {
-          "title": "Root of radish.JPG",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Root_of_radish.JPG?width=1600",
+          "title": "Daikon radish - Minowase.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Daikon_radish_-_Minowase.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "stem": [
         {
-          "title": "Root of radish.JPG",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Root_of_radish.JPG?width=1600",
+          "title": "Radishes just harvested.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radishes_just_harvested.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 2.0"
         }
       ],
       "leaf": [
@@ -13511,13 +13523,112 @@
   "flower-kalanchoe-flaming-katy": {
     "general": [
       {
-        "title": "Kalanchoe blossfeldiana.jpg",
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe%20blossfeldiana.jpg",
+        "title": "Kalanchoe blossfeldiana 9814.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_9814.JPG?width=1600",
         "source": "Wikimedia Commons",
-        "license": "Commons license"
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Kalanchoe blossfeldiana Flowers Closeup TorreLaMata.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_Flowers_Closeup_TorreLaMata.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Kalanchoe blossfeldiana (Tangopaso) D2511 1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_%28Tangopaso%29_D2511_1.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "Flaming Katy, Closeup.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flaming_Katy%2C_Closeup.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Kalanchoe blossfeldiana Plant 01.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_Plant_01.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Kalanchoe blossfeldiana bud.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_bud.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Kalanchoe blossfeldiana 2019-12-13 6195.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_2019-12-13_6195.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Kalanchoe blossfeldiana Plant 02.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_Plant_02.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
       }
     ],
-    "categories": {}
+    "categories": {
+      "full_plant": [
+        {
+          "title": "Kalanchoe blossfeldiana (Tangopaso) D2511 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_%28Tangopaso%29_D2511_1.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Kalanchoe blossfeldiana Plant 02.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_Plant_02.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Kalanchoe blossfeldiana 9814.JPG",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_9814.JPG?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "flower": [
+        {
+          "title": "Flaming Katy, Closeup.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flaming_Katy%2C_Closeup.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Kalanchoe blossfeldiana Plant 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_Plant_01.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Kalanchoe blossfeldiana Flowers Closeup TorreLaMata.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_Flowers_Closeup_TorreLaMata.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "fruit_seed": [
+        {
+          "title": "Kalanchoe blossfeldiana bud.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_bud.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "leaf": [
+        {
+          "title": "Kalanchoe blossfeldiana 2019-12-13 6195.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalanchoe_blossfeldiana_2019-12-13_6195.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    }
   },
   "vegetable-bitter-gourd-karela": {
     "general": [
