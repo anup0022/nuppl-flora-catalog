@@ -11986,32 +11986,50 @@
   "flower-yellow-rain-lily": {
     "general": [
       {
-        "title": "Fruit of Zephyranthes citrina in Ishigaki Island.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Fruit_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg/1920px-Fruit_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Flower of Zephyranthes citrina in Ishigaki Island.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flower_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY 4.0"
+      },
+      {
+        "title": "Zephyranthes citrina flower close up view.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zephyranthes_citrina_flower_close_up_view.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "Yellow rain lily 01.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yellow_rain_lily_01.jpg?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "title": "YellowRainLily 6476.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/YellowRainLily_6476.JPG?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "title": "YellowRainLily 4472.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/YellowRainLily_4472.JPG?width=1600",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
       },
       {
         "title": "Mature fruit of Zephyranthes citrina in Ishigaki Island.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Mature_fruit_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg/1920px-Mature_fruit_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mature_fruit_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY 4.0"
       },
       {
-        "title": "Starr 000828-9001 Zephyranthes citrina.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Starr_000828-9001_Zephyranthes_citrina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Zephyranthes citrina seeds.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zephyranthes_citrina_seeds.jpg?width=1600",
         "source": "Wikimedia Commons",
-        "license": "CC BY 3.0"
+        "license": "CC BY-SA 4.0"
       },
       {
         "title": "Starr 021019-0001 Zephyranthes citrina.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Starr_021019-0001_Zephyranthes_citrina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "source": "Wikimedia Commons",
-        "license": "CC BY 3.0"
-      },
-      {
-        "title": "Starr 021019-0002 Zephyranthes citrina.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Starr_021019-0002_Zephyranthes_citrina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Starr_021019-0001_Zephyranthes_citrina.jpg?width=1600",
         "source": "Wikimedia Commons",
         "license": "CC BY 3.0"
       }
@@ -12019,42 +12037,58 @@
     "categories": {
       "full_plant": [
         {
-          "title": "Fruit of Zephyranthes citrina in Ishigaki Island.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Fruit_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg/1920px-Fruit_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "YellowRainLily 6476.JPG",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/YellowRainLily_6476.JPG?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY 4.0"
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Starr 021019-0001 Zephyranthes citrina.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Starr_021019-0001_Zephyranthes_citrina.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 3.0"
         }
       ],
       "flower": [
         {
-          "title": "Mature fruit of Zephyranthes citrina in Ishigaki Island.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Mature_fruit_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg/1920px-Mature_fruit_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "title": "Flower of Zephyranthes citrina in Ishigaki Island.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flower_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg?width=1600",
           "source": "Wikimedia Commons",
           "license": "CC BY 4.0"
+        },
+        {
+          "title": "Yellow rain lily 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yellow_rain_lily_01.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Zephyranthes citrina flower close up view.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zephyranthes_citrina_flower_close_up_view.jpg?width=1600",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
         }
       ],
       "fruit_seed": [
         {
-          "title": "Starr 000828-9001 Zephyranthes citrina.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Starr_000828-9001_Zephyranthes_citrina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Mature fruit of Zephyranthes citrina in Ishigaki Island.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mature_fruit_of_Zephyranthes_citrina_in_Ishigaki_Island.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0"
-        }
-      ],
-      "stem": [
+          "license": "CC BY 4.0"
+        },
         {
-          "title": "Starr 021019-0001 Zephyranthes citrina.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Starr_021019-0001_Zephyranthes_citrina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "Zephyranthes citrina seeds.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zephyranthes_citrina_seeds.jpg?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0"
+          "license": "CC BY-SA 4.0"
         }
       ],
       "leaf": [
         {
-          "title": "Starr 021019-0002 Zephyranthes citrina.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Starr_021019-0002_Zephyranthes_citrina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "title": "YellowRainLily 4472.JPG",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/YellowRainLily_4472.JPG?width=1600",
           "source": "Wikimedia Commons",
-          "license": "CC BY 3.0"
+          "license": "CC BY-SA 3.0"
         }
       ]
     }
