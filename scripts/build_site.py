@@ -496,14 +496,22 @@ def render_index(by_category):
       <p class="credit-name">Shri S. Durai Kumar</p>
       <p class="credit-role">Chief Executive Officer, NUPPL</p>
       <p class="credit-role">Chairman, DAV NUPPL Public School</p>
+      <p class="credit-name credit-name-next">Shri Kaushik Bhar</p>
+      <p class="credit-role">DGM-HR, NUPPL</p>
+    </section>
+    <section class="credit-block">
+      <p class="credit-label">Supported By</p>
+      <p class="credit-name">Dr. Ashutosh Mishra</p>
+      <p class="credit-role">RA cum Principal</p>
+      <p class="credit-role">DAV NUPPL Public School</p>
     </section>
     <section class="credit-block">
       <p class="credit-label">Contributors</p>
       <ul class="credit-list">
-        <li><span class="credit-person">Shri Santosh Yadav</span><span class="credit-role">School Coordinator, HR, NUPPL</span></li>
-        <li><span class="credit-person">Mrs. Annu Singh</span><span class="credit-role">PGT Biology</span></li>
-        <li><span class="credit-person">Ms. Khushi</span></li>
-        <li><span class="credit-person">Mr. Arpit</span></li>
+        <li><span class="credit-person">Shri Santosh Yadav</span><span class="credit-role">Manager CSR/HR, NUPPL</span></li>
+        <li><span class="credit-person">Mrs. Annu Singh</span><span class="credit-role">PGT Biology, DAV NUPPL Public School</span></li>
+        <li><span class="credit-person">Ms. Khushi</span><span class="credit-role">Apprentice</span></li>
+        <li><span class="credit-person">Mr. Arpit</span><span class="credit-role">Apprentice</span></li>
       </ul>
     </section>
   </div>
@@ -684,14 +692,22 @@ def render_plant_page(plant, prev_p, next_p):
       <p class="credit-name">Shri S. Durai Kumar</p>
       <p class="credit-role">Chief Executive Officer, NUPPL</p>
       <p class="credit-role">Chairman, DAV NUPPL Public School</p>
+      <p class="credit-name credit-name-next">Shri Kaushik Bhar</p>
+      <p class="credit-role">DGM-HR, NUPPL</p>
+    </section>
+    <section class="credit-block">
+      <p class="credit-label">Supported By</p>
+      <p class="credit-name">Dr. Ashutosh Mishra</p>
+      <p class="credit-role">RA cum Principal</p>
+      <p class="credit-role">DAV NUPPL Public School</p>
     </section>
     <section class="credit-block">
       <p class="credit-label">Contributors</p>
       <ul class="credit-list">
-        <li><span class="credit-person">Shri Santosh Yadav</span><span class="credit-role">School Coordinator, HR, NUPPL</span></li>
-        <li><span class="credit-person">Mrs. Annu Singh</span><span class="credit-role">PGT Biology</span></li>
-        <li><span class="credit-person">Ms. Khushi</span></li>
-        <li><span class="credit-person">Mr. Arpit</span></li>
+        <li><span class="credit-person">Shri Santosh Yadav</span><span class="credit-role">Manager CSR/HR, NUPPL</span></li>
+        <li><span class="credit-person">Mrs. Annu Singh</span><span class="credit-role">PGT Biology, DAV NUPPL Public School</span></li>
+        <li><span class="credit-person">Ms. Khushi</span><span class="credit-role">Apprentice</span></li>
+        <li><span class="credit-person">Mr. Arpit</span><span class="credit-role">Apprentice</span></li>
       </ul>
     </section>
   </div>
@@ -1107,11 +1123,12 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
   .plant-nav { padding-left: 1.4rem; padding-right: 1.4rem; }
 }
 .site-credits { border-top: 1px solid var(--rule); background: rgba(255,255,255,.4); margin-top: 2rem; padding: 3rem 3rem 3.4rem; }
-.credit-grid { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2.6rem 4rem; }
+.credit-grid { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.6rem 3rem; }
 .credit-block { min-width: 0; }
 .credit-label { text-transform: uppercase; letter-spacing: .14em; font-size: .68rem; font-weight: 600; color: var(--ink-soft); margin: 0 0 .9rem; }
 .credit-label::after { content: ""; display: block; width: 2.2rem; height: 2px; margin-top: .6rem; background: var(--green); }
 .credit-name { font-family: "Fraunces", serif; font-size: 1.35rem; color: var(--green-deep); margin: 0 0 .25rem; }
+.credit-name-next { margin-top: 1.3rem; }
 .credit-role { font-size: .84rem; color: var(--ink-soft); margin: 0; line-height: 1.5; }
 .credit-list { list-style: none; margin: 0; padding: 0; }
 .credit-list li { margin-bottom: .7rem; }
