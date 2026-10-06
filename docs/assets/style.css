@@ -282,15 +282,17 @@ body::before {
 }
 
 .site-header {
-  max-width: 1180px;
-  min-height: 440px;
-  padding: 6.8rem 3rem 4rem;
+  max-width: none;
+  margin: 0;
+  min-height: clamp(440px, 60vh, 600px);
+  padding: 2.4rem max(3rem, calc((100% - 1180px) / 2 + 3rem)) 3.8rem;
   text-align: left;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 290px;
-  align-content: end;
-  gap: 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
 .site-header::after {
   content: "NUPPL / 2026";
@@ -300,29 +302,28 @@ body::before {
   color: var(--ink-soft);
   font: 600 .7rem/1 "Work Sans", sans-serif;
   letter-spacing: .16em;
+  z-index: 3;
 }
 .site-header .eyebrow { grid-column: 1 / -1; }
-.site-logo { display: block; width: clamp(96px, 9.5vw, 132px); height: auto; margin: 0 0 1.3rem; }
+.site-logo { display: block; width: clamp(96px, 9.5vw, 132px); height: auto; margin: 0 0 1.3rem; position: relative; z-index: 2; }
 /* opsz is pinned so glyph width stays proportional to font-size, keeping the one-line fit predictable */
 .site-header h1 { font-size: min(7rem, 14.8cqw); font-variation-settings: "opsz" 144; letter-spacing: -.04em; max-width: none; white-space: nowrap; }
 .tagline { margin: 0; max-width: 540px; font-size: 1.02rem; }
-#search { align-self: end; justify-self: end; max-width: 290px; border-radius: 0; border: 0; border-bottom: 2px solid var(--green); background: transparent; padding: .85rem 0; }
+#search { display: block; width: 100%; max-width: 330px; margin-top: 1.9rem; border-radius: 0; border: 0; border-bottom: 2px solid var(--green); background: rgba(255,255,255,.45); padding: .85rem .8rem; }
 /* container-type lets the headline scale off the hero column so it never wraps */
-.hero-copy { position: relative; z-index: 2; container-type: inline-size; animation: rise-in .85s cubic-bezier(.2,.8,.2,1) both; }
-.hero-collage { min-height: 330px; position: relative; transform: rotate(2deg); animation: collage-in 1.1s .15s cubic-bezier(.2,.8,.2,1) both; }
-.hero-photo { position: absolute; margin: 0; overflow: hidden; background: var(--paper-deep); box-shadow: 0 18px 32px rgba(16,47,34,.16); border: 7px solid var(--paper); opacity: 0; animation: photo-in .75s cubic-bezier(.2,.8,.2,1) forwards; }
-.hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(.82) contrast(1.05); transition: transform .6s ease, filter .6s ease; }
-.hero-photo:hover img { transform: scale(1.08); filter: saturate(1.15) contrast(1.04); }
-.hero-photo figcaption { position: absolute; left: .6rem; bottom: .55rem; color: #fff; font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; text-shadow: 0 1px 8px #000; }
-.hero-photo-1 { width: 190px; height: 245px; top: 10px; left: 0; transform: rotate(-7deg); animation-delay: .25s; }
-.hero-photo-2 { width: 165px; height: 205px; top: 100px; left: 145px; transform: rotate(5deg); animation-delay: .38s; }
-.hero-photo-3 { width: 145px; height: 185px; top: 0; right: 5px; transform: rotate(8deg); animation-delay: .51s; }
-.hero-photo-4 { width: 160px; height: 205px; bottom: 0; right: 115px; transform: rotate(-5deg); animation-delay: .64s; }
-.hero-photo-5 { width: 125px; height: 170px; bottom: 5px; left: 35px; transform: rotate(4deg); animation-delay: .77s; }
-.hero-photo-6 { width: 120px; height: 155px; top: 125px; right: 0; transform: rotate(-4deg); animation-delay: .9s; }
+.hero-copy { position: relative; z-index: 2; max-width: 660px; container-type: inline-size; animation: rise-in .85s cubic-bezier(.2,.8,.2,1) both; }
+/* sits behind the copy on desktop; becomes a normal block above the copy on mobile */
+.hero-banner { position: absolute; inset: 0; z-index: -2; margin: 0; overflow: hidden; }
+.hero-banner img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 72% 58%; }
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(96deg, var(--paper) 0%, rgba(247,244,237,.97) 24%, rgba(247,244,237,.84) 40%, rgba(247,244,237,.38) 57%, rgba(247,244,237,0) 76%),
+    linear-gradient(to top, rgba(247,244,237,.6), rgba(247,244,237,0) 38%);
+}
 @keyframes rise-in { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes collage-in { from { opacity: 0; transform: translateX(35px) rotate(8deg); } to { opacity: 1; transform: translateX(0) rotate(2deg); } }
-@keyframes photo-in { from { opacity: 0; transform: translateY(24px) rotate(0); } to { opacity: 1; } }
 
 main { max-width: 1180px; padding: 0 3rem 5rem; }
 .cat-block { padding: 3.3rem 0; position: relative; }
@@ -367,19 +368,24 @@ main { max-width: 1180px; padding: 0 3rem 5rem; }
 .inline-photo { margin: .2rem 0 2.5rem; max-width: 520px; }
 .inline-photo img { display: block; width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 12px 24px rgba(23,48,29,.12); }
 
-/* tablet: stack the hero, otherwise the 290px collage column starves the headline */
 @media (min-width: 761px) and (max-width: 1023px) {
-  .site-header { grid-template-columns: minmax(0, 1fr); min-height: 0; padding: 5.5rem 2rem 3.2rem; }
-  .hero-collage { margin-top: 2.4rem; }
-  #search { justify-self: start; max-width: 360px; width: 100%; }
+  .site-header { min-height: 420px; padding: 2.2rem 2rem 3rem; }
+  .hero-banner img { object-position: 76% 58%; }
+  .hero-banner::after { background: linear-gradient(96deg, var(--paper) 0%, rgba(247,244,237,.97) 32%, rgba(247,244,237,.8) 52%, rgba(247,244,237,.25) 70%, rgba(247,244,237,0) 88%); }
+  #search { max-width: 360px; }
 }
 
 @media (max-width: 760px) {
-  .site-header { min-height: 0; padding: 4.5rem 1.4rem 3rem; display: block; }
-  .site-header h1 { margin-top: 1.2rem; }
-  .site-logo { width: 92px; margin-bottom: 1rem; }
-  .hero-collage { min-height: 280px; margin: 2.3rem -.4rem 0; transform: scale(.9) rotate(2deg); transform-origin: top center; }
-  #search { margin-top: 2rem; max-width: none; width: 100%; }
+  /* logo stays above the banner, banner sits above the copy */
+  .site-header { min-height: 0; padding: 1.9rem 1.4rem 2.6rem; display: flex; flex-direction: column; justify-content: flex-start; overflow: visible; }
+  .site-header::after { display: none; }
+  .site-logo { order: 1; width: 92px; margin: 0 0 1.2rem; align-self: center; }
+  .hero-banner { order: 2; position: relative; inset: auto; z-index: auto; height: 210px; margin: 0 -1.4rem 1.7rem; }
+  .hero-banner img { object-position: 70% 60%; }
+  .hero-banner::after { background: linear-gradient(to top, rgba(247,244,237,.72), rgba(247,244,237,0) 42%); }
+  .hero-copy { order: 3; max-width: none; }
+  .site-header h1 { margin-top: .5rem; white-space: normal; font-size: clamp(2.5rem, 12.5vw, 3.6rem); }
+  #search { margin-top: 1.6rem; max-width: none; width: 100%; }
   main, .plant-main { padding-left: 1.4rem; padding-right: 1.4rem; }
   .plant-header { padding: 2.2rem 1.4rem 1.2rem; }
   .plant-hero { display: block; height: auto; min-height: 0; }
